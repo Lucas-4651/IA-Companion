@@ -1,0 +1,62 @@
+[
+  {
+    "title": "L'art du prompt engineering",
+    "content": "Pour obtenir des résultats pertinents : 1) Structurez vos prompts avec contexte + instruction + format attendu 2) Spécifiez le ton et le public cible 3) Limitez la longueur 4) Fournissez des exemples. Exemple efficace : 'En tant qu'expert SEO, génère 5 titres accrocheurs pour un article sur l'IA dans l'éducation, ton professionnel mais accessible, max 60 caractères par titre.'",
+    "category": "Prompting"
+  },
+  {
+    "title": "Vérification des faits IA",
+    "content": "Toujours croiser les informations générées par l'IA : 1) Vérifier les sources citées 2) Contrôler les données chiffrées avec des références autorisées 3) Tester les extraits de code dans un bac à sable 4) Utiliser des outils comme Scite.ai pour la validation scientifique. L'IA peut inventer des faits (hallucinations) avec une grande conviction.",
+    "category": "Meilleures pratiques"
+  },
+  {
+    "title": "Optimisation des workflows métier",
+    "content": "Intégrez l'IA dans vos processus : 1) Automatisez la synthèse de rapports avec Gemini 2) Générez des réponses client personnalisées avec ChatGPT 3) Créez des visuels marketing avec DALL-E en 30% du temps traditionnel 4) Utilisez Copilot pour documenter automatiquement le code. Mesurez le temps gagné chaque mois.",
+    "category": "Productivité"
+  },
+  {
+    "title": "Protection des données sensibles",
+    "content": "Ne jamais partager avec une IA publique : 1) Données personnelles (RGPD) 2) Secrets commerciaux 3) Code propriétaire 4) Documents juridiques non anonymisés. Privilégiez les solutions on-premise comme Llama 2 ou des API enterprise avec chiffrement comme AWS Bedrock. Activez toujours l'historique désactivé dans les paramètres.",
+    "category": "Sécurité"
+  },
+  {
+    "title": "Éviter les biais algorithmiques",
+    "content": "1) Testez vos prompts avec différents groupes démographiques 2) Ajoutez 'Considère divers perspectives culturelles' dans vos instructions 3) Vérifiez les stéréotypes dans les sorties générées 4) Utilisez des datasets équilibrés pour les modèles personnalisés. Auditez régulièrement vos systèmes avec des outils comme IBM AI Fairness 360.",
+    "category": "Éthique"
+  },
+  {
+    "title": "IA pour l'apprentissage",
+    "content": "Transformez votre apprentissage : 1) Demandez des analogies complexes ('Explique la relativité comme à un lycéen') 2) Générez des quiz personnalisés 3) Utilisez la synthèse vocale pour réviser 4) Créez des fiches mnémotechniques visuelles avec Midjourney. Limitez les sessions à 25min avec 5min de pause pour une rétention optimale.",
+    "category": "Éducation"
+  },
+  {
+    "title": "Erreurs courantes débutants",
+    "content": "À éviter absolument : 1) Poser des questions trop vagues ('Parle-moi du marketing') 2) Croire toutes les sorties sans vérification 3) Négliger le fine-tuning des paramètres (température, top_p) 4) Oublier de contextualiser les requêtes complexes. Commencez par des tâches simples avant de monter en complexité.",
+    "category": "Débutant"
+  },
+  {
+    "title": "Optimisation des outils créatifs",
+    "content": "Pour les outils comme Jasper ou Copy.ai : 1) Définissez une charte éditoriale détaillée 2) Utilisez le seed content pour guider le style 3) Expérimentez avec différents tones ('professionnel', 'décontracté', 'persuasif') 4) Combine plusieurs sorties pour un résultat unique. Mesurez l'engagement réel plutôt que la vitesse de production.",
+    "category": "Création de contenu"
+  },
+  {
+    "title": "IA et propriété intellectuelle",
+    "content": "1) Vérifiez les droits d'usage des sorties générées 2) Documentez les contributions humaines significatives 3) Ne déposez pas de copyright sur des œuvres 100% IA dans certains pays 4) Attribuez correctement les outils utilisés. Consultez un spécialiste PI avant une utilisation commerciale de contenus IA.",
+    "category": "Légal"
+  },
+  {
+    "title": "Prompt avancé pour développeurs",
+    "content": "Pour GitHub Copilot : '/FONCTIONNALITÉ: Système d'authentification JWT / CONTRAINTES: Node.js, MongoDB / BEST PRACTICES: OWASP top 10 / SORTIE ATTENDUE: Code avec commentaires expliquant chaque sécurité implémentée'. Ajoutez 'Montre-moi seulement la partie critique sans le boilerplate' pour éviter les répétitions.",
+    "category": "Développement"
+  },
+  {
+    "title": "Évolution des compétences IA",
+    "content": "Maintenez votre employabilité : 1) Maîtrisez un outil spécialisé (ex: Stable Diffusion pour designers) 2) Apprenez le prompt engineering systématique 3) Développez l'esprit critique face aux outputs 4) Comprenez les bases des modèles (LLM, diffusion, etc.). Pratiquez 30min/jour sur des projets concrets plutôt que des tutoriels passifs.",
+    "category": "Compétences futures"
+  },
+  {
+    "title": "Bonnes pratiques de testing IA",
+    "content": "Avant déploiement : 1) Testez avec des inputs extrêmes 2) Vérifiez les biais avec des datasets diversifiés 3) Évaluez la performance sous charge 4) Analysez la consommation énergétique. Utilisez des frameworks comme MLflow pour le versioning et le monitoring continu.",
+    "category": "Technique"
+  }
+]

@@ -1,0 +1,68 @@
+<%- include('partials/header', { 
+  title: 'Gestion des Utilisateurs',
+  currentPage: 'users' 
+}) %>
+
+<%- include('../partials/hamburgerMenu') %>
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+  <h1>Gestion des Utilisateurs</h1>
+  <div class="input-group" style="width: 300px;">
+    <input type="text" class="form-control" placeholder="Rechercher un utilisateur...">
+    <button class="btn btn-outline-secondary" type="button">
+      <i class="fas fa-search"></i>
+    </button>
+  </div>
+</div>
+
+<div class="admin-card">
+  <div class="admin-card-header d-flex justify-content-between align-items-center">
+    <span>Total Utilisateurs : <%= users.length %></span>
+  </div>
+
+  <div class="admin-card-body">
+    <div class="table-responsive">
+      <table class="table table-hover align-middle">
+        <thead class="table-light">
+          <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Email</th>
+            <th>Rôle</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% users.forEach(user => { %>
+            <tr>
+              <td><%= user.id %></td>
+              <td><strong><%= user.username %></strong></td>
+              <td><%= user.email %></td>
+              <td>
+                <% if (user.isAdmin) { %>
+                  <span class="badge bg-success">Admin</span>
+                <% } else { %>
+                  <span class="badge bg-secondary">Utilisateur</span>
+                <% } %>
+              </td>
+              <td>
+                <div class="btn-group">
+                  <% if (!user.isAdmin) { %>
+                    <button class="btn btn-sm btn-outline-warning make-admin" data-id="<%= user.id %>">
+                      <i class="fas fa-user-shield"></i> Admin
+                    </button>
+                  <% } %>
+                  <button class="btn btn-sm btn-outline-danger delete-user" data-id="<%= user.id %>">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

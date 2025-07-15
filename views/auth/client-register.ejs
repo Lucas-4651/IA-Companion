@@ -1,0 +1,78 @@
+<%- include('../partials/header', { title: 'Inscription' }) %>
+<%- include('../partials/hamburgerMenu') %>
+
+<main class="page-container">
+  <section class="section">
+    <div class="card neon-border auth-card">
+      <h1 class="neon-text">Inscription</h1>
+      
+      <% if (error) { %>
+        <div class="alert neon-border" style="background: rgba(255, 80, 80, 0.1); border-color: rgba(255, 80, 80, 0.3);">
+          <% if (error === 'email') { %>
+            Cet email est déjà utilisé
+          <% } else if (error === 'password') { %>
+            Les mots de passe ne correspondent pas
+          <% } else if (error === 'server') { %>
+            Erreur serveur, veuillez réessayer
+          <% } %>
+        </div>
+      <% } %>
+
+      <form action="/auth/register" method="POST">
+        <div class="form-group">
+          <label for="username" class="neon-text">Nom d'utilisateur</label>
+          <input type="text" id="username" name="username" required class="form-input neon-glow">
+        </div>
+        
+        <div class="form-group">
+          <label for="email" class="neon-text">Email</label>
+          <input type="email" id="email" name="email" required class="form-input neon-glow">
+        </div>
+        
+        <div class="form-group">
+          <label for="password" class="neon-text">Mot de passe</label>
+          <input type="password" id="password" name="password" required class="form-input neon-glow">
+        </div>
+        
+        <div class="form-group">
+          <label for="confirmPassword" class="neon-text">Confirmer le mot de passe</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" required class="form-input neon-glow">
+        </div>
+        
+        <button type="submit" class="btn neon-btn">S'inscrire</button>
+      </form>
+      
+      <p class="auth-link">
+        Déjà inscrit ? <a href="/auth/login" class="neon-text">Se connecter</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<%- include('../partials/footer') %>
+
+<style>
+  .auth-card {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .auth-link {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  
+  .auth-link a {
+    color: var(--neon-secondary);
+    text-decoration: none;
+  }
+  
+  .auth-link a:hover {
+    text-decoration: underline;
+  }
+</style>

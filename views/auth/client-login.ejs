@@ -1,0 +1,96 @@
+<%- include('../partials/header', { title: 'Connexion Client' }) %>
+
+<main class="page-container">
+  <section class="section">
+    <div class="card neon-border auth-card">
+      <h1 class="text-center neon-text">Connexion à votre compte</h1>
+      
+      <% if (error) { %>
+        <div class="alert neon-border" style="background: rgba(255, 80, 80, 0.1); border-color: rgba(255, 80, 80, 0.3);">
+          <% if (error === 'invalid') { %>
+            Email ou mot de passe incorrect
+          <% } else { %>
+            Erreur de connexion
+          <% } %>
+        </div>
+      <% } %>
+
+      <form action="/auth/login" method="POST">
+        <div class="form-group">
+          <label class="form-label neon-text">Email</label>
+          <input type="email" class="form-input neon-glow" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label neon-text">Mot de passe</label>
+          <input type="password" class="form-input neon-glow" name="password" required>
+        </div>
+        
+        <button type="submit" class="btn neon-btn w-100">Se connecter</button>
+      </form>
+      
+      <div class="auth-links mt-3">
+        <p class="text-center">
+          Pas encore inscrit? <a href="/auth/register" class="neon-text">Créer un compte</a>
+        </p>
+        <p class="text-center">
+          <a href="#" class="neon-text">Mot de passe oublié?</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include('../partials/footer') %>
+
+<style>
+  .auth-card {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 195, 255, 0.3);
+    background: rgba(10, 15, 30, 0.6);
+    color: var(--text-light);
+    font-size: 1rem;
+  }
+  
+  .w-100 {
+    width: 100%;
+  }
+  
+  .auth-links p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .auth-links a {
+    color: var(--neon-secondary);
+    text-decoration: none;
+  }
+  
+  .auth-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .alert {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+</style>

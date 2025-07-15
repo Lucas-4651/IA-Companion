@@ -1,0 +1,4881 @@
+[
+  {
+    "title": "Rédaction email professionnel",
+    "content": "Rédige un email professionnel pour proposer un partenariat à une entreprise tech.",
+    "category": "Communication",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché SaaS",
+    "content": "Génère une analyse de marché pour un logiciel SaaS de gestion RH ciblant les PME françaises.",
+    "category": "Business",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégies SEO e-commerce",
+    "content": "Donne 5 stratégies pour améliorer le SEO d'un site e-commerce de produits écologiques.",
+    "category": "Marketing Digital",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Script vidéo explicative",
+    "content": "Écris un script de 60 secondes expliquant le fonctionnement d'une application de finance participative.",
+    "category": "Production de Contenu",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Diagnostic performance WordPress",
+    "content": "Identifie 3 points critiques affectant la vitesse d'un site WordPress et propose des correctifs.",
+    "category": "Développement Web",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Calendrier réseaux sociaux",
+    "content": "Crée un calendrier éditorial d'une semaine pour une marque de sport avec du contenu engageant.",
+    "category": "Social Media",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse comportement utilisateur",
+    "content": "Interprète ces données de comportement utilisateur pour suggérer des améliorations produit.",
+    "category": "Data Science",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Améliorations UX bancaire",
+    "content": "Propose 3 améliorations d'UX pour l'interface d'une application bancaire mobile pour seniors.",
+    "category": "Design",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Pitch deck startup AgriTech",
+    "content": "Structure un pitch deck de 5 diapos pour une startup AgriTech cherchant un financement seed.",
+    "category": "Présentation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Automatisation collecte leads",
+    "content": "Décris un workflow pour automatiser la collecte de leads B2B via LinkedIn et Zapier.",
+    "category": "Productivité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "KPIs campagne marketing",
+    "content": "Liste 7 KPIs essentiels pour mesurer l'efficacité d'une campagne marketing sur les réseaux sociaux.",
+    "category": "Analytique",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie contenu B2B",
+    "content": "Développe une stratégie de contenu trimestrielle pour une entreprise SaaS B2B.",
+    "category": "Content Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script Python scraping",
+    "content": "Écris un script Python pour scraper les avis clients d'un site e-commerce donné.",
+    "category": "Programmation",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan formation employés",
+    "content": "Crée un plan de formation de 30 jours pour les nouveaux employés en service client.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse SWOT FinTech",
+    "content": "Réalise une analyse SWOT pour une startup FinTech spécialisée dans les paiements transfrontaliers.",
+    "category": "Stratégie",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow révision contrat",
+    "content": "Décris un workflow optimisé pour le processus de révision des contrats clients.",
+    "category": "Juridique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Idées fonctionnalités app",
+    "content": "Génère 5 idées de fonctionnalités innovantes pour une application de suivi fitness.",
+    "category": "Innovation",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure base de données",
+    "content": "Propose une structure de base de données pour une plateforme de réservation de services.",
+    "category": "Bases de Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Politique télétravail",
+    "content": "Rédige une politique de télétravail complète pour une entreprise de 100 employés.",
+    "category": "Gestion",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email relance clients",
+    "content": "Rédige un email de relance pour les clients inactifs depuis plus de 6 mois.",
+    "category": "Relation Client",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan projet événementiel",
+    "content": "Crée un plan de projet détaillé pour l'organisation d'une conférence de 500 personnes.",
+    "category": "Gestion de Projet",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Traduction document technique",
+    "content": "Traduis ce document technique de l'anglais au français en conservant la terminologie spécialisée.",
+    "category": "Traduction",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Questionnaire satisfaction",
+    "content": "Conçois un questionnaire de satisfaction client de 10 questions pour un service SaaS.",
+    "category": "Recherche",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Prévision ventes saisonnières",
+    "content": "Développe un modèle de prévision des ventes pour un commerce de détail avec saisonnalité marquée.",
+    "category": "Finance",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script automatisation Excel",
+    "content": "Écris un script VBA pour automatiser la génération de rapports mensuels dans Excel.",
+    "category": "Automatisation",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie branding",
+    "content": "Développe une stratégie de branding pour une nouvelle marque de café durable.",
+    "category": "Marketing",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide utilisateur logiciel",
+    "content": "Crée un guide utilisateur étape par étape pour un nouveau logiciel de comptabilité.",
+    "category": "Documentation",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse concurrentielle",
+    "content": "Réalise une analyse concurrentielle détaillée pour une application de livraison de nourriture.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Politique sécurité données",
+    "content": "Rédige une politique de sécurité des données conforme au RGPD pour une PME.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test logiciel",
+    "content": "Établis un plan de test complet pour une nouvelle application mobile.",
+    "category": "Qualité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Scénario formation vidéo",
+    "content": "Écris un scénario pour une vidéo de formation de 10 minutes sur l'utilisation de Slack.",
+    "category": "Formation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Optimisation processus",
+    "content": "Identifie les goulots d'étranglement dans ce processus opérationnel et propose des solutions.",
+    "category": "Optimisation",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Article blog tendances tech",
+    "content": "Rédige un article de blog de 800 mots sur les 5 tendances tech à surveiller en 2024.",
+    "category": "Rédaction",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan de continuité",
+    "content": "Développe un plan de continuité des activités pour une entreprise de services financiers.",
+    "category": "Gestion de Crise",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure API REST",
+    "content": "Conçois la structure d'une API REST pour un système de gestion de contenu.",
+    "category": "Développement API",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Email newsletter",
+    "content": "Rédige un email newsletter engageant pour annoncer les nouvelles fonctionnalités d'un produit.",
+    "category": "Email Marketing",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Personas clients",
+    "content": "Crée 3 personas clients détaillés pour un service de streaming musical premium.",
+    "category": "UX Research",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Script chatbot service client",
+    "content": "Écris un script de conversation pour un chatbot traitant les demandes de support technique.",
+    "category": "Service Client",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan acquisition utilisateurs",
+    "content": "Développe un plan d'acquisition d'utilisateurs pour une nouvelle application mobile.",
+    "category": "Growth Hacking",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse rentabilité produit",
+    "content": "Calcule la rentabilité d'un produit en fonction des coûts et des prévisions de vente.",
+    "category": "Analyse Financière",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Checklist audit site web",
+    "content": "Crée une checklist complète pour l'audit technique d'un site e-commerce.",
+    "category": "SEO Technique",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie sortie produit",
+    "content": "Développe une stratégie de lancement pour un nouveau produit électronique grand public.",
+    "category": "Gestion de Produit",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Contrat freelance",
+    "content": "Rédige un contrat type pour des prestations de développement web freelance.",
+    "category": "Juridique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Optimisation requêtes SQL",
+    "content": "Analyse ces requêtes SQL et propose des optimisations de performance.",
+    "category": "Bases de Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan engagement employés",
+    "content": "Développe un plan pour améliorer l'engagement des employés dans une entreprise tech.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie LinkedIn B2B",
+    "content": "Crée une stratégie de contenu LinkedIn pour une entreprise B2B de services professionnels.",
+    "category": "Marketing de Réseau",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Migration cloud",
+    "content": "Décris les étapes clés pour migrer une infrastructure on-premise vers AWS.",
+    "category": "Cloud Computing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure rapport annuel",
+    "content": "Propose une structure pour le rapport annuel d'une entreprise de technologie.",
+    "category": "Rapport",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test utilisabilité",
+    "content": "Développe un plan de test d'utilisabilité pour une application web avec 5 scénarios clés.",
+    "category": "UX Testing",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Synthèse réunion",
+    "content": "Rédige un résumé des décisions et actions issues de cette réunion d'équipe.",
+    "category": "Communication Interne",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle prédictif maintenance",
+    "content": "Conçois un modèle prédictif pour la maintenance des équipements industriels.",
+    "category": "Data Science",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie contenu vidéo",
+    "content": "Développe une stratégie de contenu vidéo pour YouTube pour une marque de sport.",
+    "category": "Marketing Vidéo",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow validation contenu",
+    "content": "Décris un workflow de création et validation de contenu pour une équipe marketing.",
+    "category": "Gestion de Contenu",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Calcul ROI campagne",
+    "content": "Calcule le ROI d'une campagne marketing basée sur les données fournies.",
+    "category": "Analyse Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Politique télétravail",
+    "content": "Rédige une politique de télétravail pour une entreprise de 200 employés.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Architecture microservices",
+    "content": "Propose une architecture microservices pour une application e-commerce.",
+    "category": "Architecture Logicielle",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script onboarding client",
+    "content": "Écris un script d'onboarding client pour un service SaaS B2B.",
+    "category": "Service Client",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan réduction coûts",
+    "content": "Développe un plan de réduction des coûts opérationnels pour une PME manufacturière.",
+    "category": "Finance",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie influenceurs",
+    "content": "Crée une stratégie de marketing d'influenceurs pour une marque de cosmétiques.",
+    "category": "Marketing Digital",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Dashboard KPI management",
+    "content": "Conçois un dashboard de suivi des KPI pour l'équipe de direction d'une startup.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan formation logiciel",
+    "content": "Développe un plan de formation de 4 semaines pour un nouveau logiciel CRM.",
+    "category": "Formation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure base connaissances",
+    "content": "Propose une structure pour une base de connaissances de support technique.",
+    "category": "Documentation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse risques projet",
+    "content": "Identifie et évalue les risques potentiels pour un projet de développement logiciel.",
+    "category": "Gestion de Projet",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Email campagne promotionnelle",
+    "content": "Rédige un email pour une campagne promotionnelle de fin d'année.",
+    "category": "Email Marketing",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow recrutement",
+    "content": "Optimise le workflow de recrutement pour une entreprise tech en croissance rapide.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie localisation app",
+    "content": "Développe une stratégie de localisation pour une application mobile ciblant 5 marchés.",
+    "category": "Internationalisation",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole sécurité réseau",
+    "content": "Établis un protocole de sécurité réseau pour une entreprise de services financiers.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test pénétration",
+    "content": "Crée un plan de test d'intrusion pour une application web sensible.",
+    "category": "Sécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle de tarification",
+    "content": "Propose un modèle de tarification pour un nouveau service SaaS basé sur les données du marché.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Scénarios test utilisateur",
+    "content": "Crée 5 scénarios de test utilisateur pour évaluer l'UX d'une application bancaire.",
+    "category": "UX Testing",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme fidélité",
+    "content": "Conçois la structure d'un programme de fidélisation pour une chaîne de restaurants.",
+    "category": "Marketing Relationnel",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan communication crise",
+    "content": "Développe un plan de communication de crise pour une entreprise de produits alimentaires.",
+    "category": "Relations Publiques",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Automatisation rapports",
+    "content": "Décris un système automatisé pour générer des rapports mensuels à partir de données brutes.",
+    "category": "Automatisation",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie contenu LinkedIn",
+    "content": "Crée un calendrier de contenu LinkedIn pour un mois pour un expert en transformation digitale.",
+    "category": "Marketing de Réseau",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle prévisionnel financier",
+    "content": "Conçois un modèle financier prévisionnel sur 3 ans pour une startup tech.",
+    "category": "Finance",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide style rédaction",
+    "content": "Rédige un guide de style rédactionnel pour une marque de luxe.",
+    "category": "Rédaction",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan migration données",
+    "content": "Développe un plan de migration de données pour un changement de système CRM.",
+    "category": "Gestion de Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script intégration API",
+    "content": "Écris un script Python pour intégrer deux API (Salesforce et Mailchimp).",
+    "category": "Programmation",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie génération leads",
+    "content": "Crée une stratégie de génération de leads pour une entreprise de services B2B.",
+    "category": "Ventes",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse écarts performance",
+    "content": "Analyse les écarts de performance entre les prévisions et les résultats réels.",
+    "category": "Analyse Financière",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Prototype wireframe",
+    "content": "Conçois des wireframes pour une application mobile de réservation de voyages.",
+    "category": "Design",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan déploiement logiciel",
+    "content": "Établis un plan de déploiement pour une nouvelle version majeure d'un logiciel.",
+    "category": "DevOps",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme mentorat",
+    "content": "Propose la structure d'un programme de mentorat interne pour une entreprise tech.",
+    "category": "Développement Personnel",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de prospection",
+    "content": "Rédige un email de prospection efficace pour un service de consulting IT.",
+    "category": "Ventes",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Checklist audit accessibilité",
+    "content": "Crée une checklist pour l'audit d'accessibilité d'un site web conforme WCAG 2.1.",
+    "category": "UX",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle prédictif attrition",
+    "content": "Développe un modèle prédictif d'attrition client pour une entreprise de télécoms.",
+    "category": "Data Science",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing viral",
+    "content": "Conçois une stratégie de marketing viral pour une nouvelle application sociale.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test charge",
+    "content": "Développe un plan de test de charge pour une application web attendue à haute fréquentation.",
+    "category": "Performance",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow approbation dépenses",
+    "content": "Automatise le workflow d'approbation des dépenses pour une équipe commerciale.",
+    "category": "Automatisation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme bien-être",
+    "content": "Propose la structure d'un programme de bien-être au travail pour une entreprise de 500 personnes.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Script analyse logs",
+    "content": "Écris un script Bash pour analyser les logs serveur et détecter les erreurs critiques.",
+    "category": "Administration Système",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan transformation digitale",
+    "content": "Développe un plan de transformation digitale sur 18 mois pour une entreprise manufacturière.",
+    "category": "Stratégie Digitale",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide référencement local",
+    "content": "Crée un guide de meilleures pratiques pour le référencement local d'une entreprise physique.",
+    "category": "SEO",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché NFT",
+    "content": "Réalise une analyse de marché pour les NFT dans l'industrie du sport.",
+    "category": "Blockchain",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie contenu podcast",
+    "content": "Développe une stratégie de contenu pour un podcast B2B sur l'innovation technologique.",
+    "category": "Marketing de Contenu",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Politique utilisation IA",
+    "content": "Rédige une politique d'utilisation de l'IA générative dans une entreprise.",
+    "category": "Gouvernance",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité",
+    "content": "Établis un plan de test de sécurité pour une application mobile de paiement.",
+    "category": "Sécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow publication média",
+    "content": "Optimise le workflow de création et publication de contenu pour un média en ligne.",
+    "category": "Gestion de Contenu",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle évaluation employés",
+    "content": "Conçois un modèle d'évaluation de performance pour les développeurs logiciels.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie retention clients",
+    "content": "Développe une stratégie de rétention client pour un service SaaS avec fort taux de désabonnement.",
+    "category": "Expérience Client",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Architecture solution IoT",
+    "content": "Propose une architecture technique pour une solution IoT de monitoring industriel.",
+    "category": "Architecture",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script backup automatisé",
+    "content": "Écris un script pour automatiser les sauvegardes quotidiennes d'une base de données.",
+    "category": "DevOps",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan de relance économique",
+    "content": "Développe un plan de relance économique post-crise pour une PME du secteur touristique.",
+    "category": "Stratégie",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide accessibilité web",
+    "content": "Crée un guide des meilleures pratiques d'accessibilité web pour les développeurs.",
+    "category": "Développement Web",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse sentiment réseaux sociaux",
+    "content": "Analyse le sentiment des discussions sur les réseaux sociaux concernant notre marque.",
+    "category": "Social Media",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme RSE",
+    "content": "Propose la structure d'un programme de responsabilité sociale d'entreprise (RSE).",
+    "category": "Développement Durable",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email notification sécurité",
+    "content": "Rédige un email pour notifier les utilisateurs d'une violation de sécurité potentielle.",
+    "category": "Communication",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test compatibilité",
+    "content": "Crée un plan de test de compatibilité pour une application web sur différents navigateurs.",
+    "category": "Qualité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie gamification",
+    "content": "Développe une stratégie de gamification pour augmenter l'engagement utilisateur d'une app.",
+    "category": "UX",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle tarification dynamique",
+    "content": "Conçois un modèle de tarification dynamique pour une plateforme de réservation hôtelière.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script migration données",
+    "content": "Écris un script pour migrer des données d'un ancien système vers une nouvelle base de données.",
+    "category": "Bases de Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan engagement communauté",
+    "content": "Crée un plan d'engagement communautaire pour une marque de jeu vidéo sur Discord.",
+    "category": "Marketing Social",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché réalité virtuelle",
+    "content": "Réalise une analyse de marché pour les applications de réalité virtuelle en éducation.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme innovation",
+    "content": "Propose la structure d'un programme d'innovation ouverte pour une grande entreprise.",
+    "category": "Innovation",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide RGPD pour startups",
+    "content": "Rédige un guide de conformité RGPD simplifié pour les startups.",
+    "category": "Juridique",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion incidents",
+    "content": "Automatise le workflow de gestion des incidents IT dans une entreprise.",
+    "category": "IT Management",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing automation",
+    "content": "Développe une stratégie de marketing automation pour un cycle de vente complexe B2B.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole reprise activité",
+    "content": "Établis un protocole de reprise d'activité après sinistre pour une entreprise tech.",
+    "category": "Gestion de Crise",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test internationalisation",
+    "content": "Crée un plan de test pour vérifier l'internationalisation d'une application web.",
+    "category": "Qualité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle d'affaires canvas",
+    "content": "Complète un Business Model Canvas pour une startup de mobilité urbaine.",
+    "category": "Business Plan",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Script analyse données",
+    "content": "Écris un script Python pour analyser un jeu de données de ventes et générer des insights.",
+    "category": "Data Science",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie contenu interatif",
+    "content": "Développe une stratégie de contenu interactif pour augmenter l'engagement sur un site web.",
+    "category": "Marketing de Contenu",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan optimisation CRO",
+    "content": "Crée un plan d'optimisation du taux de conversion (CRO) pour un site e-commerce.",
+    "category": "Optimisation",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme diversité",
+    "content": "Propose la structure d'un programme de diversité et inclusion pour une entreprise tech.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email annonce produit",
+    "content": "Rédige un email pour annoncer le lancement d'un nouveau produit à la clientèle existante.",
+    "category": "Email Marketing",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse valeur client",
+    "content": "Calcule la valeur à vie du client (LTV) pour différents segments d'une base clients.",
+    "category": "Analyse Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan déploiement ERP",
+    "content": "Développe un plan de déploiement d'un système ERP pour une entreprise manufacturière.",
+    "category": "Gestion de Projet",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide UX mobile",
+    "content": "Crée un guide des meilleures pratiques UX pour les applications mobiles.",
+    "category": "UX",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing entrant",
+    "content": "Conçois une stratégie de marketing entrant pour générer des leads qualifiés.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole sécurité données",
+    "content": "Établis un protocole de sécurité des données pour les employés en télétravail.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script surveillance performance",
+    "content": "Écris un script pour surveiller la performance d'un site web et alerter en cas de problème.",
+    "category": "DevOps",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan fidélisation clients",
+    "content": "Développe un plan de fidélisation client pour un service d'abonnement.",
+    "category": "Relation Client",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme formation",
+    "content": "Propose la structure d'un programme de formation continue pour les développeurs.",
+    "category": "Formation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de bienvenue SaaS",
+    "content": "Rédige une série de 3 emails de bienvenue pour les nouveaux utilisateurs d'un service SaaS.",
+    "category": "Email Marketing",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse segmentation marché",
+    "content": "Segmente notre marché cible en sous-groupes distincts avec caractéristiques et potentiel.",
+    "category": "Marketing Stratégique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test régression",
+    "content": "Crée un plan de test de régression pour une application web complexe.",
+    "category": "Qualité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle économie circulaire",
+    "content": "Conçois un modèle d'économie circulaire pour une entreprise de produits de consommation.",
+    "category": "Développement Durable",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow approvisionnement",
+    "content": "Optimise le workflow d'approvisionnement pour une chaîne de restauration rapide.",
+    "category": "Logistique",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie présence événement",
+    "content": "Développe une stratégie de présence événementielle pour une conférence tech majeure.",
+    "category": "Marketing Événementiel",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Architecture serverless",
+    "content": "Propose une architecture serverless pour une application de traitement de données.",
+    "category": "Cloud Computing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script nettoyage données",
+    "content": "Écris un script Python pour nettoyer et préparer un jeu de données désordonné.",
+    "category": "Data Science",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan engagement influenceurs",
+    "content": "Crée un plan d'engagement avec des influenceurs pour une campagne de lancement de produit.",
+    "category": "Marketing d'Influence",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide confidentialité données",
+    "content": "Rédige un guide sur les meilleures pratiques de confidentialité des données pour les employés.",
+    "category": "Protection des Données",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse benchmark concurrentiel",
+    "content": "Réalise une analyse comparative des fonctionnalités de nos produits contre 3 concurrents clés.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme parrainage",
+    "content": "Propose la structure d'un programme de parrainage client pour une entreprise SaaS.",
+    "category": "Marketing Relationnel",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email rappel panier abandonné",
+    "content": "Rédige une série de 2 emails pour récupérer les paniers abandonnés sur un site e-commerce.",
+    "category": "Email Marketing",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test accessibilité",
+    "content": "Crée un plan de test d'accessibilité complet pour une application web conforme WCAG 2.1.",
+    "category": "UX",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle prédictif ventes",
+    "content": "Développe un modèle prédictif de ventes saisonnières pour une entreprise de détail.",
+    "category": "Data Science",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie contenu généré",
+    "content": "Conçois une stratégie pour encourager et utiliser le contenu généré par les utilisateurs.",
+    "category": "Marketing Social",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow validation juridique",
+    "content": "Automatise le workflow de validation juridique des contrats clients.",
+    "category": "Juridique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan de succession",
+    "content": "Développe un plan de succession pour les postes clés d'une entreprise familiale.",
+    "category": "Gestion",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Architecture microfrontends",
+    "content": "Propose une architecture microfrontends pour une application web complexe.",
+    "category": "Architecture Logicielle",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script intégration continue",
+    "content": "Écris un script de configuration pour une pipeline d'intégration continue avec Jenkins.",
+    "category": "DevOps",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie de marque employeur",
+    "content": "Développe une stratégie de marque employeur pour attirer des talents tech.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide RGPD e-commerce",
+    "content": "Crée un guide de conformité RGPD pour un site e-commerce européen.",
+    "category": "Juridique",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse coût-bénéfice",
+    "content": "Réalise une analyse coût-bénéfice pour l'implémentation d'un nouveau système CRM.",
+    "category": "Finance",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme bien-être",
+    "content": "Propose la structure d'un programme de bien-être au travail pour une entreprise de 500 personnes.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email newsletter mensuelle",
+    "content": "Rédige une newsletter mensuelle pour une agence de marketing digital mettant en valeur ses succès clients.",
+    "category": "Email Marketing",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test performance API",
+    "content": "Crée un plan de test de performance pour une API publique à fort trafic.",
+    "category": "Performance",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle économie de partage",
+    "content": "Conçois un modèle d'économie de partage pour un service de location d'équipement spécialisé.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion connaissances",
+    "content": "Optimise le workflow de gestion des connaissances dans une équipe technique.",
+    "category": "Gestion des Connaissances",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie présence TikTok",
+    "content": "Développe une stratégie de présence sur TikTok pour une marque ciblant la Gen Z.",
+    "category": "Marketing Social",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole réponse incidents",
+    "content": "Établis un protocole de réponse aux incidents de sécurité informatique.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script analyse sécurité",
+    "content": "Écris un script pour analyser automatiquement les vulnérabilités d'un site web.",
+    "category": "Sécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan rétention talents",
+    "content": "Crée un plan de rétention des talents pour une entreprise en secteur concurrentiel.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide UX voice interface",
+    "content": "Rédige un guide des meilleures pratiques UX pour les interfaces vocales.",
+    "category": "UX",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché EdTech",
+    "content": "Réalise une analyse de marché pour les solutions EdTech en apprentissage des langues.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme innovation",
+    "content": "Propose la structure d'un programme d'innovation interne avec budget et processus.",
+    "category": "Innovation",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de relance facture",
+    "content": "Rédige une série de 3 emails de relance pour les factures impayées.",
+    "category": "Finance",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test localisation",
+    "content": "Crée un plan de test de localisation pour une application mobile ciblant 5 pays.",
+    "category": "Internationalisation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle tarification SaaS",
+    "content": "Conçois un modèle de tarification pour un service SaaS basé sur la valeur perçue.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow publication app",
+    "content": "Automatise le workflow de publication d'une application mobile sur les stores.",
+    "category": "DevOps",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing conversationnel",
+    "content": "Développe une stratégie de marketing conversationnel via chatbots et messaging apps.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole télétravail sécurisé",
+    "content": "Établis un protocole de sécurité pour les employés en télétravail.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script migration cloud",
+    "content": "Écris un script pour migrer des serveurs virtuels vers un environnement cloud.",
+    "category": "Cloud Computing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan engagement employés",
+    "content": "Crée un plan d'engagement des employés pour réduire le turnover dans une entreprise tech.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design inclusif",
+    "content": "Rédige un guide de design inclusif pour les produits numériques.",
+    "category": "Design",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse tendances consommateurs",
+    "content": "Analyse les tendances émergentes des consommateurs dans le secteur du e-commerce.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme R&D",
+    "content": "Propose la structure d'un programme de recherche et développement pour une entreprise pharma.",
+    "category": "Recherche",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Email confirmation commande",
+    "content": "Rédige un email de confirmation de commande avec informations de suivi pour un e-commerce.",
+    "category": "Email Marketing",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test récupération",
+    "content": "Crée un plan de test de récupération après sinistre pour une application critique.",
+    "category": "Sécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle économie abonnement",
+    "content": "Conçois un modèle économique basé sur l'abonnement pour un service de contenu premium.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion feedback",
+    "content": "Automatise le workflow de collecte et traitement des feedbacks clients.",
+    "category": "Expérience Client",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing sensoriel",
+    "content": "Développe une stratégie de marketing sensoriel pour une marque de produits de luxe.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole confidentialité",
+    "content": "Établis un protocole de confidentialité pour les réunions stratégiques.",
+    "category": "Gouvernance",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Script analyse réseaux sociaux",
+    "content": "Écris un script Python pour analyser les mentions de marque sur les réseaux sociaux.",
+    "category": "Social Media",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan diversité recrutement",
+    "content": "Crée un plan pour améliorer la diversité dans les processus de recrutement.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design durable",
+    "content": "Rédige un guide de design durable pour les produits électroniques.",
+    "category": "Design",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse cycle de vie produit",
+    "content": "Réalise une analyse du cycle de vie d'un produit de consommation courante.",
+    "category": "Développement Durable",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme bénévolat",
+    "content": "Propose la structure d'un programme de bénévolat d'entreprise pour une grande société.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email anniversaire client",
+    "content": "Rédige un email personnalisé pour l'anniversaire des clients avec une offre spéciale.",
+    "category": "Email Marketing",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test UX cross-device",
+    "content": "Crée un plan de test UX pour vérifier la cohérence de l'expérience sur tous les appareils.",
+    "category": "UX Testing",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle franchise",
+    "content": "Conçois un modèle de franchise pour une chaîne de cafés artisanaux.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion idées",
+    "content": "Automatise le workflow de collecte et évaluation des idées d'innovation des employés.",
+    "category": "Innovation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie réalité augmentée",
+    "content": "Développe une stratégie marketing utilisant la réalité augmentée pour un détaillant.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole gestion crise",
+    "content": "Établis un protocole de gestion de crise pour une entreprise de services publics.",
+    "category": "Gestion de Crise",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script backup cloud",
+    "content": "Écris un script pour automatiser les sauvegardes vers un service cloud.",
+    "category": "Cloud Computing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan reconnaissance employés",
+    "content": "Crée un plan de reconnaissance des employés pour renforcer la culture d'entreprise.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide accessibilité événement",
+    "content": "Rédige un guide d'accessibilité pour l'organisation d'événements inclusifs.",
+    "category": "Inclusion",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse impact environnemental",
+    "content": "Mesure l'impact environnemental des opérations d'une entreprise manufacturière.",
+    "category": "Développement Durable",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme mentorat",
+    "content": "Propose la structure d'un programme de mentorat inversé dans une grande entreprise.",
+    "category": "Développement Personnel",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email feedback produit",
+    "content": "Rédige un email pour solliciter des feedbacks après l'utilisation d'un nouveau produit.",
+    "category": "Relation Client",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité cloud",
+    "content": "Crée un plan de test de sécurité pour une infrastructure cloud publique.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle plateforme multi-face",
+    "content": "Conçois un modèle d'affaires de plateforme multi-faces pour un service de mobilité.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion contrats",
+    "content": "Automatise le workflow de gestion du cycle de vie des contrats fournisseurs.",
+    "category": "Juridique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing expérientiel",
+    "content": "Développe une stratégie de marketing expérientiel pour une marque de voyage.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole retour bureau",
+    "content": "Établis un protocole de retour au bureau après une période de télétravail prolongée.",
+    "category": "Gestion",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Script surveillance réseau",
+    "content": "Écris un script pour surveiller la performance et la sécurité d'un réseau d'entreprise.",
+    "category": "Administration Réseau",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan développement carrière",
+    "content": "Crée un plan de développement de carrière type pour les employés d'une entreprise tech.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design émotionnel",
+    "content": "Rédige un guide sur l'application du design émotionnel dans les produits numériques.",
+    "category": "Design",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché crypto",
+    "content": "Réalise une analyse de marché pour les applications blockchain dans la logistique.",
+    "category": "Blockchain",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme innovation",
+    "content": "Propose la structure d'un programme d'innovation ouverte avec partenaires externes.",
+    "category": "Innovation",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de réactivation",
+    "content": "Rédige un email de réactivation pour les clients inactifs d'un service SaaS.",
+    "category": "Email Marketing",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test compatibilité mobile",
+    "content": "Crée un plan de test de compatibilité pour une application web sur différents appareils mobiles.",
+    "category": "Qualité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle freemium",
+    "content": "Conçois un modèle freemium efficace pour une application de productivité.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion incidents IT",
+    "content": "Automatise le workflow de gestion des incidents IT selon ITIL.",
+    "category": "IT Management",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing olfactif",
+    "content": "Développe une stratégie de marketing olfactif pour une marque d'hôtels de luxe.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole télétravail productif",
+    "content": "Établis un protocole pour maintenir la productivité en télétravail hybride.",
+    "category": "Productivité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Script analyse logs sécurité",
+    "content": "Écris un script pour analyser les logs de sécurité et détecter les activités suspectes.",
+    "category": "Sécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan équilibre vie professionnelle",
+    "content": "Crée un plan pour promouvoir l'équilibre vie professionnelle-vie personnelle dans l'entreprise.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design minimaliste",
+    "content": "Rédige un guide des principes du design minimaliste pour les interfaces utilisateur.",
+    "category": "Design",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse risques fournisseurs",
+    "content": "Réalise une analyse des risques liés à la chaîne d'approvisionnement mondiale.",
+    "category": "Gestion des Risques",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme diversité",
+    "content": "Propose la structure d'un programme de diversité des fournisseurs pour une grande entreprise.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email promotion fidélité",
+    "content": "Rédige un email pour promouvoir un programme de fidélité à la clientèle existante.",
+    "category": "Email Marketing",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test charge mobile",
+    "content": "Crée un plan de test de charge pour une application mobile attendue à forte croissance.",
+    "category": "Performance",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle abonnement physique",
+    "content": "Conçois un modèle d'abonnement pour des produits physiques dans le secteur de la beauté.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion connaissances",
+    "content": "Automatise le workflow de capture et partage des connaissances dans une équipe technique.",
+    "category": "Gestion des Connaissances",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing tactile",
+    "content": "Développe une stratégie de marketing tactile pour un détaillant de produits de luxe.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole gestion données RGPD",
+    "content": "Établis un protocole de gestion des données personnelles conforme RGPD.",
+    "category": "Protection des Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script migration données RGPD",
+    "content": "Écris un script pour migrer des données personnelles vers un stockage conforme RGPD.",
+    "category": "Protection des Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan santé mentale",
+    "content": "Crée un plan de soutien à la santé mentale pour les employés d'une entreprise.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design durable packaging",
+    "content": "Rédige un guide de design durable pour les emballages de produits de consommation.",
+    "category": "Design",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché santé digitale",
+    "content": "Réalise une analyse de marché pour les solutions de santé digitale ciblant les seniors.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme bénévolat",
+    "content": "Propose la structure d'un programme de bénévolat compétitif pour attirer les talents.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email enquête satisfaction",
+    "content": "Rédige un email pour envoyer une enquête de satisfaction client post-achat.",
+    "category": "Email Marketing",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test localisation",
+    "content": "Crée un plan de test de localisation pour un site e-commerce ciblant 3 marchés européens.",
+    "category": "Internationalisation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle revenus multiples",
+    "content": "Conçois un modèle à sources de revenus multiples pour une plateforme de contenu.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion crises",
+    "content": "Automatise le workflow de gestion des crises pour une équipe de direction.",
+    "category": "Gestion de Crise",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing auditif",
+    "content": "Développe une stratégie de marketing auditif pour une marque de bien-être.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole sécurité physique",
+    "content": "Établis un protocole de sécurité physique pour les bureaux d'une entreprise tech.",
+    "category": "Sécurité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Script surveillance site",
+    "content": "Écris un script pour surveiller la disponibilité et les performances d'un site web critique.",
+    "category": "DevOps",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan développement soft skills",
+    "content": "Crée un plan de développement des compétences comportementales pour les managers.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design universel",
+    "content": "Rédige un guide de principes de design universel pour les espaces de travail.",
+    "category": "Design",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AgriTech",
+    "content": "Réalise une analyse de marché pour les solutions AgriTech en agriculture verticale.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme mentorat",
+    "content": "Propose la structure d'un programme de mentorat pour les femmes en tech.",
+    "category": "Diversité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email annonce événement",
+    "content": "Rédige un email pour annoncer un événement industriel majeur avec invitation.",
+    "category": "Email Marketing",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test accessibilité mobile",
+    "content": "Crée un plan de test d'accessibilité pour une application mobile conforme aux normes WCAG.",
+    "category": "UX",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle revenu passif",
+    "content": "Conçois un modèle de génération de revenus passifs pour un créateur de contenu.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion feedback produit",
+    "content": "Automatise le workflow de collecte et tri des feedbacks utilisateurs pour l'équipe produit.",
+    "category": "Gestion de Produit",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing gustatif",
+    "content": "Développe une stratégie de marketing gustatif pour une marque d'aliments premium.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole gestion pandémie",
+    "content": "Établis un protocole de gestion des pandémies pour une entreprise multinationale.",
+    "category": "Gestion de Crise",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script analyse performance",
+    "content": "Écris un script pour analyser les performances des campagnes marketing sur plusieurs canaux.",
+    "category": "Analytique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan bien-être financier",
+    "content": "Crée un plan de bien-être financier pour les employés d'une entreprise.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design responsive",
+    "content": "Rédige un guide des meilleures pratiques de design responsive pour les sites web.",
+    "category": "Design Web",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché CleanTech",
+    "content": "Réalise une analyse de marché pour les solutions CleanTech dans l'énergie solaire.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme éthique",
+    "content": "Propose la structure d'un programme d'éthique d'entreprise avec formation et reporting.",
+    "category": "Gouvernance",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de suivi entretien",
+    "content": "Rédige un email de suivi après un entretien d'embauche.",
+    "category": "Ressources Humaines",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité API",
+    "content": "Crée un plan de test de sécurité pour une API exposée publiquement.",
+    "category": "Sécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle économie circulaire",
+    "content": "Conçois un modèle d'économie circulaire pour un fabricant de meubles.",
+    "category": "Développement Durable",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion propriété intellectuelle",
+    "content": "Automatise le workflow de gestion de la propriété intellectuelle dans une entreprise innovante.",
+    "category": "Juridique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing multisensoriel",
+    "content": "Développe une stratégie de marketing multisensoriel pour une marque haut de gamme.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole gestion des talents",
+    "content": "Établis un protocole d'identification et développement des talents clés dans l'organisation.",
+    "category": "Ressources Humaines",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script intégration données",
+    "content": "Écris un script pour intégrer des données provenant de multiples sources dans un data warehouse.",
+    "category": "Data Engineering",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan flexibilité travail",
+    "content": "Crée un plan de flexibilité du travail pour répondre aux besoins divers des employés.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design émotionnel produits",
+    "content": "Rédige un guide sur l'application du design émotionnel aux produits physiques.",
+    "category": "Design Produit",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché PropTech",
+    "content": "Réalise une analyse de marché pour les solutions PropTech dans la gestion immobilière.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme impact social",
+    "content": "Propose la structure d'un programme d'impact social pour une entreprise avec objectifs mesurables.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email promotion contenu",
+    "content": "Rédige un email pour promouvoir un nouveau contenu premium aux abonnés.",
+    "category": "Email Marketing",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test résilience",
+    "content": "Crée un plan de test de résilience pour une infrastructure cloud critique.",
+    "category": "Sécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle plateforme d'apprentissage",
+    "content": "Conçois un modèle d'affaires pour une plateforme d'apprentissage en ligne avec contenu généré.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion risques projet",
+    "content": "Automatise le workflow d'identification et mitigation des risques dans les projets IT.",
+    "category": "Gestion de Projet",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing haptique",
+    "content": "Développe une stratégie de marketing haptique pour un détaillant de produits électroniques.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole éthique IA",
+    "content": "Établis un protocole d'éthique pour le développement et l'utilisation de l'IA dans l'entreprise.",
+    "category": "Gouvernance",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script automatisation marketing",
+    "content": "Écris un script pour automatiser les campagnes marketing sur plusieurs canaux digitaux.",
+    "category": "Marketing Automation",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan inclusion neurodiversité",
+    "content": "Crée un plan pour promouvoir l'inclusion des personnes neurodivergentes dans l'entreprise.",
+    "category": "Diversité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design biodégradable",
+    "content": "Rédige un guide de design biodégradable pour les produits jetables.",
+    "category": "Design Durable",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché FinTech",
+    "content": "Réalise une analyse de marché pour les solutions FinTech dans les paiements instantanés.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme volontariat",
+    "content": "Propose la structure d'un programme de volontariat d'entreprise avec impact communautaire.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de récompense",
+    "content": "Rédige un email pour récompenser les clients fidèles avec une offre exclusive.",
+    "category": "Email Marketing",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test récupération données",
+    "content": "Crée un plan de test de récupération après perte de données critiques.",
+    "category": "Sécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle coopératif",
+    "content": "Conçois un modèle d'affaires coopératif pour une plateforme agricole.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion conformité",
+    "content": "Automatise le workflow de gestion de la conformité réglementaire dans le secteur financier.",
+    "category": "Conformité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing 360°",
+    "content": "Développe une stratégie de marketing 360° intégrée pour un lancement de produit majeur.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole innovation responsable",
+    "content": "Établis un protocole pour une innovation responsable et éthique dans les produits tech.",
+    "category": "Gouvernance",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script analyse sentiments",
+    "content": "Écris un script pour analyser les sentiments des avis clients sur les réseaux sociaux.",
+    "category": "Social Media",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan diversité leadership",
+    "content": "Crée un plan pour augmenter la diversité aux postes de direction de l'entreprise.",
+    "category": "Diversité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design régénératif",
+    "content": "Rédige un guide de principes de design régénératif pour les produits et services.",
+    "category": "Design Durable",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché HealthTech",
+    "content": "Réalise une analyse de marché pour les solutions HealthTech en télémédecine.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme impact environnemental",
+    "content": "Propose la structure d'un programme de réduction d'impact environnemental avec objectifs SMART.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de confirmation",
+    "content": "Rédige un email de confirmation pour une inscription à un webinar.",
+    "category": "Email Marketing",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test failover",
+    "content": "Crée un plan de test de basculement pour une infrastructure haute disponibilité.",
+    "category": "Sécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur l'usage",
+    "content": "Conçois un modèle de tarification basé sur l'usage pour un service cloud.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion audits",
+    "content": "Automatise le workflow de gestion des audits internes et externes.",
+    "category": "Conformité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing holistique",
+    "content": "Développe une stratégie de marketing holistique pour une marque de bien-être intégré.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole transparence algorithme",
+    "content": "Établis un protocole de transparence pour les algorithmes d'IA utilisés dans les décisions clients.",
+    "category": "Éthique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script visualisation données",
+    "content": "Écris un script Python pour visualiser des données complexes sous forme de dashboard interactif.",
+    "category": "Data Visualization",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan inclusion générationnelle",
+    "content": "Crée un plan pour favoriser l'inclusion des différentes générations dans l'entreprise.",
+    "category": "Diversité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design biomimétique",
+    "content": "Rédige un guide d'introduction au design biomimétique pour les produits innovants.",
+    "category": "Design",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché RetailTech",
+    "content": "Réalise une analyse de marché pour les solutions RetailTech en magasins connectés.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme éducation",
+    "content": "Propose la structure d'un programme d'éducation communautaire pour une entreprise tech.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de rappel événement",
+    "content": "Rédige un email de rappel pour un événement en ligne avec le lien de connexion.",
+    "category": "Email Marketing",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test résilience réseau",
+    "content": "Crée un plan de test de résilience réseau pour une entreprise distribuée géographiquement.",
+    "category": "Sécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle à deux versants",
+    "content": "Conçois un modèle d'affaires à deux versants pour une plateforme de mise en relation.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion connaissances clients",
+    "content": "Automatise le workflow de gestion des connaissances clients dans une équipe de support.",
+    "category": "Service Client",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing de niche",
+    "content": "Développe une stratégie de marketing de niche pour un produit spécialisé haut de gamme.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole déploiement éthique IA",
+    "content": "Établis un protocole pour le déploiement éthique de solutions d'IA dans les services publics.",
+    "category": "Éthique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script prétraitement données",
+    "content": "Écris un script pour le prétraitement automatique des données avant analyse.",
+    "category": "Data Science",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan équité salariale",
+    "content": "Crée un plan pour assurer l'équité salariale dans l'ensemble de l'organisation.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design circulaire",
+    "content": "Rédige un guide de principes de design circulaire pour réduire les déchets produits.",
+    "category": "Design Durable",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI éthique",
+    "content": "Réalise une analyse de marché pour les solutions d'IA éthique dans le secteur financier.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme alphabétisation digitale",
+    "content": "Propose la structure d'un programme d'alphabétisation digitale pour les communautés défavorisées.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de feedback employé",
+    "content": "Rédige un email pour solliciter des feedbacks anonymes sur la culture d'entreprise.",
+    "category": "Ressources Humaines",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité physique",
+    "content": "Crée un plan de test de sécurité physique pour les locaux d'une entreprise sensible.",
+    "category": "Sécurité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur les données",
+    "content": "Conçois un modèle d'affaires basé sur la monétisation de données agrégées et anonymisées.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion propriété",
+    "content": "Automatise le workflow de gestion des biens et propriétés d'entreprise.",
+    "category": "Gestion",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing expérientiel digital",
+    "content": "Développe une stratégie de marketing expérientiel digital pour une marque de voyage.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole confidentialité données santé",
+    "content": "Établis un protocole de confidentialité pour les données de santé des employés.",
+    "category": "Protection des Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script détection anomalies",
+    "content": "Écris un script pour détecter automatiquement les anomalies dans les données financières.",
+    "category": "Data Science",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan développement leadership",
+    "content": "Crée un plan de développement du leadership pour les managers intermédiaires.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design régénératif urbain",
+    "content": "Rédige un guide de design régénératif pour les espaces urbains et les bâtiments.",
+    "category": "Design",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché Smart Cities",
+    "content": "Réalise une analyse de marché pour les solutions de Smart Cities dans la mobilité urbaine.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme accès numérique",
+    "content": "Propose la structure d'un programme pour améliorer l'accès au numérique dans les zones rurales.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de bienvenue employé",
+    "content": "Rédige un email de bienvenue pour les nouveaux employés avec informations essentielles.",
+    "category": "Ressources Humaines",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test intrusion physique",
+    "content": "Crée un plan de test d'intrusion physique pour les systèmes de sécurité d'une entreprise.",
+    "category": "Sécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur la communauté",
+    "content": "Conçois un modèle d'affaires basé sur la communauté pour une plateforme de créateurs.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion réunions",
+    "content": "Automatise le workflow de planification et suivi des réunions d'équipe.",
+    "category": "Productivité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing immersif",
+    "content": "Développe une stratégie de marketing immersif utilisant la réalité virtuelle.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole éthique données",
+    "content": "Établis un protocole d'éthique pour la collecte et l'utilisation des données clients.",
+    "category": "Éthique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script analyse réseau social",
+    "content": "Écris un script pour analyser les réseaux sociaux d'entreprise et identifier les experts internes.",
+    "category": "Ressources Humaines",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan mentorat inversé",
+    "content": "Crée un plan de mentorat inversé entre jeunes talents et dirigeants expérimentés.",
+    "category": "Développement Personnel",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design régénératif produits",
+    "content": "Rédige un guide de principes de design régénératif pour les produits de consommation.",
+    "category": "Design Durable",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché FoodTech",
+    "content": "Réalise une analyse de marché pour les solutions FoodTech dans les protéines alternatives.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme éducation STEM",
+    "content": "Propose la structure d'un programme d'éducation STEM pour les jeunes défavorisés.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de félicitations",
+    "content": "Rédige un email pour féliciter un employé pour une réalisation exceptionnelle.",
+    "category": "Communication Interne",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test continuité activité",
+    "content": "Crée un plan de test de continuité d'activité pour une entreprise de services financiers.",
+    "category": "Gestion de Crise",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle à impact social",
+    "content": "Conçois un modèle d'affaires à impact social pour une entreprise à mission.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion idées innovation",
+    "content": "Automatise le workflow de gestion du pipeline d'idées d'innovation dans l'entreprise.",
+    "category": "Innovation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing neuro",
+    "content": "Développe une stratégie de marketing neuroscientifique pour une marque de bien-être mental.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole décommissionnement données",
+    "content": "Établis un protocole sécurisé pour le décommissionnement des données sensibles.",
+    "category": "Protection des Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script optimisation images",
+    "content": "Écris un script pour optimiser automatiquement les images d'un site web pour le web.",
+    "category": "Performance Web",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan intégration employés",
+    "content": "Crée un plan d'intégration de 90 jours pour les nouveaux employés.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design minimaliste digital",
+    "content": "Rédige un guide de design minimaliste pour les interfaces digitales complexes.",
+    "category": "UX",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI créative",
+    "content": "Réalise une analyse de marché pour les solutions d'IA créative dans l'industrie du divertissement.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme égalité chances",
+    "content": "Propose la structure d'un programme pour promouvoir l'égalité des chances dans le recrutement.",
+    "category": "Diversité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email annonce partenariat",
+    "content": "Rédige un email pour annoncer un nouveau partenariat stratégique à la clientèle.",
+    "category": "Communication",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test résilience cloud",
+    "content": "Crée un plan de test de résilience pour une architecture cloud multi-régions.",
+    "category": "Cloud Computing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur l'abonnement physique",
+    "content": "Conçois un modèle d'abonnement pour des produits physiques dans le secteur de la mode.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion propriété intellectuelle",
+    "content": "Automatise le workflow de gestion du portefeuille de propriété intellectuelle.",
+    "category": "Juridique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing prédictif",
+    "content": "Développe une stratégie de marketing prédictif basée sur l'analyse des données clients.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole gestion données santé",
+    "content": "Établis un protocole de gestion des données de santé conforme aux réglementations internationales.",
+    "category": "Protection des Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script nettoyage base données",
+    "content": "Écris un script pour nettoyer et standardiser une base de données clients désorganisée.",
+    "category": "Bases de Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan développement compétences futures",
+    "content": "Crée un plan pour développer les compétences futures des employés dans un monde automatisé.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design inclusif digital",
+    "content": "Rédige un guide de design inclusif pour les applications et sites web accessibles.",
+    "category": "UX",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI industrielle",
+    "content": "Réalise une analyse de marché pour les solutions d'IA industrielle dans la maintenance prédictive.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme innovation sociale",
+    "content": "Propose la structure d'un programme d'innovation sociale pour résoudre des problèmes communautaires.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de mise à jour produit",
+    "content": "Rédige un email pour informer les clients d'une mise à jour majeure de produit.",
+    "category": "Communication Produit",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité IoT",
+    "content": "Crée un plan de test de sécurité pour un réseau d'appareils IoT industriels.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur la performance",
+    "content": "Conçois un modèle de rémunération basé sur la performance pour les partenaires commerciaux.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion changements",
+    "content": "Automatise le workflow de gestion des changements selon ITIL pour les services IT.",
+    "category": "IT Management",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing contextuel",
+    "content": "Développe une stratégie de marketing contextuel basé sur le comportement utilisateur en temps réel.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole éthique publicité",
+    "content": "Établis un protocole d'éthique pour les pratiques publicitaires numériques.",
+    "category": "Éthique",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Script agrégation données",
+    "content": "Écris un script pour agréger des données provenant de multiples sources API.",
+    "category": "Data Engineering",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan diversité fournisseurs",
+    "content": "Crée un plan pour augmenter la diversité dans la base de fournisseurs de l'entreprise.",
+    "category": "Diversité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design durable numérique",
+    "content": "Rédige un guide de design durable pour réduire l'empreinte carbone des produits numériques.",
+    "category": "Design Durable",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI éducative",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans l'éducation personnalisée.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme accès éducation",
+    "content": "Propose la structure d'un programme pour améliorer l'accès à l'éducation dans les pays en développement.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de remerciement",
+    "content": "Rédige un email de remerciement aux clients pour leur fidélité en fin d'année.",
+    "category": "Relation Client",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité API",
+    "content": "Crée un plan de test de sécurité approfondi pour une API financière sensible.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle d'abonnement communautaire",
+    "content": "Conçois un modèle d'abonnement communautaire pour une plateforme de créateurs de contenu.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion connaissances produit",
+    "content": "Automatise le workflow de gestion des connaissances produit pour les équipes de support et vente.",
+    "category": "Gestion des Connaissances",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing émotionnel",
+    "content": "Développe une stratégie de marketing émotionnel pour une marque à forte identité.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole confidentialité métadonnées",
+    "content": "Établis un protocole de confidentialité pour les métadonnées générées par les utilisateurs.",
+    "category": "Protection des Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script génération rapports",
+    "content": "Écris un script pour générer automatiquement des rapports de performance mensuels.",
+    "category": "Automatisation",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan inclusion internationale",
+    "content": "Crée un plan pour promouvoir l'inclusion des employés de différentes nationalités.",
+    "category": "Diversité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design biomimétique numérique",
+    "content": "Rédige un guide d'application des principes biomimétiques dans le design d'interfaces.",
+    "category": "UX",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI juridique",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans l'analyse de contrats juridiques.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme eau potable",
+    "content": "Propose la structure d'un programme d'accès à l'eau potable dans les communautés défavorisées.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de rétroaction",
+    "content": "Rédige un email pour donner une rétroaction constructive à un membre de l'équipe.",
+    "category": "Management",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test résilience données",
+    "content": "Crée un plan de test de résilience pour la protection des données contre les ransomwares.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur les actifs",
+    "content": "Conçois un modèle d'affaires basé sur la monétisation des actifs numériques.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion incidents sécurité",
+    "content": "Automatise le workflow de gestion des incidents de sécurité informatique.",
+    "category": "Sécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing de précision",
+    "content": "Développe une stratégie de marketing de précision basée sur la segmentation avancée.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole éthique reconnaissance faciale",
+    "content": "Établis un protocole d'éthique pour l'utilisation de la reconnaissance faciale dans les services.",
+    "category": "Éthique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script optimisation SEO",
+    "content": "Écris un script pour analyser et optimiser automatiquement les métadonnées SEO d'un site.",
+    "category": "SEO",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan développement carrière technique",
+    "content": "Crée un plan de développement de carrière pour les profils techniques dans l'entreprise.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design régénératif numérique",
+    "content": "Rédige un guide de principes de design régénératif pour les produits et services numériques.",
+    "category": "Design Durable",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI médicale",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans le diagnostic médical.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme reforestation",
+    "content": "Propose la structure d'un programme de reforestation avec impact mesurable.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de bienvenue client",
+    "content": "Rédige une série de 3 emails de bienvenue pour les nouveaux clients d'un service SaaS.",
+    "category": "Email Marketing",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité mobile",
+    "content": "Crée un plan de test de sécurité pour une application mobile de banque en ligne.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle de franchise digitale",
+    "content": "Conçois un modèle de franchise pour une plateforme de services digitaux.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion documentation",
+    "content": "Automatise le workflow de création et maintenance de la documentation technique.",
+    "category": "Documentation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing prédictif B2B",
+    "content": "Développe une stratégie de marketing prédictif pour le secteur B2B avec cycle de vente long.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole déploiement responsable",
+    "content": "Établis un protocole pour un déploiement responsable des nouvelles technologies.",
+    "category": "Éthique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script migration serveur",
+    "content": "Écris un script pour migrer des applications d'un serveur physique vers une infrastructure cloud.",
+    "category": "Cloud Computing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan mentorat technique",
+    "content": "Crée un plan de mentorat technique pour les développeurs juniors dans l'entreprise.",
+    "category": "Développement Personnel",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design durable événementiel",
+    "content": "Rédige un guide de design durable pour l'organisation d'événements écoresponsables.",
+    "category": "Design Durable",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI agriculture",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans l'agriculture de précision.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme éducation financière",
+    "content": "Propose la structure d'un programme d'éducation financière pour les communautés à faible revenu.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de rappel de paiement",
+    "content": "Rédige un email de rappel de paiement professionnel et courtois.",
+    "category": "Finance",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité cloud hybride",
+    "content": "Crée un plan de test de sécurité pour une infrastructure cloud hybride complexe.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur l'abonnement service",
+    "content": "Conçois un modèle d'abonnement pour des services professionnels récurrents.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion versions",
+    "content": "Automatise le workflow de gestion des versions logicielles et des déploiements.",
+    "category": "DevOps",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing conversationnel B2B",
+    "content": "Développe une stratégie de marketing conversationnel pour les ventes B2B complexes.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole confidentialité télétravail",
+    "content": "Établis un protocole de confidentialité pour les employés en télétravail.",
+    "category": "Protection des Données",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Script analyse performance site",
+    "content": "Écris un script pour analyser la performance technique d'un site web et générer des recommandations.",
+    "category": "Performance Web",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan développement soft skills techniques",
+    "content": "Crée un plan de développement des soft skills pour les équipes techniques.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design inclusif événementiel",
+    "content": "Rédige un guide de design inclusif pour l'organisation d'événements accessibles à tous.",
+    "category": "Inclusion",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI retail",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans l'optimisation des stocks retail.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme sécurité alimentaire",
+    "content": "Propose la structure d'un programme de sécurité alimentaire dans les régions vulnérables.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de prospection personnalisée",
+    "content": "Rédige un email de prospection B2B hautement personnalisé pour un service de consulting.",
+    "category": "Ventes",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test résilience données",
+    "content": "Crée un plan de test de résilience pour la récupération des données après catastrophe.",
+    "category": "Sécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle de revenus complémentaires",
+    "content": "Conçois un modèle de revenus complémentaires pour une application gratuite.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion connaissances IT",
+    "content": "Automatise le workflow de gestion des connaissances pour l'équipe support IT.",
+    "category": "IT Management",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing prédictif e-commerce",
+    "content": "Développe une stratégie de marketing prédictif pour un e-commerce avec large catalogue.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole éthique algorithmes",
+    "content": "Établis un protocole d'éthique pour le développement des algorithmes d'IA.",
+    "category": "Éthique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script intégration données marketing",
+    "content": "Écris un script pour intégrer des données marketing provenant de multiples sources.",
+    "category": "Data Engineering",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan diversité leadership",
+    "content": "Crée un plan pour augmenter la diversité aux postes de direction dans les 5 prochaines années.",
+    "category": "Diversité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design régénératif packaging",
+    "content": "Rédige un guide de design régénératif pour les emballages de produits de consommation.",
+    "category": "Design Durable",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI énergie",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans l'optimisation énergétique.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme accès numérique",
+    "content": "Propose la structure d'un programme pour améliorer l'accès au numérique dans les zones rurales.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de satisfaction client",
+    "content": "Rédige un email pour mesurer la satisfaction client après une interaction avec le support.",
+    "category": "Service Client",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité API",
+    "content": "Crée un plan de test de sécurité pour une API de paiement.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur la location",
+    "content": "Conçois un modèle d'affaires basé sur la location d'équipements spécialisés.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion projets agiles",
+    "content": "Automatise le workflow de gestion des projets agiles dans une équipe de développement.",
+    "category": "Gestion de Projet",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing de niche B2B",
+    "content": "Développe une stratégie de marketing de niche pour un produit B2B spécialisé.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole confidentialité employés",
+    "content": "Établis un protocole de confidentialité pour les données personnelles des employés.",
+    "category": "Protection des Données",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Script optimisation base données",
+    "content": "Écris un script pour optimiser les performances d'une base de données relationnelle.",
+    "category": "Bases de Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan développement leadership féminin",
+    "content": "Crée un plan de développement du leadership pour les femmes dans les postes techniques.",
+    "category": "Diversité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design biomimétique produit",
+    "content": "Rédige un guide d'application des principes biomimétiques au design de produits physiques.",
+    "category": "Design Produit",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI transport",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans la logistique et le transport.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme recyclage électronique",
+    "content": "Propose la structure d'un programme de recyclage des déchets électroniques.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de notification maintenance",
+    "content": "Rédige un email pour informer les utilisateurs d'une maintenance planifiée du service.",
+    "category": "Communication",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité réseau",
+    "content": "Crée un plan de test de sécurité pour un réseau d'entreprise avec télétravail.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur les commissions",
+    "content": "Conçois un modèle d'affaires basé sur les commissions pour une plateforme de services.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion documentation produit",
+    "content": "Automatise le workflow de création et mise à jour de la documentation produit.",
+    "category": "Documentation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing émotionnel B2B",
+    "content": "Développe une stratégie de marketing émotionnel pour les ventes B2B à forte valeur.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole gestion données RGPD",
+    "content": "Établis un protocole complet de gestion des données personnelles conforme RGPD.",
+    "category": "Protection des Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script analyse performance marketing",
+    "content": "Écris un script pour analyser la performance des campagnes marketing multicanal.",
+    "category": "Analytique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan intégration acquisition",
+    "content": "Crée un plan d'intégration pour les employés suite à une acquisition d'entreprise.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design inclusif produits",
+    "content": "Rédige un guide de design inclusif pour les produits physiques accessibles à tous.",
+    "category": "Inclusion",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI construction",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans la construction durable.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme éducation digitale",
+    "content": "Propose la structure d'un programme d'éducation digitale pour les enseignants.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de relance de projet",
+    "content": "Rédige un email pour relancer un projet client en suspens depuis plusieurs semaines.",
+    "category": "Gestion de Projet",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité cloud public",
+    "content": "Crée un plan de test de sécurité pour une infrastructure cloud publique à grande échelle.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur la publicité",
+    "content": "Conçois un modèle d'affaires basé sur la publicité pour une application à fort trafic.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion tickets support",
+    "content": "Automatise le workflow de gestion des tickets de support client.",
+    "category": "Service Client",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing prédictif services",
+    "content": "Développe une stratégie de marketing prédictif pour des services professionnels.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole éthique reconnaissance vocale",
+    "content": "Établis un protocole d'éthique pour l'utilisation de la reconnaissance vocale dans les produits.",
+    "category": "Éthique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script génération contenu",
+    "content": "Écris un script pour générer automatiquement du contenu basé sur des données structurées.",
+    "category": "Content Generation",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan développement carrière management",
+    "content": "Crée un plan de développement de carrière pour les profils en transition vers le management.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design durable événements",
+    "content": "Rédige un guide de design durable pour l'organisation d'événements d'entreprise.",
+    "category": "Design Durable",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI finance",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans la détection de fraude financière.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme conservation biodiversité",
+    "content": "Propose la structure d'un programme de conservation de la biodiversité avec partenaires locaux.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de confirmation rendez-vous",
+    "content": "Rédige un email de confirmation pour un rendez-vous commercial avec un prospect.",
+    "category": "Ventes",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité IoT grand public",
+    "content": "Crée un plan de test de sécurité pour des appareils IoT grand public.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle de licence logicielle",
+    "content": "Conçois un modèle de licence logicielle pour une application B2B spécialisée.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion changements IT",
+    "content": "Automatise le workflow de gestion des changements IT selon les bonnes pratiques ITIL.",
+    "category": "IT Management",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing contextuel géolocalisé",
+    "content": "Développe une stratégie de marketing contextuel basé sur la géolocalisation.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole confidentialité données enfants",
+    "content": "Établis un protocole de confidentialité pour les données des enfants dans les applications éducatives.",
+    "category": "Protection des Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script migration données legacy",
+    "content": "Écris un script pour migrer des données d'un système legacy vers une base de données moderne.",
+    "category": "Data Migration",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan diversité recrutement technique",
+    "content": "Crée un plan pour améliorer la diversité dans le recrutement des profils techniques.",
+    "category": "Diversité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design régénératif architecture",
+    "content": "Rédige un guide de principes de design régénératif pour l'architecture durable.",
+    "category": "Design Durable",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI énergie renouvelable",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans l'optimisation des énergies renouvelables.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme accès eau",
+    "content": "Propose la structure d'un programme d'accès à l'eau potable dans les régions arides.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de relance de vente",
+    "content": "Rédige un email de relance pour un prospect chaud qui n'a pas donné suite.",
+    "category": "Ventes",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité API bancaire",
+    "content": "Crée un plan de test de sécurité pour une API bancaire exposée à des transactions sensibles.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur les transactions",
+    "content": "Conçois un modèle d'affaires basé sur les transactions pour une plateforme de marché.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion versions API",
+    "content": "Automatise le workflow de gestion des versions et de la rétrocompatibilité des API.",
+    "category": "Développement API",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing émotionnel produits",
+    "content": "Développe une stratégie de marketing émotionnel pour des produits de consommation courante.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole éthique chatbots",
+    "content": "Établis un protocole d'éthique pour les chatbots et assistants virtuels.",
+    "category": "Éthique",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Script analyse logs applicatifs",
+    "content": "Écris un script pour analyser les logs applicatifs et détecter les erreurs récurrentes.",
+    "category": "DevOps",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan développement compétences futures",
+    "content": "Crée un plan pour développer les compétences futures des employés face à l'automatisation.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design inclusif numérique",
+    "content": "Rédige un guide de design inclusif pour les applications numériques accessibles.",
+    "category": "Inclusion",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI médias",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans la création de contenu médiatique.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme éducation environnementale",
+    "content": "Propose la structure d'un programme d'éducation environnementale pour les écoles.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de notification de mise à jour",
+    "content": "Rédige un email pour informer les utilisateurs d'une mise à jour de sécurité importante.",
+    "category": "Communication",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité réseau sans fil",
+    "content": "Crée un plan de test de sécurité pour un réseau sans fil d'entreprise.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur les dons",
+    "content": "Conçois un modèle d'affaires basé sur les dons pour une plateforme open source.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion idées produits",
+    "content": "Automatise le workflow de collecte et évaluation des idées pour de nouveaux produits.",
+    "category": "Gestion de Produit",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing de précision géo",
+    "content": "Développe une stratégie de marketing de précision basée sur la géolocalisation avancée.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole confidentialité métadonnées",
+    "content": "Établis un protocole de confidentialité pour les métadonnées générées par les utilisateurs.",
+    "category": "Protection des Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script optimisation requêtes",
+    "content": "Écris un script pour optimiser les requêtes SQL complexes dans une base de données transactionnelle.",
+    "category": "Bases de Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan développement carrière leadership",
+    "content": "Crée un plan de développement de carrière pour les leaders émergents dans l'organisation.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design régénératif numérique",
+    "content": "Rédige un guide de principes de design régénératif pour réduire l'empreinte des services numériques.",
+    "category": "Design Durable",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI publicité",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans l'optimisation des campagnes publicitaires.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme accès santé",
+    "content": "Propose la structure d'un programme pour améliorer l'accès aux soins de santé dans les zones rurales.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de suivi de réunion",
+    "content": "Rédige un email de suivi après une réunion client avec les points d'action et décisions.",
+    "category": "Communication",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité cloud privé",
+    "content": "Crée un plan de test de sécurité pour une infrastructure cloud privé d'entreprise.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur la souscription",
+    "content": "Conçois un modèle d'affaires basé sur la souscription pour des services premium.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion documentation technique",
+    "content": "Automatise le workflow de création et mise à jour de la documentation technique.",
+    "category": "Documentation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing expérientiel digital",
+    "content": "Développe une stratégie de marketing expérientiel digital pour une marque de luxe.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole éthique reconnaissance émotion",
+    "content": "Établis un protocole d'éthique pour l'utilisation de la reconnaissance émotionnelle dans les produits.",
+    "category": "Éthique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script migration cloud multi",
+    "content": "Écris un script pour migrer des applications entre différents fournisseurs cloud.",
+    "category": "Cloud Computing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan mentorat intergénérationnel",
+    "content": "Crée un plan de mentorat intergénérationnel dans l'entreprise.",
+    "category": "Développement Personnel",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design biomimétique architecture",
+    "content": "Rédige un guide d'application des principes biomimétiques en architecture durable.",
+    "category": "Design Durable",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI sécurité",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans la sécurité informatique.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme éducation numérique",
+    "content": "Propose la structure d'un programme d'éducation numérique pour les seniors.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de relance facture impayée",
+    "content": "Rédige un email de relance pour une facture impayée avec échéance dépassée.",
+    "category": "Finance",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité mobile banking",
+    "content": "Crée un plan de test de sécurité pour une application mobile de banque en ligne.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle de revenus par utilisation",
+    "content": "Conçois un modèle de revenus basé sur l'utilisation pour un service cloud.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion déploiements",
+    "content": "Automatise le workflow de déploiement continu pour les applications critiques.",
+    "category": "DevOps",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing neuroscientifique",
+    "content": "Développe une stratégie de marketing neuroscientifique pour un produit de bien-être.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole confidentialité données santé",
+    "content": "Établis un protocole de confidentialité pour les données de santé collectées par les wearables.",
+    "category": "Protection des Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script analyse tendances marché",
+    "content": "Écris un script pour analyser les tendances du marché à partir de données publiques.",
+    "category": "Data Science",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan diversité équipes",
+    "content": "Crée un plan pour améliorer la diversité dans les équipes projet.",
+    "category": "Diversité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design inclusif services",
+    "content": "Rédige un guide de design inclusif pour les services publics numériques.",
+    "category": "Inclusion",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI ressources humaines",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans le recrutement et les RH.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme accès éducation STEM",
+    "content": "Propose la structure d'un programme pour améliorer l'accès à l'éducation STEM pour les filles.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de confirmation de commande",
+    "content": "Rédige un email de confirmation de commande pour un e-commerce avec détails de livraison.",
+    "category": "E-commerce",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité réseau domestique",
+    "content": "Crée un plan de test de sécurité pour les solutions de réseau domestique intelligent.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur la publicité native",
+    "content": "Conçois un modèle d'affaires basé sur la publicité native intégrée dans le contenu.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion bugs",
+    "content": "Automatise le workflow de gestion des bugs et demandes d'amélioration.",
+    "category": "Développement Logiciel",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing de contenu interactif",
+    "content": "Développe une stratégie de marketing de contenu interactif pour engager l'audience.",
+    "category": "Content Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole éthique data mining",
+    "content": "Établis un protocole d'éthique pour le data mining et l'analyse comportementale.",
+    "category": "Éthique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script génération leads",
+    "content": "Écris un script pour générer des leads qualifiés à partir de sources publiques.",
+    "category": "Ventes",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan développement compétences transverses",
+    "content": "Crée un plan de développement des compétences transverses pour les employés.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design durable événements digitaux",
+    "content": "Rédige un guide de design durable pour les événements digitaux à faible empreinte carbone.",
+    "category": "Design Durable",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI agriculture durable",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans l'agriculture durable et de précision.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme accès énergie",
+    "content": "Propose la structure d'un programme d'accès à l'énergie renouvelable dans les zones isolées.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de satisfaction employé",
+    "content": "Rédige un email pour mesurer la satisfaction des employés de manière anonyme.",
+    "category": "Ressources Humaines",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité API santé",
+    "content": "Crée un plan de test de sécurité pour une API de données de santé sensibles.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur les abonnements communautaires",
+    "content": "Conçois un modèle d'abonnement communautaire pour une plateforme de contenu exclusif.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion connaissances client",
+    "content": "Automatise le workflow de gestion des connaissances client pour le service support.",
+    "category": "Service Client",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing de niche internationale",
+    "content": "Développe une stratégie de marketing de niche pour un produit spécialisé sur les marchés internationaux.",
+    "category": "Marketing International",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole confidentialité données biométriques",
+    "content": "Établis un protocole de confidentialité pour les données biométriques des utilisateurs.",
+    "category": "Protection des Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script optimisation images web",
+    "content": "Écris un script pour optimiser automatiquement les images d'un site web pour le référencement.",
+    "category": "SEO Technique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan diversité leadership",
+    "content": "Crée un plan pour augmenter la diversité aux postes de direction dans les 3 prochaines années.",
+    "category": "Diversité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design régénératif mode",
+    "content": "Rédige un guide de principes de design régénératif pour l'industrie de la mode.",
+    "category": "Design Durable",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI logistique",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans l'optimisation logistique mondiale.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme protection espèces",
+    "content": "Propose la structure d'un programme de protection des espèces menacées avec partenaires locaux.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de notification de compte",
+    "content": "Rédige un email pour notifier les utilisateurs d'une activité suspecte sur leur compte.",
+    "category": "Sécurité",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité réseau IoT industriel",
+    "content": "Crée un plan de test de sécurité pour un réseau IoT industriel critique.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur les commissions élevées",
+    "content": "Conçois un modèle d'affaires basé sur des commissions pour les transactions à haute valeur.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion versions logiciel",
+    "content": "Automatise le workflow de gestion des versions pour un logiciel avec mise à jour continue.",
+    "category": "Gestion de Produit",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing prédictif retail",
+    "content": "Développe une stratégie de marketing prédictif pour une chaîne de magasins physique.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole éthique publicité ciblée",
+    "content": "Établis un protocole d'éthique pour la publicité ciblée basée sur le comportement.",
+    "category": "Éthique",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Script analyse performance SEO",
+    "content": "Écris un script pour analyser la performance SEO d'un site web et générer des recommandations.",
+    "category": "SEO",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan développement compétences techniques",
+    "content": "Crée un plan de développement des compétences techniques pour les équipes IT.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design inclusif expérience magasin",
+    "content": "Rédige un guide de design inclusif pour l'expérience en magasin physique.",
+    "category": "Inclusion",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI éducation",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans l'éducation adaptative.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme recyclage créatif",
+    "content": "Propose la structure d'un programme de recyclage créatif des déchets plastiques.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de rappel d'échéance",
+    "content": "Rédige un email pour rappeler une échéance importante à un client.",
+    "category": "Gestion de Projet",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité cloud multi",
+    "content": "Crée un plan de test de sécurité pour une architecture multi-cloud complexe.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur les microtransactions",
+    "content": "Conçois un modèle d'affaires basé sur les microtransactions pour une application mobile.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion idées innovation",
+    "content": "Automatise le workflow de collecte et évaluation des idées d'innovation des employés.",
+    "category": "Innovation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing immersif réalité augmentée",
+    "content": "Développe une stratégie de marketing immersif utilisant la réalité augmentée pour un détaillant.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole confidentialité données génétiques",
+    "content": "Établis un protocole de confidentialité pour les données génétiques des utilisateurs.",
+    "category": "Protection des Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script migration base données",
+    "content": "Écris un script pour migrer une base de données volumineuse vers un nouveau schéma.",
+    "category": "Data Migration",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan développement leadership inclusif",
+    "content": "Crée un plan de développement du leadership inclusif pour les managers.",
+    "category": "Diversité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design durable packaging digital",
+    "content": "Rédige un guide de design durable pour les emballages numériques et l'expérience de déballage.",
+    "category": "Design Durable",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI construction durable",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans la construction durable et intelligente.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme accès éducation artistique",
+    "content": "Propose la structure d'un programme d'accès à l'éducation artistique pour les jeunes défavorisés.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de rétroaction projet",
+    "content": "Rédige un email pour demander une rétroaction sur un projet livré à un client.",
+    "category": "Gestion de Projet",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité réseau social",
+    "content": "Crée un plan de test de sécurité pour une plateforme de réseau social.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur les licences",
+    "content": "Conçois un modèle de licences logicielles pour une suite d'outils professionnels.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion documentation API",
+    "content": "Automatise le workflow de génération et mise à jour de la documentation d'API.",
+    "category": "Documentation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing expérientiel événementiel",
+    "content": "Développe une stratégie de marketing expérientiel pour un événement majeur en présentiel.",
+    "category": "Marketing Événementiel",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole éthique surveillance numérique",
+    "content": "Établis un protocole d'éthique pour les pratiques de surveillance numérique en entreprise.",
+    "category": "Éthique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script analyse données temps réel",
+    "content": "Écris un script pour analyser des flux de données en temps réel et détecter des anomalies.",
+    "category": "Data Science",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan développement compétences créatives",
+    "content": "Crée un plan de développement des compétences créatives pour les équipes marketing.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design régénératif produits numériques",
+    "content": "Rédige un guide de principes de design régénératif pour les produits et services numériques.",
+    "category": "Design Durable",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI énergie verte",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans l'optimisation de la production d'énergie verte.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme conservation eau",
+    "content": "Propose la structure d'un programme de conservation de l'eau dans les régions à stress hydrique.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de confirmation d'inscription",
+    "content": "Rédige un email de confirmation pour l'inscription à une newsletter.",
+    "category": "Email Marketing",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité API publique",
+    "content": "Crée un plan de test de sécurité pour une API publique exposée à des millions d'utilisateurs.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur les dons récurrents",
+    "content": "Conçois un modèle d'affaires basé sur les dons récurrents pour une plateforme open source.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion tests utilisabilité",
+    "content": "Automatise le workflow de gestion des tests d'utilisabilité et de l'analyse des résultats.",
+    "category": "UX Testing",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing prédictif services financiers",
+    "content": "Développe une stratégie de marketing prédictif pour une institution financière.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole confidentialité données employés",
+    "content": "Établis un protocole de confidentialité pour les données personnelles des employés.",
+    "category": "Protection des Données",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Script optimisation performance mobile",
+    "content": "Écris un script pour analyser et optimiser les performances des applications mobiles.",
+    "category": "Performance Mobile",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan développement carrière technique",
+    "content": "Crée un plan de développement de carrière pour les ingénieurs logiciels dans l'entreprise.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design inclusif espaces publics",
+    "content": "Rédige un guide de design inclusif pour les espaces publics et les bâtiments.",
+    "category": "Inclusion",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI santé mentale",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans le soutien à la santé mentale.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme reforestation urbaine",
+    "content": "Propose la structure d'un programme de reforestation urbaine avec impact communautaire.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de notification de compte",
+    "content": "Rédige un email pour notifier les utilisateurs d'une connexion inhabituelle à leur compte.",
+    "category": "Sécurité",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité IoT santé",
+    "content": "Crée un plan de test de sécurité pour des dispositifs IoT médicaux connectés.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur les frais de transaction",
+    "content": "Conçois un modèle d'affaires basé sur les frais de transaction pour une plateforme de marché.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion retours produits",
+    "content": "Automatise le workflow de gestion des retours produits pour un e-commerce.",
+    "category": "Service Client",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing contextuel temps réel",
+    "content": "Développe une stratégie de marketing contextuel basé sur des déclencheurs en temps réel.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole éthique influenceurs",
+    "content": "Établis un protocole d'éthique pour les collaborations avec des influenceurs.",
+    "category": "Éthique",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Script surveillance performance API",
+    "content": "Écris un script pour surveiller la performance et la disponibilité des API critiques.",
+    "category": "DevOps",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan développement leadership technique",
+    "content": "Crée un plan de développement du leadership pour les architectes techniques.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design durable expérience digitale",
+    "content": "Rédige un guide de design durable pour réduire l'impact environnemental des expériences digitales.",
+    "category": "Design Durable",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI retail personnalisé",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans la personnalisation retail.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme éducation nutrition",
+    "content": "Propose la structure d'un programme d'éducation nutritionnelle dans les écoles.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de bienvenue à la communauté",
+    "content": "Rédige un email de bienvenue pour les nouveaux membres d'une communauté en ligne.",
+    "category": "Community Management",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité réseau étendu",
+    "content": "Crée un plan de test de sécurité pour un réseau étendu d'entreprise avec multiples sites.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle de revenus par abonnement premium",
+    "content": "Conçois un modèle de revenus par abonnement premium avec fonctionnalités exclusives.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion feedback design",
+    "content": "Automatise le workflow de collecte et traitement des feedbacks sur les designs produits.",
+    "category": "Design",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing émotionnel marque employeur",
+    "content": "Développe une stratégie de marketing émotionnel pour la marque employeur d'une entreprise tech.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole confidentialité données télétravail",
+    "content": "Établis un protocole de confidentialité pour les données sensibles en télétravail.",
+    "category": "Protection des Données",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Script analyse campagnes email",
+    "content": "Écris un script pour analyser les performances des campagnes emailing et optimiser les envois.",
+    "category": "Email Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan diversité équipes techniques",
+    "content": "Crée un plan pour améliorer la diversité dans les équipes de développement logiciel.",
+    "category": "Diversité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design biomimétique produits de consommation",
+    "content": "Rédige un guide d'application des principes biomimétiques aux produits de consommation.",
+    "category": "Design Produit",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI transport durable",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans les systèmes de transport durable.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme accès à internet",
+    "content": "Propose la structure d'un programme pour améliorer l'accès à internet dans les zones mal desservies.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de confirmation d'annulation",
+    "content": "Rédige un email de confirmation d'annulation pour un service d'abonnement.",
+    "category": "Service Client",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité réseau social",
+    "content": "Crée un plan de test de sécurité pour une nouvelle plateforme de réseau social.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur la location d'accès",
+    "content": "Conçois un modèle d'affaires basé sur la location d'accès temporaire à des ressources premium.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion déploiements cloud",
+    "content": "Automatise le workflow de déploiement d'applications sur des environnements cloud multiples.",
+    "category": "DevOps",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing de niche luxe",
+    "content": "Développe une stratégie de marketing de niche pour une marque de luxe haut de gamme.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole éthique utilisation données",
+    "content": "Établis un protocole d'éthique pour l'utilisation des données clients dans la recherche.",
+    "category": "Éthique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script surveillance réseau social",
+    "content": "Écris un script pour surveiller les mentions de marque sur les réseaux sociaux en temps réel.",
+    "category": "Social Media",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan développement compétences analytiques",
+    "content": "Crée un plan de développement des compétences analytiques pour les équipes commerciales.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design régénératif architecture intérieure",
+    "content": "Rédige un guide de principes de design régénératif pour l'architecture intérieure.",
+    "category": "Design Durable",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI finance durable",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans la finance durable et ESG.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme protection océans",
+    "content": "Propose la structure d'un programme de protection des océans avec partenaires scientifiques.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de rappel de formation",
+    "content": "Rédige un email pour rappeler aux employés une formation obligatoire à venir.",
+    "category": "Formation",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité API gouvernementale",
+    "content": "Crée un plan de test de sécurité pour une API gouvernementale critique.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur les micro-paiements",
+    "content": "Conçois un modèle d'affaires basé sur les micro-paiements pour du contenu premium.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion changements produit",
+    "content": "Automatise le workflow de gestion des changements pour les produits logiciels.",
+    "category": "Gestion de Produit",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing prédictif santé",
+    "content": "Développe une stratégie de marketing prédictif pour un service de santé digitale.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole confidentialité données mineurs",
+    "content": "Établis un protocole de confidentialité pour les données des mineurs dans les applications éducatives.",
+    "category": "Protection des Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script génération rapports analytiques",
+    "content": "Écris un script pour générer automatiquement des rapports analytiques à partir de données brutes.",
+    "category": "Analytique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan développement carrière créative",
+    "content": "Crée un plan de développement de carrière pour les profils créatifs dans l'entreprise.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design inclusif transports",
+    "content": "Rédige un guide de design inclusif pour les systèmes de transport public.",
+    "category": "Inclusion",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI médias sociaux",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans la modération de contenus sur les médias sociaux.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme éducation climatique",
+    "content": "Propose la structure d'un programme d'éducation sur le changement climatique pour les jeunes.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de notification de maintenance",
+    "content": "Rédige un email pour informer les utilisateurs d'une maintenance planifiée avec impact minimal.",
+    "category": "Communication",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité réseau IoT",
+    "content": "Crée un plan de test de sécurité pour un réseau domestique IoT connecté.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur les commissions de marché",
+    "content": "Conçois un modèle d'affaires basé sur les commissions pour une place de marché B2B.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion retours clients",
+    "content": "Automatise le workflow de gestion des retours et réclamations clients.",
+    "category": "Service Client",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing contextuel géolocalisé",
+    "content": "Développe une stratégie de marketing contextuel basée sur la géolocalisation précise.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole éthique essais utilisateurs",
+    "content": "Établis un protocole d'éthique pour les essais utilisateurs et la recherche UX.",
+    "category": "Éthique",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Script optimisation base données NoSQL",
+    "content": "Écris un script pour optimiser les performances d'une base de données NoSQL à grande échelle.",
+    "category": "Bases de Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan développement leadership transformation",
+    "content": "Crée un plan de développement du leadership pour la transformation digitale de l'entreprise.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design régénératif mode circulaire",
+    "content": "Rédige un guide de principes de design régénératif pour une mode circulaire.",
+    "category": "Design Durable",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI sécurité nationale",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans la sécurité nationale et la défense.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme accès livres",
+    "content": "Propose la structure d'un programme pour améliorer l'accès aux livres dans les communautés défavorisées.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de confirmation de réunion",
+    "content": "Rédige un email de confirmation pour un rendez-vous d'affaires avec détails pratiques.",
+    "category": "Communication",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité cloud hybride",
+    "content": "Crée un plan de test de sécurité pour une infrastructure cloud hybride complexe.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur les abonnements communautaires",
+    "content": "Conçois un modèle d'abonnement communautaire pour une plateforme de créateurs de contenu.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion tests de charge",
+    "content": "Automatise le workflow de planification et exécution des tests de charge pour les applications web.",
+    "category": "Performance",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing immersif réalité virtuelle",
+    "content": "Développe une stratégie de marketing immersif en réalité virtuelle pour un constructeur automobile.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole confidentialité données financières",
+    "content": "Établis un protocole de confidentialité pour les données financières des clients.",
+    "category": "Protection des Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script migration données RGPD",
+    "content": "Écris un script pour migrer des données personnelles vers un stockage conforme RGPD.",
+    "category": "Protection des Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan diversité conseil administration",
+    "content": "Crée un plan pour améliorer la diversité au sein du conseil d'administration.",
+    "category": "Diversité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design biomimétique architecture durable",
+    "content": "Rédige un guide d'application des principes biomimétiques à l'architecture durable.",
+    "category": "Design Durable",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI divertissement",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans la création de contenu de divertissement.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme accès arts",
+    "content": "Propose la structure d'un programme pour améliorer l'accès aux arts dans les communautés marginalisées.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de rappel de tâche",
+    "content": "Rédige un email pour rappeler à un collègue une tâche importante à compléter.",
+    "category": "Communication Interne",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité réseau industriel",
+    "content": "Crée un plan de test de sécurité pour un réseau industriel critique (OT).",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur les licences perpétuelles",
+    "content": "Conçois un modèle de licences perpétuelles pour un logiciel professionnel.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion versions contenu",
+    "content": "Automatise le workflow de gestion des versions et traductions de contenu multilingue.",
+    "category": "Gestion de Contenu",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing prédictif e-commerce",
+    "content": "Développe une stratégie de marketing prédictif pour un e-commerce avec recommandations personnalisées.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole éthique expérimentation",
+    "content": "Établis un protocole d'éthique pour les expérimentations sur les utilisateurs.",
+    "category": "Éthique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script surveillance infrastructure",
+    "content": "Écris un script pour surveiller l'infrastructure IT et alerter en cas d'anomalies.",
+    "category": "IT Management",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan développement compétences futures RH",
+    "content": "Crée un plan de développement des compétences futures pour les professionnels des RH.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design inclusif éducation",
+    "content": "Rédige un guide de design inclusif pour les outils éducatifs numériques.",
+    "category": "Inclusion",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI ressources naturelles",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans la gestion des ressources naturelles.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme protection biodiversité",
+    "content": "Propose la structure d'un programme de protection de la biodiversité marine.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de notification de nouveau contenu",
+    "content": "Rédige un email pour notifier les abonnés de la publication d'un nouveau contenu exclusif.",
+    "category": "Content Marketing",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité réseau sans fil public",
+    "content": "Crée un plan de test de sécurité pour un réseau Wi-Fi public.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur les micro-abonnements",
+    "content": "Conçois un modèle d'affaires basé sur les micro-abonnements pour du contenu premium.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion documentation utilisateur",
+    "content": "Automatise le workflow de création et mise à jour de la documentation utilisateur.",
+    "category": "Documentation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing émotionnel produit de luxe",
+    "content": "Développe une stratégie de marketing émotionnel pour un produit de luxe haut de gamme.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole confidentialité données télémétrie",
+    "content": "Établis un protocole de confidentialité pour les données de télémétrie des applications.",
+    "category": "Protection des Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script analyse logs serveur",
+    "content": "Écris un script pour analyser les logs serveur et identifier les problèmes de performance.",
+    "category": "DevOps",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan développement carrière data science",
+    "content": "Crée un plan de développement de carrière pour les data scientists dans l'entreprise.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design régénératif produits électroniques",
+    "content": "Rédige un guide de principes de design régénératif pour les produits électroniques.",
+    "category": "Design Durable",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI énergie renouvelable",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans le secteur des énergies renouvelables.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme accès éducation technique",
+    "content": "Propose la structure d'un programme pour améliorer l'accès à l'éducation technique dans les pays en développement.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de réactivation de compte",
+    "content": "Rédige un email pour réactiver les comptes utilisateurs inactifs depuis longtemps.",
+    "category": "Service Client",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité réseau social",
+    "content": "Crée un plan de test de sécurité pour une nouvelle fonctionnalité de réseau social.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur les commissions de performance",
+    "content": "Conçois un modèle d'affaires basé sur les commissions de performance pour les partenaires commerciaux.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion tests de sécurité",
+    "content": "Automatise le workflow de gestion des tests de sécurité et correction des vulnérabilités.",
+    "category": "Sécurité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing contextuel comportemental",
+    "content": "Développe une stratégie de marketing contextuel basé sur le comportement utilisateur.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole éthique recherche UX",
+    "content": "Établis un protocole d'éthique pour la recherche utilisateur et les tests UX.",
+    "category": "Éthique",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Script optimisation CRO",
+    "content": "Écris un script pour analyser et optimiser le taux de conversion d'un site e-commerce.",
+    "category": "CRO",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan développement leadership inclusif",
+    "content": "Crée un plan de développement du leadership inclusif pour les cadres supérieurs.",
+    "category": "Diversité",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design biomimétique emballages",
+    "content": "Rédige un guide d'application des principes biomimétiques au design d'emballages.",
+    "category": "Design Durable",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI santé publique",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans la santé publique et l'épidémiologie.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme éducation entrepreneuriale",
+    "content": "Propose la structure d'un programme d'éducation entrepreneuriale pour les jeunes.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de notification de sécurité",
+    "content": "Rédige un email pour informer les utilisateurs d'une mise à jour de sécurité critique.",
+    "category": "Sécurité",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité IoT grand public",
+    "content": "Crée un plan de test de sécurité pour des appareils IoT grand public connectés.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur les frais de service",
+    "content": "Conçois un modèle d'affaires basé sur les frais de service pour une plateforme de services professionnels.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion retours design",
+    "content": "Automatise le workflow de collecte et intégration des retours sur les designs d'interface.",
+    "category": "Design",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing prédictif voyages",
+    "content": "Développe une stratégie de marketing prédictif pour une agence de voyage en ligne.",
+    "category": "Marketing Digital",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole confidentialité données localisation",
+    "content": "Établis un protocole de confidentialité pour les données de localisation des utilisateurs.",
+    "category": "Protection des Données",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script analyse données marketing",
+    "content": "Écris un script pour analyser les données marketing et générer des insights actionnables.",
+    "category": "Analytique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan développement compétences numériques",
+    "content": "Crée un plan de développement des compétences numériques pour tous les employés.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design inclusif applications mobiles",
+    "content": "Rédige un guide de design inclusif pour les applications mobiles accessibles.",
+    "category": "Inclusion",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI agriculture intelligente",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans l'agriculture intelligente et durable.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme accès eau potable",
+    "content": "Propose la structure d'un programme pour améliorer l'accès à l'eau potable dans les communautés rurales.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de bienvenue nouveau collaborateur",
+    "content": "Rédige un email de bienvenue pour un nouveau collaborateur avec informations d'intégration.",
+    "category": "Ressources Humaines",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan test sécurité API de paiement",
+    "content": "Crée un plan de test de sécurité pour une API de traitement de paiements en ligne.",
+    "category": "Cybersécurité",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Modèle basé sur les transactions haute fréquence",
+    "content": "Conçois un modèle d'affaires basé sur les transactions haute fréquence pour une plateforme financière.",
+    "category": "Business Model",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Workflow gestion versions design",
+    "content": "Automatise le workflow de gestion des versions pour les fichiers de design.",
+    "category": "Design",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie marketing émotionnel service public",
+    "content": "Développe une stratégie de marketing émotionnel pour un service public essentiel.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Protocole éthique données santé mentale",
+    "content": "Établis un protocole d'éthique pour la collecte et l'utilisation des données de santé mentale.",
+    "category": "Éthique",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Script surveillance performance réseau",
+    "content": "Écris un script pour surveiller la performance du réseau d'entreprise et alerter en cas de problème.",
+    "category": "Administration Réseau",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan développement carrière cybersécurité",
+    "content": "Crée un plan de développement de carrière pour les experts en cybersécurité.",
+    "category": "Ressources Humaines",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide design régénératif mode durable",
+    "content": "Rédige un guide de principes de design régénératif pour une mode durable et circulaire.",
+    "category": "Design Durable",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse marché AI éducation personnalisée",
+    "content": "Réalise une analyse de marché pour les solutions d'IA dans l'éducation personnalisée adaptative.",
+    "category": "Business Intelligence",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Structure programme accès numérique éducatif",
+    "content": "Propose la structure d'un programme pour améliorer l'accès au numérique éducatif dans les écoles défavorisées.",
+    "category": "RSE",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Email de relance de projet en retard",
+    "content": "Rédige un email pour relancer un client sur un projet dont les délais sont dépassés.",
+    "category": "Gestion de Projet",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  }
+]

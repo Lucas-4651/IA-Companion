@@ -1,0 +1,37 @@
+# Node modules
+node_modules/
+
+# Env files (sécurité)
+.env
+
+# Base SQLite locale (pas en prod)
+database.sqlite
+
+# macOS system files
+.DS_Store
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+*.bak
+# IDEs et éditeurs (ajoute selon ton setup)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Build output (si jamais tu builds un front par exemple)
+dist/
+build/
+
+# Coverage reports (tests)
+coverage/

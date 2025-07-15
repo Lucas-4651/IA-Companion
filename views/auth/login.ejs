@@ -1,0 +1,38 @@
+<%- include('../partials/header', { title: 'Connexion' }) %>
+<%- include('../partials/hamburgerMenu') %>
+
+<div class="container">
+  <div class="auth-form">
+    <h1>Connexion</h1>
+    
+    <% if (error) { %>
+      <div class="alert alert-danger">
+        <% if (error === 'invalid') { %>
+          Identifiants incorrects
+        <% } else if (error === 'server') { %>
+          Erreur serveur, veuillez réessayer
+        <% } %>
+      </div>
+    <% } %>
+
+    <form action="/auth/login" method="POST">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required class="form-input">
+      </div>
+      
+      <div class="form-group">
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" name="password" required class="form-input">
+      </div>
+      
+      <button type="submit" class="btn">Se connecter</button>
+    </form>
+    
+    <p class="auth-link">
+      Pas encore inscrit ? <a href="/auth/register">Créer un compte</a>
+    </p>
+  </div>
+</div>
+
+<%- include('../partials/footer') %>

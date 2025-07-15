@@ -1,0 +1,28 @@
+{
+  "name": "ia-companion",
+  "version": "1.0.0",
+  "description": "Plateforme d'apprentissage et d'utilisation des IA",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "sync": "node scripts/sync.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "connect-session-sequelize": "^7.1.5",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "multer": "^2.0.1",
+    "pg": "^8.16.3",
+    "sequelize": "^6.28.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "sqlite3": "^5.1.4"
+  },
+  "author": "Lucas46Moddermadagascar",
+  "license": "MIT"
+}

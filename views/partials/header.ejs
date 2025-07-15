@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA-Companion - Header Ultra-Compact</title>
+  <style>
+    /* HEADER ULTRA-COMPACT */
+    header {
+      background: rgba(15, 23, 42, 0.98);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(99, 102, 241, 0.2);
+      backdrop-filter: blur(8px);
+      padding: 0.2rem 0; /* Padding vertical minimal */
+      height: 38px; /* Hauteur fixe */
+    }
+    
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 0.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+    }
+    
+    .logo {
+      font-size: 1.4rem; /* Taille originale conservée */
+      font-weight: 700;
+      background: linear-gradient(90deg, #6366f1, #06b6d4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-decoration: none;
+      padding: 0; /* Padding supprimé */
+      line-height: 1; /* Pas d'espace vertical supplémentaire */
+    }
+    
+    .desktop-nav {
+      display: none;
+    }
+    
+    .hamburger-btn {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0.35rem;
+      border-radius: 6px;
+      background: rgba(99, 102, 241, 0.1);
+    }
+    
+    .hamburger-btn span {
+      width: 18px;
+      height: 2px;
+      background: #06b6d4;
+      border-radius: 2px;
+    }
+    
+    @media (min-width: 768px) {
+      .desktop-nav {
+        display: block;
+      }
+      
+      .desktop-nav ul {
+        display: flex;
+        list-style: none;
+        gap: 0.8rem;
+      }
+      
+      .desktop-nav a {
+        color: #f1f5f9;
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding: 0.2rem 0.5rem;
+        border-radius: 6px;
+      }
+      
+      .desktop-nav a:hover {
+        color: #06b6d4;
+        background: rgba(6, 182, 212, 0.1);
+      }
+      
+      .hamburger-btn {
+        display: none;
+      }
+      
+      .logo {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="/" class="logo">IA-Companion</a>
+      
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="/ai">IA</a></li>
+          <li><a href="/prompts">Prompts</a></li>
+          <li><a href="/tips">Astuces</a></li>
+          <% if (user) { %>
+            <li><a href="/user/dashboard">Mon compte</a></li>
+            <li><a href="/auth/logout">Déconnexion</a></li>
+          <% } else { %>
+            <li><a href="/auth/login">Connexion</a></li>
+            <li><a href="/auth/register">Inscription</a></li>
+          <% } %>
+        </ul>
+      </nav>
+      
+      <button class="hamburger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+</body>
+</html>*

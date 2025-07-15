@@ -1,0 +1,289 @@
+<%- include('../partials/header', { title: 'Catalogue IA' }) %>
+<%- include('../partials/hamburgerMenu') %>
+
+<main class="page-container">
+  <section class="section">
+    <div class="card neon-border">
+      <h1 class="animate-fade-in">Catalogue des IA</h1>
+      
+      <div class="search-section animate-fade-in">
+        <input type="text" id="search-input" placeholder="Rechercher une IA..." class="form-input neon-glow">
+        <button id="search-btn" class="btn neon-btn">🔍</button>
+      </div>
+      
+      <div class="filters animate-fade-in">
+        <select id="specialty-filter" class="form-input neon-glow">
+          <option value="">Toutes les spécialités</option>
+          <% specialties.forEach(specialty => { %>
+            <option value="<%= specialty %>"><%= specialty %></option>
+          <% }) %>
+        </select>
+      </div>
+    </div>
+    
+    <div class="card neon-border">
+      <h2 class="neon-text">IA Disponibles</h2>
+      <div class="card-grid" id="ai-container">
+        <% ais.forEach(ai => { %>
+          <div class="card ai-card" data-name="<%= ai.name.toLowerCase() %>" data-specialty="<%= ai.specialty %>">
+            <div class="ai-header">
+              <h3><%= ai.name %></h3>
+              <span class="specialty-badge"><%= ai.specialty %></span>
+            </div>
+            <p><%= ai.description.length > 90 ? ai.description.substring(0, 90) + '...' : ai.description %></p>
+            
+            <div class="ai-footer">
+              <a href="/ai/<%= ai.id %>" class="btn neon-btn">Détails</a>
+              <% if (user) { %>
+                <button class="favorite-btn" data-ai-id="<%= ai.id %>">
+                  <i class="far fa-star"></i>
+                </button>
+              <% } %>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+      
+      <div id="no-results" class="no-results-message" style="display: none;">
+        <p>Aucune IA trouvée</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include('../partials/footer') %>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('search-input');
+    const searchBtn = document.getElementById('search-btn');
+    const specialtyFilter = document.getElementById('specialty-filter');
+    const aiCards = document.querySelectorAll('.ai-card');
+    const noResultsMessage = document.getElementById('no-results');
+
+    // Fonction de recherche optimisée
+    function filterAIs() {
+      const searchTerm = searchInput.value.toLowerCase().trim();
+      const specialtyValue = specialtyFilter.value;
+      let visibleCount = 0;
+      const startTime = performance.now();
+
+      aiCards.forEach(card => {
+        const aiName = card.getAttribute('data-name');
+        const aiSpecialty = card.getAttribute('data-specialty');
+        
+        const matchesSearch = searchTerm === '' || aiName.includes(searchTerm);
+        const matchesSpecialty = specialtyValue === '' || aiSpecialty === specialtyValue;
+        
+        if (matchesSearch && matchesSpecialty) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Afficher le message si aucun résultat
+      noResultsMessage.style.display = visibleCount ? 'none' : 'block';
+      
+      // Log de performance
+      const duration = performance.now() - startTime;
+      console.log(`Filtrage effectué en ${duration.toFixed(2)}ms - ${visibleCount} résultats`);
+    }
+
+    // Événements avec debounce pour fluidité
+    let searchTimeout;
+    searchInput.addEventListener('input', () => {
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(filterAIs, 200);
+    });
+    
+    searchBtn.addEventListener('click', filterAIs);
+    specialtyFilter.addEventListener('change', filterAIs);
+    
+    // Animation initiale progressive
+    const cards = document.querySelectorAll('.ai-card');
+    cards.forEach((card, i) => {
+      card.style.opacity = 0;
+      card.style.transform = 'translateY(20px)';
+      setTimeout(() => {
+        card.style.transition = `opacity 0.3s ${i*0.05}s, transform 0.3s ${i*0.05}s`;
+        card.style.opacity = 1;
+        card.style.transform = 'translateY(0)';
+      }, 100);
+    });
+  });
+</script>
+
+<style>
+  /* STYLE OPTIMISÉ - PERFORMANCE ET COMPACITÉ */
+  :root {
+    --neon-primary: #00f3ff;
+    --neon-secondary: #00ccff;
+    --bg-dark: #0a0a1a;
+    --bg-darker: #0f172a;
+    --text-light: #e0e0ff;
+    --text-muted: #a0b3c0;
+  }
+  
+  body {
+    background: linear-gradient(135deg, var(--bg-dark), var(--bg-darker));
+    color: var(--text-light);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.5;
+    overflow-x: hidden;
+  }
+  
+  .page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .card {
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid rgba(0, 243, 255, 0.2);
+    border-radius: 10px;
+    padding: 1.2rem;
+    backdrop-filter: blur(6px);
+    margin-bottom: 1.2rem;
+    transition: 
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+  
+  .neon-border {
+    box-shadow: 
+      0 0 8px rgba(0, 243, 255, 0.15), 
+      inset 0 0 6px rgba(0, 195, 255, 0.1);
+  }
+  
+  .neon-border:hover {
+    box-shadow: 
+      0 0 12px rgba(0, 243, 255, 0.25),
+      inset 0 0 8px rgba(0, 195, 255, 0.15);
+    transform: translateY(-4px);
+  }
+  
+  h1, h2, h3 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.8rem;
+  }
+  
+  h1 {
+    font-size: 1.7rem;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+    padding-bottom: 0.4rem;
+  }
+  
+  h2::after {
+    width: 35px;
+    height: 2px;
+    background: var(--neon-primary);
+  }
+  
+  h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  .search-section {
+    display: flex;
+    gap: 0.8rem;
+    margin: 1rem 0;
+  }
+  
+  .form-input {
+    flex: 1;
+    padding: 0.65rem;
+    font-size: 0.85rem;
+  }
+  
+  .specialty-badge {
+    background: rgba(0, 150, 255, 0.15);
+    color: var(--neon-secondary);
+    padding: 0.2rem 0.6rem;
+    font-size: 0.7rem;
+  }
+  
+  .ai-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem;
+    border: 1px solid rgba(0, 195, 255, 0.15);
+    transition: all 0.25s ease;
+    opacity: 0; /* Initial state for animation */
+  }
+  
+  .ai-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 100, 255, 0.15);
+  }
+  
+  .ai-header {
+    margin-bottom: 0.6rem;
+  }
+  
+  .ai-footer {
+    margin-top: auto;
+    padding-top: 0.8rem;
+  }
+  
+  .neon-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    background: linear-gradient(90deg, #003d66, #0066cc);
+  }
+  
+  .favorite-btn {
+    font-size: 1rem;
+  }
+  
+  .no-results-message {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  /* Responsive */
+  @media (min-width: 768px) {
+    .card-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .card-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .card {
+      padding: 1rem;
+    }
+    
+    .ai-card {
+      padding: 0.9rem;
+    }
+  }
+</style>

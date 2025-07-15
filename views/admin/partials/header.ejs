@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin IA-Companion - <%= title %></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/admin.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    :root {
+      --admin-primary: #1a365d;
+      --admin-secondary: #2c5282;
+      --admin-accent: #4299e1;
+      --admin-light: #f7fafc;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--admin-light);
+    }
+
+    .admin-container {
+      display: flex;
+      min-height: 100vh;
+      transition: all 0.3s ease-in-out;
+      overflow-x: hidden;
+    }
+
+    .admin-sidebar {
+      width: 250px;
+      background: var(--admin-primary);
+      color: white;
+      transition: width 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .admin-logo {
+      padding: 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      font-size: 1.2rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .admin-nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .admin-nav li a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 20px;
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border-radius: 6px;
+    }
+
+    .admin-nav li a:hover,
+    .admin-nav li a.active {
+      background: var(--admin-secondary);
+      color: #fff;
+      transform: translateX(4px);
+    }
+
+    .admin-nav li a i {
+      width: 20px;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .admin-main {
+      flex: 1;
+      padding: 30px;
+      background: var(--admin-light);
+      transition: padding 0.3s;
+    }
+
+    .admin-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+      margin-bottom: 24px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .admin-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .admin-card-header {
+      padding: 20px;
+      border-bottom: 1px solid #eee;
+      font-weight: 600;
+      background-color: #f9fafb;
+    }
+
+    .admin-card-body {
+      padding: 20px;
+    }
+
+    .stat-card {
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    .stat-card .number {
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: var(--admin-primary);
+    }
+
+    .stat-card .label {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .admin-sidebar {
+        width: 70px;
+      }
+
+      .admin-logo span,
+      .nav-text {
+        display: none;
+      }
+
+      .admin-nav li a {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .admin-container {
+        flex-direction: column;
+      }
+
+      .admin-sidebar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        overflow-x: auto;
+      }
+
+      .admin-nav ul {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 0;
+        margin: 0;
+      }
+
+      .admin-nav li {
+        flex: 0 0 auto;
+      }
+
+      .admin-nav li a {
+        padding: 10px 14px;
+        font-size: 0.9rem;
+      }
+
+      .admin-main {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="admin-container">
+    <!-- Sidebar -->
+    <div class="admin-sidebar">
+      <div class="admin-logo">
+        <h5 class="mb-0">
+          <i class="fas fa-cogs"></i> <span>IA-Companion Admin</span>
+        </h5>
+      </div>
+      <nav class="admin-nav">
+        <ul>
+          <li><a href="/admin/dashboard" class="<%= currentPage === 'dashboard' ? 'active' : '' %>"><i class="fas fa-tachometer-alt"></i> <span class="nav-text">Tableau de bord</span></a></li>
+          <li><a href="/admin/ais" class="<%= currentPage === 'ais' ? 'active' : '' %>"><i class="fas fa-robot"></i> <span class="nav-text">IA</span></a></li>
+          <li><a href="/admin/prompts" class="<%= currentPage === 'prompts' ? 'active' : '' %>"><i class="fas fa-keyboard"></i> <span class="nav-text">Prompts</span></a></li>
+          <li><a href="/admin/tips" class="<%= currentPage === 'tips' ? 'active' : '' %>"><i class="fas fa-lightbulb"></i> <span class="nav-text">Astuces</span></a></li>
+          <li><a href="/admin/users" class="<%= currentPage === 'users' ? 'active' : '' %>"><i class="fas fa-users"></i> <span class="nav-text">Utilisateurs</span></a></li>
+          <li><a href="/admin/comments" class="<%= currentPage === 'comments' ? 'active' : '' %>"><i class="fas fa-comments"></i> <span class="nav-text">Commentaires</span></a></li>
+          <li><a href="/admin/settings" class="<%= currentPage === 'settings' ? 'active' : '' %>"><i class="fas fa-cog"></i> <span class="nav-text">Paramètres</span></a></li>
+          <li><a href="/"><i class="fas fa-external-link-alt"></i> <span class="nav-text">Site public</span></a></li>
+          <li><a href="/auth/logout"><i class="fas fa-sign-out-alt"></i> <span class="nav-text">Déconnexion</span></a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="admin-main">

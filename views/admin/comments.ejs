@@ -1,0 +1,33 @@
+<%- include('partials/header', { title: 'Gestion des Commentaires' }) %>
+<%- include('../partials/hamburgerMenu') %>
+
+<div class="admin-container">
+  <h1>Gestion des Commentaires</h1>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Contenu</th>
+        <th>Utilisateur</th>
+        <th>IA</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% comments.forEach(comment => { %>
+        <tr>
+          <td><%= comment.id %></td>
+          <td><%= comment.content.substring(0, 50) %>...</td>
+          <td><%= comment.User.username %></td>
+          <td><%= comment.AI.name %></td>
+          <td>
+            <button class="btn-sm danger delete-comment" data-id="<%= comment.id %>">Supprimer</button>
+          </td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</div>
+
+<%- include('partials/footer') %>

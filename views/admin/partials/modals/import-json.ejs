@@ -1,0 +1,30 @@
+<!-- Modal Import JSON -->
+<div class="modal fade" id="importJsonModal" tabindex="-1" aria-labelledby="importJsonModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <form id="importJsonForm" class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="importJsonModalLabel">Importer des IA</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="jsonFile" class="form-label">Fichier JSON</label>
+          <input type="file" class="form-control" id="jsonFile" name="jsonFile" accept=".json" required>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="overwriteCheck" name="overwrite">
+          <label class="form-check-label" for="overwriteCheck">Remplacer les IA existantes</label>
+        </div>
+        <div class="alert alert-info">
+          <strong>Format attendu :</strong> [{"name":"...", "website":"...", "specialty":"..."}]
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+        <button type="submit" class="btn btn-primary" id="submitImport">
+          <i class="fas fa-upload me-1"></i> Importer
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

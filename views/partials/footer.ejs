@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA-Companion - Solution flottante</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #f1f5f9;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding-bottom: 120px; /* Espace pour le footer */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            flex: 1;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, #06b6d4, #3b82f6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature-card {
+            background: rgba(30, 41, 59, 0.7);
+            border-radius: 12px;
+            padding: 1.2rem;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            backdrop-filter: blur(8px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: auto;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: #06b6d4;
+            box-shadow: 0 8px 20px rgba(6, 182, 212, 0.15);
+        }
+
+        .feature-card i {
+            font-size: 2.2rem;
+            color: #06b6d4;
+            margin-bottom: 0.8rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.6rem;
+            color: #f1f5f9;
+        }
+
+        .feature-card p {
+            color: #94a3b8;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        /* Bouton flottant */
+        .floating-nav-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #06b6d4, #3b82f6);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 100;
+            box-shadow: 0 6px 20px rgba(6, 182, 212, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .floating-nav-btn:hover {
+            transform: scale(1.1) rotate(90deg);
+            box-shadow: 0 8px 25px rgba(6, 182, 212, 0.6);
+        }
+
+        .floating-nav-btn i {
+            font-size: 1.8rem;
+            transition: transform 0.3s ease;
+        }
+
+        /* Menu flottant */
+        .floating-nav-content {
+            position: fixed;
+            bottom: 110px;
+            right: 30px;
+            width: 300px;
+            background: rgba(15, 23, 42, 0.95);
+            border-radius: 15px;
+            padding: 1.5rem;
+            z-index: 99;
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            transform: translateY(20px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .floating-nav-content.active {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .floating-nav-content h4 {
+            color: #06b6d4;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid rgba(6, 182, 212, 0.3);
+        }
+
+        .floating-nav-content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .floating-nav-content li {
+            margin-bottom: 0.8rem;
+            transition: transform 0.2s ease;
+        }
+
+        .floating-nav-content li:hover {
+            transform: translateX(5px);
+        }
+
+        .floating-nav-content a {
+            color: #e2e8f0;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 0.5rem;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .floating-nav-content a:hover {
+            background: rgba(6, 182, 212, 0.15);
+            color: #06b6d4;
+        }
+
+        .floating-nav-content a i {
+            width: 25px;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .nav-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        /* Footer Styles amélioré */
+        footer {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(to top, rgba(15, 23, 42, 0.98) 0%, rgba(15, 23, 42, 0.95) 100%);
+            padding: 1.5rem 1rem 0.5rem;
+            border-top: 1px solid rgba(99, 102, 241, 0.3);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);
+            margin-top: auto;
+        }
+
+        footer::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath fill='%2306b6d4' fill-opacity='0.15' d='M45.5,46.5Q36,63,35.5,81.5Q35,100,45.5,118Q56,136,71,143.5Q86,151,100,146.5Q114,142,126,134.5Q138,127,148.5,113.5Q159,100,148.5,86.5Q138,73,126,65.5Q114,58,100,55Q86,52,71,59.5Q56,67,45.5,46.5Z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 280px;
+            opacity: 0.35;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .footer-container {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .footer-section {
+            padding: 0.8rem 0;
+        }
+
+        .footer-section h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1.2rem;
+            color: #06b6d4;
+            font-weight: 600;
+            position: relative;
+            display: inline-block;
+        }
+
+        .footer-section h3::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(90deg, #06b6d4, #3b82f6);
+            border-radius: 2px;
+        }
+
+        .footer-section p {
+            font-size: 0.95rem;
+            color: #cbd5e1;
+            line-height: 1.6;
+            margin-bottom: 0.8rem;
+        }
+
+        /* Section de soutien mise en avant */
+        .support-section {
+            background: linear-gradient(to right, rgba(6, 182, 212, 0.1), rgba(14, 165, 233, 0.08));
+            border-radius: 10px;
+            padding: 1.5rem;
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            box-shadow: 0 4px 15px rgba(6, 182, 212, 0.1);
+            position: relative;
+            overflow: hidden;
+            margin-top: 0.5rem;
+        }
+
+        .support-section::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(6, 182, 212, 0.1) 0%, transparent 70%);
+            z-index: -1;
+        }
+
+        .support-section::after {
+            content: "❤️";
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 1.2rem;
+            opacity: 0.3;
+        }
+
+        .donation-text {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 1.2rem;
+        }
+
+        .donate-btn {
+            background: linear-gradient(90deg, #06b6d4, #0ea5e9);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.7rem;
+            font-size: 1rem;
+            box-shadow: 0 4px 10px rgba(6, 182, 212, 0.3);
+        }
+
+        .donate-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(6, 182, 212, 0.4);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 1.5rem 0 0.5rem;
+            border-top: 1px solid rgba(99, 102, 241, 0.15);
+            font-size: 0.85rem;
+            color: #94a3b8;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .copyright {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .copyright span {
+            padding: 0.3rem 0.8rem;
+            background: rgba(30, 41, 59, 0.4);
+            border-radius: 20px;
+        }
+
+        .developer {
+            color: #06b6d4;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .developer:hover {
+            color: #3b82f6;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.7rem;
+            background: rgba(30, 41, 59, 0.8);
+            color: #cbd5e1;
+            text-decoration: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .social-btn:hover {
+            background: rgba(6, 182, 212, 0.2);
+            color: #06b6d4;
+            border-color: rgba(6, 182, 212, 0.6);
+            transform: translateY(-2px);
+        }
+
+        /* Toast Notification améliorée */
+        #toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: rgba(15, 23, 42, 0.95);
+            color: #06b6d4;
+            padding: 1.2rem 1.8rem;
+            border-radius: 12px;
+            border: 1px solid rgba(6, 182, 212, 0.5);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            font-weight: 600;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            backdrop-filter: blur(12px);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            max-width: 90%;
+        }
+
+        #toast.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+            bottom: 40px;
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+                margin-bottom: 2rem;
+            }
+            
+            .footer-section {
+                padding: 0.5rem;
+            }
+            
+            footer {
+                padding: 2.5rem 1rem 0.5rem;
+            }
+            
+            .footer-bottom {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1.8rem 0 1rem;
+            }
+            
+            .social-links {
+                margin-top: 0;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .footer-section {
+                padding: 1.2rem 0.8rem;
+            }
+            
+            .support-section {
+                margin-bottom: 1.5rem;
+            }
+            
+            .floating-nav-btn {
+                bottom: 20px;
+                right: 20px;
+                width: 55px;
+                height: 55px;
+            }
+            
+            .floating-nav-content {
+                bottom: 90px;
+                right: 20px;
+                width: 280px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .floating-nav-content {
+                width: 90%;
+                right: 5%;
+                left: 5%;
+            }
+            
+            .copyright {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+        <div class="features">
+            <div class="feature-card">
+                <i class="fas fa-robot"></i>
+                <h3>Catalogue IA</h3>
+                <p>Découvrez notre sélection des meilleurs outils d'intelligence artificielle classés par catégories et cas d'usage.</p>
+            </div>
+            
+            <div class="feature-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Générateur de Prompts</h3>
+                <p>Créez des prompts efficaces en quelques clics pour obtenir des résultats optimaux de vos IA préférées.</p>
+            </div>
+            
+            <div class="feature-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Astuces & Conseils</h3>
+                <p>Apprenez à tirer le meilleur parti des IA grâce à nos guides pratiques et conseils d'experts.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bouton flottant -->
+    <div class="floating-nav-btn" id="floatingNavBtn">
+        <i class="fas fa-bars"></i>
+    </div>
+    
+    <!-- Contenu flottant -->
+    <div class="floating-nav-content" id="floatingNavContent">
+        <div class="nav-columns">
+            <div>
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="/"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="/ai"><i class="fas fa-robot"></i> Catalogue IA</a></li>
+                    <li><a href="/prompts"><i class="fas fa-lightbulb"></i> Prompts</a></li>
+                    <li><a href="/tips"><i class="fas fa-book"></i> Astuces</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4>Compte</h4>
+                <ul>
+                    <li><a href="/user/dashboard"><i class="fas fa-user-circle"></i> Mon compte</a></li>
+                    <li><a href="/user/favorites"><i class="fas fa-star"></i> Favoris</a></li>
+                    <li><a href="/auth/login"><i class="fas fa-sign-in-alt"></i> Connexion</a></li>
+                    <li><a href="/auth/register"><i class="fas fa-user-plus"></i> Inscription</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>IA-Companion</h3>
+                    <p>Votre guide expert pour maîtriser les intelligences artificielles et transformer votre productivité.</p>
+                </div>
+                
+                <div class="footer-section support-section">
+                    <h4>Soutenez le projet</h4>
+                    <p class="donation-text">Appréciez-vous IA-Companion ? Chaque contribution, même modeste, nous aide à améliorer la plateforme et à développer de nouvelles fonctionnalités.Ce site est gratuit mais la maintenance non , n'hésité pas a soutenir le projet. Merci pour votre soutien ❤</p>
+                    <button class="donate-btn" id="donateBtn">
+                        <i class="fas fa-hand-holding-heart"></i> Faire un don
+                    </button>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <span>&copy; <span id="currentYear"></span> IA-Companion. Tous droits réservés.</span>
+                    <span>Développé par <span class="developer">Lucas46 Modder Madagascar</span></span>
+                    <span>Contact: <a href="mailto:Rakotonirinalucas26@gmail.com" style="color:#06b6d4;">Envoyer Email</a></span>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/12LZNxBpQEV/" target="_blank" class="social-btn">
+                        <i class="fab fa-facebook"></i> Facebook
+                    </a>
+                    <a href="#" class="social-btn">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </a>
+                    <a href="#" class="social-btn">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <div id="toast">
+        <i class="fas fa-gift" style="font-size: 1.5rem;"></i>
+        <span>Merci pour votre soutien ! Numéro Mobile Money: <strong style="color: #3b82f6; font-size: 1.1rem;">0387085243</strong></span>
+    </div>
+    
+    <script>
+        // Gestion de la date du copyright
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Gestion du toast pour les dons
+        const donateBtn = document.getElementById('donateBtn');
+        const toast = document.getElementById('toast');
+        
+        donateBtn.addEventListener('click', () => {
+            toast.classList.add('show');
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 5000);
+        });
+        
+        // Gestion du menu flottant
+        const floatingNavBtn = document.getElementById('floatingNavBtn');
+        const floatingNavContent = document.getElementById('floatingNavContent');
+        
+        floatingNavBtn.addEventListener('click', () => {
+            floatingNavContent.classList.toggle('active');
+        });
+        
+        // Fermer le menu en cliquant en dehors
+        document.addEventListener('click', (e) => {
+            if (!floatingNavContent.contains(e.target) && !floatingNavBtn.contains(e.target)) {
+                floatingNavContent.classList.remove('active');
+            }
+        });
+        
+        // Animation au chargement
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.feature-card');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 200 * index);
+            });
+        });
+    </script>
+</body>
+</html>

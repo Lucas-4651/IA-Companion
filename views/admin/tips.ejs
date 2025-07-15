@@ -1,0 +1,199 @@
+<%- include('partials/header', { 
+  title: 'Gestion des Astuces',
+  currentPage: 'tips' 
+}) %>
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+  <h1>Gestion des Astuces</h1>
+  <div>
+    <!-- Bouton d'import JSON -->
+    <button type="button" class="btn btn-info me-2" data-bs-toggle="modal" data-bs-target="#importTipJsonModal">
+      <i class="fas fa-file-import"></i> Importer JSON
+    </button>
+    <a href="#add-tip-form" class="btn btn-primary">
+      <i class="fas fa-plus"></i> Ajouter une Astuce
+    </a>
+  </div>
+</div>
+
+<!-- Modal d'import JSON pour les astuces -->
+<div class="modal fade" id="importTipJsonModal" tabindex="-1" aria-labelledby="importTipJsonModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="importTipJsonModalLabel">Importer des Astuces</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="tipJsonFile" class="form-label">Sélectionnez un fichier JSON</label>
+            <input class="form-control" type="file" id="tipJsonFile" name="tipJsonFile" accept=".json" required>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="tipOverwriteCheck">
+            <label class="form-check-label" for="tipOverwriteCheck">
+              Remplacer les astuces existantes
+            </label>
+          </div>
+        </form>
+        <div class="alert alert-info">
+          <strong>Format attendu :</strong> 
+          [{
+            "title": "...",
+            "content": "...",
+            "category": "..."
+          }, ...]
+          <br><br>
+          <strong>Exemple :</strong>
+          <pre>[
+  {
+    "title": "Bonnes pratiques IA",
+    "content": "1) Poser des questions précises\n2) Vérifier les sources\n3) Contextualiser les requêtes",
+    "category": "conseils"
+  }
+]</pre>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+        <button type="button" class="btn btn-primary" id="submitTipImport">
+          <i class="fas fa-upload me-1"></i> Importer
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="admin-card">
+  <div class="admin-card-header d-flex justify-content-between align-items-center">
+    <span>Liste des Astuces (Total: <%= tips.length %>)</span>
+    <div class="input-group" style="width: 300px;">
+      <input type="text" class="form-control" placeholder="Rechercher...">
+      <button class="btn btn-outline-secondary" type="button">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="admin-card-body">
+    <div class="table-responsive">
+      <table class="table table-hover align-middle">
+        <thead class="table-light">
+          <tr>
+            <th>ID</th>
+            <th>Titre</th>
+            <th>Contenu</th>
+            <th>Catégorie</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% tips.forEach(tip => { %>
+            <tr>
+              <td><%= tip.id %></td>
+              <td><strong class="text-primary"><%= tip.title %></strong></td>
+              <td>
+                <% 
+                  // Détecter les listes numérotées
+                  const hasNumberedList = tip.content.match(/\d+\)\s/g);
+                  
+                  if (hasNumberedList) {
+                    // Diviser le contenu par les numéros
+                    const items = tip.content.split(/\d+\)\s/).filter(item => item.trim());
+                %>
+                  <div class="numbered-tip-content">
+                    <% items.forEach((item, index) => { %>
+                      <div class="d-flex mb-1">
+                        <div class="tip-number me-2"><%= index + 1 %>)</div>
+                        <div class="tip-text"><%= item.trim() %></div>
+                      </div>
+                    <% }); %>
+                  </div>
+                <% } else { %>
+                  <div class="standard-tip-content">
+                    <%= tip.content.substring(0, 100) %>...
+                  </div>
+                <% } %>
+              </td>
+              <td>
+                <% if (tip.category) { %>
+                  <span class="badge bg-info"><%= tip.category %></span>
+                <% } else { %>
+                  <span class="badge bg-secondary">Non classé</span>
+                <% } %>
+              </td>
+              <td>
+                <div class="btn-group">
+                  <a href="/admin/tips/edit/<%= tip.id %>" class="btn btn-sm btn-outline-primary">
+                    <i class="fas fa-edit"></i>
+                  </a>
+                  <button class="btn btn-sm btn-outline-danger delete-tip" data-id="<%= tip.id %>">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- 🛠️ Formulaire d’ajout -->
+<div class="card mt-5 shadow-sm" id="add-tip-form">
+  <div class="card-body">
+    <h2 class="h4 mb-4">📝 Ajouter une nouvelle Astuce</h2>
+    <form action="/admin/tip/create" method="POST" class="row g-3">
+      <div class="col-md-6">
+        <label class="form-label">Titre</label>
+        <input type="text" name="title" required class="form-control" />
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Catégorie</label>
+        <input type="text" name="category" class="form-control" />
+      </div>
+      <div class="col-12">
+        <label class="form-label">Contenu</label>
+        <textarea name="content" rows="4" required class="form-control"></textarea>
+        <div class="form-text">
+          Astuce : Pour créer une liste numérotée, utilisez le format :<br>
+          "1) Premier point...\n2) Deuxième point...\n3) Troisième point..."
+        </div>
+      </div>
+      <div class="col-12 text-end">
+        <button type="submit" class="btn btn-success">
+          <i class="fas fa-plus-circle"></i> Ajouter l'Astuce
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
+
+<!-- Marqueur pour le script -->
+<script>
+  window.currentPage = 'tips';
+</script>
+
+<style>
+  .numbered-tip-content {
+    font-size: 0.9rem;
+  }
+  
+  .tip-number {
+    font-weight: bold;
+    min-width: 24px;
+    text-align: right;
+  }
+  
+  .tip-text {
+    flex: 1;
+  }
+  
+  .standard-tip-content {
+    font-size: 0.9rem;
+  }
+</style>

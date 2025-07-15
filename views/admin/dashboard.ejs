@@ -1,0 +1,120 @@
+<%- include('partials/header', { 
+  title: 'Tableau de bord',
+  currentPage: 'dashboard'
+}) %>
+
+<div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-3">
+  <h1 class="fs-3 m-0">📊 Tableau de bord</h1>
+  <div class="d-flex flex-wrap gap-2">
+    <button class="btn btn-primary btn-sm">
+      <i class="fas fa-plus me-1"></i> Nouvelle IA
+    </button>
+    <button class="btn btn-secondary btn-sm">
+      <i class="fas fa-sync me-1"></i> Actualiser
+    </button>
+  </div>
+</div>
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 mb-4">
+  <div class="col">
+    <div class="admin-card stat-card text-center p-3">
+      <div class="number fs-4 fw-bold"><%= stats.aiCount %></div>
+      <div class="label text-muted">IA Référencées</div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="admin-card stat-card text-center p-3">
+      <div class="number fs-4 fw-bold"><%= stats.userCount %></div>
+      <div class="label text-muted">Utilisateurs</div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="admin-card stat-card text-center p-3">
+      <div class="number fs-4 fw-bold"><%= stats.promptCount %></div>
+      <div class="label text-muted">Prompts</div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="admin-card stat-card text-center p-3">
+      <div class="number fs-4 fw-bold"><%= stats.commentCount %></div>
+      <div class="label text-muted">Commentaires</div>
+    </div>
+  </div>
+</div>
+
+<div class="row g-4">
+  <div class="col-12 col-lg-8">
+    <div class="admin-card h-100">
+      <div class="admin-card-header fw-semibold fs-5">
+        🕒 Activité récente
+      </div>
+      <div class="admin-card-body p-0">
+        <div class="table-responsive">
+          <table class="table align-middle mb-0">
+            <thead class="table-light">
+              <tr>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% activities.forEach(activity => { %>
+                <tr>
+                  <td>
+                    <span class="badge bg-primary text-uppercase">
+                      <%= activity.type %>
+                    </span>
+                  </td>
+                  <td class="text-truncate" style="max-width: 250px;"><%= activity.description %></td>
+                  <td class="text-nowrap"><%= activity.date.toLocaleString() %></td>
+                </tr>
+              <% }); %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-4">
+    <div class="admin-card h-100">
+      <div class="admin-card-header fw-semibold fs-5">
+        📈 Statistiques d'utilisation
+      </div>
+      <div class="admin-card-body">
+        <canvas id="usageChart" style="width: 100%; max-height: 300px;"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const ctx = document.getElementById('usageChart').getContext('2d');
+  const chart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ['IA', 'Prompts', 'Astuces', 'Commentaires'],
+      datasets: [{
+        data: [<%= stats.aiCount %>, <%= stats.promptCount %>, <%= stats.tipCount %>, <%= stats.commentCount %>],
+        backgroundColor: ['#4361ee', '#3a0ca3', '#4cc9f0', '#f72585']
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: {
+            font: {
+              size: 12
+            }
+          }
+        }
+      }
+    }
+  });
+</script>
+
+<%- include('partials/footer') %>

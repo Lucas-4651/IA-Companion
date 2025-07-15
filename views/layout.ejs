@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA-Companion - <%= title %></title>
+  
+  <!-- Styles communs -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/hamburger.css">
+  <link rel="stylesheet" href="/css/animations.css">
+  
+  <% if (user && user.isAdmin) { %>
+    <link rel="stylesheet" href="/css/admin.css">
+  <% } %>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Styles spécifiques à la page -->
+  <% if (pageStyles) { %>
+    <link rel="stylesheet" href="<%= pageStyles %>">
+  <% } %>
+  
+  <style>
+    :root {
+      --ia-primary: #6366f1;
+      --ia-secondary: #8b5cf6;
+      --ia-dark: #0f172a;
+      --ia-darker: #0a1120;
+      --ia-light: #f1f5f9;
+      --ia-accent: #06b6d4;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: var(--ia-light);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    
+    main {
+      flex: 1;
+      padding: 4rem 0 3rem;
+    }
+  </style>
+</head>
+<body>
+  <%- include('partials/header') %>
+  
+  <main>
+    <%- content %>
+  </main>
+  
+  <%- include('partials/footer') %>
+  
+  <script src="/js/hamburger.js"></script>
+  <script src="/js/main.js"></script>
+  <% if (user && user.isAdmin) { %>
+    <script src="/js/admin.js"></script>
+  <% } %>
+  
+  <!-- Scripts spécifiques à la page -->
+  <% if (pageScripts) { %>
+    <script src="<%= pageScripts %>"></script>
+  <% } %>
+</body>
+</html>

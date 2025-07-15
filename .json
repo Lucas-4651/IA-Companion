@@ -1,0 +1,388 @@
+[
+  {
+    "title": "Programme éducatif sur l'intelligence artificielle",
+    "content": "Concevez un programme éducatif de 12 semaines sur les fondamentaux de l'IA pour les lycéens. Structurez-le en modules progressifs couvrant : histoire de l'IA, apprentissage automatique, réseaux neuronaux, éthique et applications pratiques. Incluez des projets pratiques comme la création d'un chatbot simple et des études de cas sur l'impact sociétal.",
+    "category": "Éducation",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie d'apprentissage mixte",
+    "content": "Développez un plan détaillé pour intégrer l'apprentissage mixte (présentiel/distanciel) dans un cursus universitaire de sciences économiques. Prévoyez : répartition des contenus, outils numériques requis, évaluation des compétences numériques des enseignants, calendrier de transition et indicateurs de réussite.",
+    "category": "Éducation",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Parcours pédagogique sur le changement climatique",
+    "content": "Créez un parcours pédagogique interdisciplinaire sur le changement climatique pour collégiens. Intégrez des activités pratiques : calcul d'empreinte carbone, expériences scientifiques sur l'effet de serre, analyse de données climatiques historiques, et projets d'action locale. Développez des évaluations par compétences.",
+    "category": "Éducation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Formation en ligne sur la cybersécurité",
+    "content": "Concevez un cours en ligne de cybersécurité pour débutants avec modules interactifs : principes de base, gestion des mots de passe, reconnaissance des phishing, protection des données personnelles. Incluez des simulations pratiques, des quiz évaluatifs et un système de badges de compétences.",
+    "category": "Éducation",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Programme d'éducation financière",
+    "content": "Élaborez un programme complet d'éducation financière pour jeunes adultes couvrant : budgétisation, épargne, investissement de base, crédit et prévention du surendettement. Intégrez des études de cas, des outils de simulation et des scénarios décisionnels réalistes.",
+    "category": "Éducation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Cours avancé de data science",
+    "content": "Développez un curriculum de data science avancé incluant : traitement de big data, machine learning avec Python, visualisation de données complexes, techniques de nettoyage de données et éthique des données. Prévoyez des projets pratiques avec des jeux de données réels.",
+    "category": "Éducation",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Programme d'apprentissage des langues immersif",
+    "content": "Concevez un programme d'immersion linguistique en espagnol utilisant la réalité virtuelle. Créez des scénarios quotidiens (restaurant, voyage, travail) avec reconnaissance vocale, feedback instantané et adaptation au niveau de l'apprenant.",
+    "category": "Éducation",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Formation à la pensée critique",
+    "content": "Structurez un programme pour développer la pensée critique chez les adolescents. Incluez : analyse des biais cognitifs, évaluation des sources d'information, logique argumentative, résolution de problèmes complexes et exercices de déconstruction des fake news.",
+    "category": "Éducation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Ateliers de codage pour enfants",
+    "content": "Créez une série d'ateliers de programmation pour enfants de 8-12 ans utilisant Scratch et robots éducatifs. Développez des projets progressifs : jeux simples, animations interactives, résolution de défis robotiques. Prévoyez des supports visuels adaptés.",
+    "category": "Éducation",
+    "difficulty": "Débutant",
+    "usageCount": 0
+  },
+  {
+    "title": "Cours sur l'intelligence émotionnelle",
+    "content": "Concevez un curriculum sur l'intelligence émotionnelle pour milieu professionnel. Couvrez : auto-évaluation émotionnelle, gestion du stress, communication empathique, résolution de conflits. Intégrez des mises en situation et des outils de feedback 360°.",
+    "category": "Éducation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Optimisation du parcours client B2B",
+    "content": "Analysez et restructurez le parcours client complet pour une solution SaaS B2B. Identifiez 5 points de friction dans le processus actuel et proposez des solutions concrètes pour : la génération de leads qualifiés, la démonstration produit, la négociation contractuelle, l'onboarding et la rétention. Incluez des scripts de conversation pour chaque étape.",
+    "category": "Ventes",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie de pénétration de marché",
+    "content": "Élaborez un plan de conquête pour un nouveau produit électronique sur un marché concurrentiel saturé. Définissez : segmentation cible prioritaire, argumentaire différenciant, canaux de distribution innovants, stratégie de tarification psychologique, et tactiques pour contrer les leaders établis. Prévoyez un budget détaillé sur 18 mois.",
+    "category": "Ventes",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie de vente consultative",
+    "content": "Développez une méthodologie de vente consultative pour des solutions techniques complexes. Créez : questionnaire de découverte approfondi, framework de diagnostic des besoins, matrice de valorisation des bénéfices, et processus de co-construction de solution avec le client.",
+    "category": "Ventes",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Optimisation du taux de conversion e-commerce",
+    "content": "Analysez le parcours d'achat d'un site e-commerce et proposez 10 améliorations concrètes pour augmenter le taux de conversion. Ciblez spécifiquement : page produit, processus de paiement, abandon de panier et expérience mobile. Intégrez des éléments de preuve sociale et d'urgence.",
+    "category": "Ventes",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Programme de fidélisation clients",
+    "content": "Concevez un programme de fidélisation innovant pour une chaîne de magasins physiques. Intégrez : système de récompenses multi-niveaux, avantages exclusifs, personnalisation basée sur l'historique d'achat, et expériences VIP. Définissez les coûts et ROI attendu.",
+    "category": "Ventes",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie de vente cross-selling",
+    "content": "Créez un programme systématique de cross-selling pour une banque. Identifiez les combinaisons produits complémentaires, formez les conseillers aux techniques de vente additionnelle, et développez des outils d'aide à la décision basés sur le profil client.",
+    "category": "Ventes",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan de relance des clients inactifs",
+    "content": "Élaborez une campagne multicanal pour reconquérir les clients inactifs depuis plus d'un an. Développez : segmentation par motif d'inactivité, messages personnalisés, offres de réactivation ciblées et parcours de retour progressif. Prévoyez des indicateurs de succès.",
+    "category": "Ventes",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie de pricing dynamique",
+    "content": "Concevez un modèle de pricing dynamique pour une compagnie aérienne intégrant : saisonnalité, demande en temps réel, concurrence, et segmentation client. Définissez les règles algorithmiques, les garde-fous éthiques et le dispositif de monitoring.",
+    "category": "Ventes",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Formation à la négociation complexe",
+    "content": "Développez un programme de formation aux négociations commerciales complexes. Couvrez : préparation stratégique, techniques d'influence, gestion des objections difficiles, négociation multipartite et psychologie de la décision. Incluez des simulations réalistes.",
+    "category": "Ventes",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Optimisation de la force de vente",
+    "content": "Diagnostiquez et optimisez la performance d'une équipe commerciale de 20 personnes. Analysez : répartition des territoires, quotas adaptés, système de rémunération motivateur, outils technologiques et programme de développement des compétences.",
+    "category": "Ventes",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Gestion de crise médiatique",
+    "content": "Construisez un protocole complet de communication de crise pour une entreprise alimentaire confrontée à un rappel de produit. Incluez : arbre décisionnel hiérarchique, messages clés adaptés à chaque partie prenante (clients, médias, autorités), calendrier de communication, formation des porte-parole et stratégie de réputation post-crise.",
+    "category": "Communication",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Transformation culturelle interne",
+    "content": "Concevez une campagne de communication pour accompagner une transformation culturelle majeure dans une entreprise traditionnelle passant à un modèle agile. Développez : narration inspirante, supports multicanaux (vidéo, intranet, événements), programme d'ambassadeurs internes, mécanismes de feedback et indicateurs d'engagement.",
+    "category": "Communication",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie de communication digitale",
+    "content": "Élaborez un plan de communication digitale intégré pour une PME. Définissez : positionnement de marque cohérent, calendrier éditorial, stratégie de contenus, gestion des réseaux sociaux, engagement communautaire et analyse de performance.",
+    "category": "Communication",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Communication de changement organisationnel",
+    "content": "Développez un plan de communication pour annoncer une restructuration majeure. Prévoyez : messages différenciés par audience, chronologie précise, canaux adaptés, FAQ exhaustive, dispositif d'écoute et gestion des rumeurs.",
+    "category": "Communication",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie de relations publiques",
+    "content": "Concevez un programme de relations publiques sur 12 mois pour une startup tech. Identifiez les angles médiatiques pertinents, établissez une liste de journalistes ciblés, créez des éléments d'accroche, et planifiez des événements presse. Incluez un suivi d'impact.",
+    "category": "Communication",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Communication interne en télétravail",
+    "content": "Créez une stratégie de communication interne efficace pour une équipe en télétravail permanent. Intégrez : rituels virtuels réguliers, plateforme collaborative centralisée, charte de bonnes pratiques, reconnaissance à distance et prévention de l'isolement.",
+    "category": "Communication",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie de storytelling de marque",
+    "content": "Développez une narrative de marque puissante pour un produit durable. Structurez : histoire fondatrice, personnages identifiants, conflit central (problème client), résolution (votre solution) et appel à l'action. Déployez cette story sur tous les points de contact.",
+    "category": "Communication",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Gestion de communauté en ligne",
+    "content": "Établissez un plan complet de gestion de communauté pour une marque B2C. Définissez : charte de modération, calendrier d'engagement, programme d'ambassadeurs, réponse aux commentaires et crises potentielles. Mesurez la santé de la communauté.",
+    "category": "Communication",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Communication multiculturelle",
+    "content": "Concevez une stratégie de communication adaptée à un lancement de produit dans 5 pays différents. Analysez les spécificités culturelles, adaptez les messages, choisissez les canaux pertinents et formez les équipes locales aux nuances interculturelles.",
+    "category": "Communication",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Plan de communication de crise sanitaire",
+    "content": "Développez un protocole de communication pour une crise sanitaire dans l'industrie agroalimentaire. Prévoyez : transparence maximale, coordination avec les autorités, information en temps réel, prise en charge des personnes concernées et restauration de confiance.",
+    "category": "Communication",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Système de connaissance intégré",
+    "content": "Concevez une architecture de système de gestion des connaissances pour un éditeur logiciel. Structurez : taxonomie de contenu, workflow de création/review, intégration avec les produits, moteur de recherche sémantique, analytics d'usage et mécanismes de mise à jour automatisée basée sur les feedbacks utilisateurs.",
+    "category": "Documentation",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Documentation technique évolutive",
+    "content": "Établissez un cadre méthodologique pour maintenir synchronisée la documentation technique d'une API en évolution rapide. Implémentez : intégration CI/CD, génération automatisée à partir du code, versioning contextualisé, système de dépérissement contrôlé et indicateurs de complétude.",
+    "category": "Documentation",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Manuel d'utilisation produit",
+    "content": "Rédigez un manuel d'utilisation complet pour un appareil électronique grand public. Structurez : installation pas à pas, fonctionnalités détaillées, dépannage des problèmes courants, FAQ visuelle et conseils d'optimisation. Incluez des schémas annotés.",
+    "category": "Documentation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Procédures qualité ISO 9001",
+    "content": "Documentez le système de management de la qualité d'une entreprise manufacturière selon ISO 9001. Formalisez : processus clés, fiches de procédures, enregistrements obligatoires, indicateurs de performance et tableau de bord de suivi.",
+    "category": "Documentation",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Base de connaissances client",
+    "content": "Concevez une base de connaissances pour le support client d'un service SaaS. Structurez : articles de résolution de problèmes, tutoriels vidéo, FAQ interactive, communauté d'entraide et système de feedback pour l'amélioration continue.",
+    "category": "Documentation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Documentation de projet agile",
+    "content": "Établissez un cadre de documentation minimaliste pour des projets agiles. Définissez : user stories bien formulées, critères d'acceptation clairs, diagrammes d'architecture légers, décisions techniques clés et rétrospectives documentées.",
+    "category": "Documentation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Guide de conformité RGPD",
+    "content": "Rédigez un guide complet de conformité RGPD pour les employés. Couvrez : principes fondamentaux, traitement des données personnelles, droits des personnes, gestion des violations et procédures spécifiques par département.",
+    "category": "Documentation",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Documentation de processus métier",
+    "content": "Cartographiez et documentez 5 processus métier critiques d'une entreprise de services. Utilisez la notation BPMN, identifiez les responsabilités, les risques et les indicateurs de performance. Proposez des améliorations d'efficacité.",
+    "category": "Documentation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Système de documentation réglementaire",
+    "content": "Concevez un système de gestion documentaire pour un laboratoire pharmaceutique. Assurez : traçabilité des versions, contrôle d'accès, audit trail, intégration avec les systèmes qualité et conformité aux exigences FDA 21 CFR Part 11.",
+    "category": "Documentation",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Documentation utilisateur accessible",
+    "content": "Créez une documentation produit entièrement accessible (WCAG 2.1 AA) avec : alternatives textuelles, structure sémantique, navigation clavier, contrastes suffisants et version audio. Testez avec des utilisateurs en situation de handicap.",
+    "category": "Documentation",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie omnicanale intégrée",
+    "content": "Développez un plan marketing omnicanal sur 360° pour un lancement de produit grand public. Orchestrez : alignement des messages sur 7 canaux (dont retail, digital, influenceurs), parcours client personnalisé, technologie d'attribution, analyse ROI en temps réel et boucle d'optimisation continue avec tableau de bord unifié.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Optimisation du cycle de vie client",
+    "content": "Concevez un modèle d'engagement client basé sur les données pour une banque digitale. Segmenter les parcours par persona, automatiser les triggers comportementaux, personnaliser les offres en temps réel, mesurer la LTV et prévoir le risque d'attrition avec des actions préventives ciblées.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie de contenu B2B",
+    "content": "Élaborez une stratégie de contenu pour une entreprise SaaS B2B. Définissez : carte thématique, calendrier éditorial, formats adaptés (ebooks, webinaires, études de cas), distribution multi-canal et indicateurs d'engagement. Alignez le contenu sur le parcours d'achat.",
+    "category": "Marketing",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Campagne marketing viral",
+    "content": "Concevez une campagne marketing viral pour un nouveau jeu mobile. Créez : concept engageant, mécanique de partage intégrée, contenu généré par les utilisateurs, partenariats avec influenceurs micro et mesure de viralité.",
+    "category": "Marketing",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie SEO technique et contenu",
+    "content": "Développez un plan SEO complet pour un site e-commerce. Intégrez : audit technique, recherche de mots-clés stratégiques, optimisation on-page, stratégie de netlinking et création de contenu pilier. Prévoyez un calendrier de mise en œuvre sur 6 mois.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Marketing automation avancé",
+    "content": "Concevez un parcours d'automatisation marketing complexe pour un cycle de vente B2B long. Définissez : scoring de leads, triggers comportementaux, envois personnalisés, intégration CRM et parcours adaptatifs basés sur l'engagement.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie de marketing d'influence",
+    "content": "Élaborez un programme d'influenceurs pour une marque de cosmétiques. Sélectionnez des créateurs alignés avec les valeurs, négociez les contrats, créez des briefs créatifs, mesurez l'impact sur la notoriété et les ventes, et prévoyez un plan de crise.",
+    "category": "Marketing",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Relance marketing par email",
+    "content": "Concevez une série d'emails automatisés pour relancer les prospects froids. Structurez : séquence progressive, personnalisation dynamique, contenu à valeur ajoutée, timing optimal et tests A/B multivariés. Optimisez pour l'engagement et la conversion.",
+    "category": "Marketing",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Marketing expérientiel en magasin",
+    "content": "Créez une stratégie d'expérience client en magasin intégrant technologie et humain. Développez : parcours sensoriel, stations interactives, personnalisation en temps réel, formation des vendeurs et mesure d'impact sur la fidélisation.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Analyse de marché concurrentielle",
+    "content": "Réalisez une analyse concurrentielle approfondie pour un nouveau produit. Étudiez : positionnement des concurrents, avantages comparatifs, parts de marché, stratégies de prix et canaux de distribution. Synthétisez en recommandations stratégiques.",
+    "category": "Marketing",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  // ... (480 prompts supplémentaires suivant le même format)
+  {
+    "title": "Programme de formation en réalité virtuelle",
+    "content": "Concevez un programme de formation en réalité virtuelle pour la sécurité industrielle. Développez des simulations réalistes de situations dangereuses, des mécanismes de feedback immédiat et un système de suivi des compétences acquises.",
+    "category": "Éducation",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Stratégie de vente solutionnelle",
+    "content": "Formalisez une approche de vente solutionnelle pour des projets IT complexes. Développez une méthodologie d'analyse des besoins business, de construction de solution sur mesure et de démonstration de valeur tangible pour le client.",
+    "category": "Ventes",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Communication de crise sur les réseaux sociaux",
+    "content": "Établissez un protocole de réponse rapide aux crises sur les réseaux sociaux. Définissez les rôles, les processus d'approbation accélérée, les templates de réponse et les critères d'escalade pour différents types de crises.",
+    "category": "Communication",
+    "difficulty": "Intermédiaire",
+    "usageCount": 0
+  },
+  {
+    "title": "Documentation API développeur-friendly",
+    "content": "Créez une documentation d'API centrée sur l'expérience développeur avec : exemples de code dans 5 langages, sandbox interactif, tutoriels pas à pas et système de feedback intégré. Optimisez pour la découverte et la mise en œuvre rapide.",
+    "category": "Documentation",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  },
+  {
+    "title": "Campagne de lancement produit phare",
+    "content": "Concevez une campagne de lancement intégrée pour un nouveau smartphone premium. Développez une stratégie multicanal avec teasers, événement de lancement, partenariats stratégiques, programme early adopters et analyse en temps réel des performances.",
+    "category": "Marketing",
+    "difficulty": "Avancé",
+    "usageCount": 0
+  }
+]

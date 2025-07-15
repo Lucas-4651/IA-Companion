@@ -1,0 +1,748 @@
+<%- include('../partials/header', { title: ai.name }) %>
+<%- include('../partials/hamburgerMenu') %>
+
+<main class="page-container">
+  <section class="section">
+    <!-- Carte principale pour l'en-tête -->
+    <div class="card neon-border">
+      <div class="ai-header">
+        <div>
+          <h1><%= ai.name %></h1>
+          <span class="specialty-badge"><%= ai.specialty %></span>
+        </div>
+        <% if (isFavorite) { %>
+          <button class="favorite-btn active" data-ai-id="<%= ai.id %>">
+            <i class="fas fa-star"></i>
+          </button>
+        <% } else { %>
+          <button class="favorite-btn" data-ai-id="<%= ai.id %>">
+            <i class="far fa-star"></i>
+          </button>
+        <% } %>
+      </div>
+      
+      <div class="ai-rating">
+        <div class="stars">
+          <% for (let i = 1; i <= 5; i++) { %>
+            <% if (i <= Math.floor(averageRating)) { %>
+              <i class="fas fa-star"></i>
+            <% } else if (i - 0.5 <= averageRating) { %>
+              <i class="fas fa-star-half-alt"></i>
+            <% } else { %>
+              <i class="far fa-star"></i>
+            <% } %>
+          <% } %>
+        </div>
+        <span>(<%= ratingsCount %> avis)</span>
+      </div>
+    </div>
+    
+    <!-- Grille d'informations principales -->
+    <div class="card-grid">
+      <!-- Description -->
+      <div class="card neon-border">
+        <h2>Description</h2>
+        <p><%= ai.description %></p>
+      </div>
+      
+      <!-- Points forts -->
+      <div class="card neon-border">
+        <h2>Points forts</h2>
+        <ul class="strengths-list">
+          <% ai.strengths.split(',').forEach(strength => { %>
+            <li><%= strength.trim() %></li>
+          <% }); %>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Deuxième grille -->
+    <div class="card-grid">
+      <!-- Cas d'utilisation -->
+      <div class="card neon-border">
+        <h2>Cas d'utilisation</h2>
+        <ul class="use-cases-list">
+          <% ai.useCases.split(',').forEach(useCase => { %>
+            <li><%= useCase.trim() %></li>
+          <% }); %>
+        </ul>
+      </div>
+      
+      <!-- Site Web de l'IA -->
+      <div class="card neon-border">
+        <h2>Site Officiel</h2>
+        <div class="ai-website">
+          <% if (ai.website) { %>
+            <a href="<%= ai.website %>" target="_blank" class="website-link">
+              <i class="fas fa-external-link-alt"></i>
+              Visiter le site
+            </a>
+            <p class="website-url"><%= ai.website.replace(/^https?:\/\//, '') %></p>
+          <% } else { %>
+            <p>Aucun site web disponible</p>
+          <% } %>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Commentaires -->
+    <div class="card neon-border">
+      <h2>Commentaires et avis</h2>
+      
+      <% if (user) { %>
+        <div class="add-comment">
+          <h3>Ajouter un commentaire</h3>
+          <form id="comment-form">
+            <textarea 
+              placeholder="Partagez votre expérience avec cette IA..." 
+              required
+              class="neon-glow"
+            ></textarea>
+            <div class="rating-input">
+              <span>Note:</span>
+              <div class="stars">
+                <% for (let i = 1; i <= 5; i++) { %>
+                  <i class="far fa-star" data-rating="<%= i %>"></i>
+                <% } %>
+              </div>
+            </div>
+            <button type="submit" class="btn neon-btn">Publier</button>
+          </form>
+        </div>
+      <% } else { %>
+        <p class="login-prompt">
+          <a href="/login">Connectez-vous</a> pour ajouter un commentaire
+        </p>
+      <% } %>
+      
+      <div class="comments-list" id="comments-container">
+        <!-- Les commentaires seront chargés ici via AJAX -->
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include('../partials/footer') %>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const aiId = '<%= ai.id %>';
+    const userId = '<%= user ? user.id : "" %>';
+    const initialIsFavorite = <%= isFavorite ? 'true' : 'false' %>;
+    
+    // Système de notation
+    const ratingStars = document.querySelectorAll('.rating-input .stars i');
+    let selectedRating = 0;
+    
+    ratingStars.forEach(star => {
+      star.addEventListener('click', () => {
+        const rating = parseInt(star.getAttribute('data-rating'));
+        selectedRating = rating;
+        
+        ratingStars.forEach((s, i) => {
+          if (i < rating) {
+            s.classList.remove('far');
+            s.classList.add('fas');
+          } else {
+            s.classList.remove('fas');
+            s.classList.add('far');
+          }
+        });
+      });
+    });
+
+    // Gestion des favoris
+    const favoriteBtn = document.querySelector('.favorite-btn');
+    if (favoriteBtn) {
+      // Mettre à jour l'état initial
+      if (initialIsFavorite) {
+        favoriteBtn.classList.add('active');
+        const icon = favoriteBtn.querySelector('i');
+        icon.classList.replace('far', 'fas');
+      }
+      
+      favoriteBtn.addEventListener('click', async function() {
+        if (!userId) {
+          showToast('Connectez-vous pour ajouter aux favoris', 'warning');
+          return;
+        }
+        
+        try {
+          const response = await fetch('/favorites/toggle', {
+            method: 'POST',
+            headers: { 
+              'Content-Type': 'application/json' 
+            },
+            body: JSON.stringify({ aiId })
+          });
+
+          if (response.ok) {
+            const result = await response.json();
+            const icon = this.querySelector('i');
+            
+            if (result.isFavorite) {
+              this.classList.add('active');
+              icon.classList.replace('far', 'fas');
+              showToast('Ajouté aux favoris', 'success');
+            } else {
+              this.classList.remove('active');
+              icon.classList.replace('fas', 'far');
+              showToast('Retiré des favoris', 'info');
+            }
+          }
+        } catch (error) {
+          console.error('Erreur favori:', error);
+          showToast('Erreur lors de la mise à jour', 'danger');
+        }
+      });
+    }
+
+    // Soumission des commentaires
+    const commentForm = document.getElementById('comment-form');
+    if (commentForm) {
+      commentForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        if (!userId) {
+          showToast('Connectez-vous pour commenter', 'warning');
+          return;
+        }
+        
+        const textarea = commentForm.querySelector('textarea');
+        const content = textarea.value.trim();
+        
+        if (!content) {
+          showToast('Veuillez écrire un commentaire', 'warning');
+          return;
+        }
+        
+        if (selectedRating === 0) {
+          showToast('Veuillez attribuer une note', 'warning');
+          return;
+        }
+
+        try {
+          // Envoyer le commentaire
+          const commentResponse = await fetch('/comments/add', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ aiId, content })
+          });
+
+          // Envoyer la note
+          const ratingResponse = await fetch('/comments/rate', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ aiId, value: selectedRating })
+          });
+
+          if (commentResponse.ok && ratingResponse.ok) {
+            const newComment = await commentResponse.json();
+            const ratingData = await ratingResponse.json();
+            
+            // Réinitialiser le formulaire
+            textarea.value = '';
+            selectedRating = 0;
+            ratingStars.forEach(star => {
+              star.classList.remove('fas');
+              star.classList.add('far');
+            });
+            
+            // Mettre à jour l'interface
+            addCommentToDOM(newComment);
+            updateRatingDisplay(ratingData.averageRating, ratingData.ratingsCount);
+            showToast('Commentaire publié avec succès!', 'success');
+          } else {
+            const error = await commentResponse.json() || await ratingResponse.json();
+            throw new Error(error.message || 'Erreur lors de la publication');
+          }
+        } catch (error) {
+          console.error('Erreur:', error);
+          showToast(`Erreur: ${error.message}`, 'danger');
+        }
+      });
+    }
+
+    // Fonction pour charger les commentaires
+    async function loadComments() {
+      try {
+        const response = await fetch(`/comments/${aiId}`);
+        if (response.ok) {
+          const comments = await response.json();
+          renderComments(comments);
+        }
+      } catch (error) {
+        console.error('Erreur chargement commentaires:', error);
+      }
+    }
+
+    // Afficher les commentaires
+    function renderComments(comments) {
+      const container = document.getElementById('comments-container');
+      container.innerHTML = '';
+      
+      if (comments.length === 0) {
+        container.innerHTML = '<p class="text-center py-3">Aucun commentaire pour le moment</p>';
+        return;
+      }
+      
+      comments.forEach(comment => {
+        addCommentToDOM(comment);
+      });
+    }
+
+    // Ajouter un commentaire au DOM
+    function addCommentToDOM(comment) {
+      const container = document.getElementById('comments-container');
+      const commentEl = document.createElement('div');
+      commentEl.className = 'comment-item';
+      
+      // Formater la date
+      const date = new Date(comment.createdAt);
+      const formattedDate = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
+      
+      // Générer les étoiles
+      let starsHtml = '';
+      for (let i = 1; i <= 5; i++) {
+        starsHtml += `<i class="${i <= comment.rating ? 'fas' : 'far'} fa-star"></i>`;
+      }
+      
+      commentEl.innerHTML = `
+        <div class="comment-header">
+          <strong>${comment.User?.username || 'Utilisateur inconnu'}</strong>
+          <div class="stars">${starsHtml}</div>
+        </div>
+        <div class="comment-date">${formattedDate}</div>
+        <div class="comment-content">${comment.content}</div>
+      `;
+      
+      container.prepend(commentEl);
+    }
+
+    // Mettre à jour l'affichage des notes
+    function updateRatingDisplay(averageRating, ratingsCount) {
+      const starsContainer = document.querySelector('.ai-rating .stars');
+      starsContainer.innerHTML = '';
+      
+      for (let i = 1; i <= 5; i++) {
+        const star = document.createElement('i');
+        
+        if (i <= Math.floor(averageRating)) {
+          star.className = 'fas fa-star';
+        } else if (i - 0.5 <= averageRating) {
+          star.className = 'fas fa-star-half-alt';
+        } else {
+          star.className = 'far fa-star';
+        }
+        
+        starsContainer.appendChild(star);
+      }
+      
+      document.querySelector('.ai-rating span').textContent = `(${ratingsCount} avis)`;
+    }
+
+    // Fonction utilitaire pour les notifications
+    function showToast(message, type = 'info') {
+      // Créer le conteneur s'il n'existe pas
+      let toastContainer = document.getElementById('toast-container');
+      if (!toastContainer) {
+        toastContainer = document.createElement('div');
+        toastContainer.id = 'toast-container';
+        toastContainer.style.position = 'fixed';
+        toastContainer.style.top = '20px';
+        toastContainer.style.right = '20px';
+        toastContainer.style.zIndex = '9999';
+        document.body.appendChild(toastContainer);
+      }
+
+      // Créer le toast
+      const toast = document.createElement('div');
+      toast.className = `toast show align-items-center text-bg-${type}`;
+      toast.role = 'alert';
+
+      const body = document.createElement('div');
+      body.className = 'd-flex';
+
+      const toastBody = document.createElement('div');
+      toastBody.className = 'toast-body';
+      toastBody.textContent = message;
+
+      const closeBtn = document.createElement('button');
+      closeBtn.type = 'button';
+      closeBtn.className = 'btn-close me-2 m-auto';
+      closeBtn.dataset.bsDismiss = 'toast';
+      closeBtn.addEventListener('click', () => toast.remove());
+
+      body.appendChild(toastBody);
+      body.appendChild(closeBtn);
+      toast.appendChild(body);
+      toastContainer.appendChild(toast);
+
+      // Suppression automatique après 5s
+      setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 300);
+      }, 5000);
+    }
+
+    // Charger les commentaires au démarrage
+    loadComments();
+
+    // Animation d'apparition progressive
+    const cards = document.querySelectorAll('.card');
+    cards.forEach((card, i) => {
+      card.style.opacity = 0;
+      card.style.transform = 'translateY(20px)';
+      setTimeout(() => {
+        card.style.transition = `opacity 0.4s ${i*0.1}s, transform 0.4s ${i*0.1}s`;
+        card.style.opacity = 1;
+        card.style.transform = 'translateY(0)';
+      }, 100);
+    });
+  });
+</script>
+
+<style>
+  /* VARIABLES ET BASE */
+  :root {
+    --neon-primary: #00f3ff;
+    --neon-secondary: #00ccff;
+    --bg-dark: #0a0a1a;
+    --bg-darker: #0f172a;
+    --text-light: #e0e0ff;
+    --text-muted: #a0b3c0;
+    --card-bg: rgba(15, 23, 42, 0.8);
+  }
+  
+  body {
+    background: linear-gradient(135deg, var(--bg-dark), var(--bg-darker));
+    color: var(--text-light);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.5;
+  }
+  
+  .page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .card {
+    background: var(--card-bg);
+    border: 1px solid rgba(0, 243, 255, 0.2);
+    border-radius: 10px;
+    padding: 1.2rem;
+    backdrop-filter: blur(6px);
+    transition: all 0.3s ease;
+  }
+  
+  .neon-border {
+    box-shadow: 
+      0 0 8px rgba(0, 243, 255, 0.15), 
+      inset 0 0 6px rgba(0, 195, 255, 0.1);
+  }
+  
+  .neon-border:hover {
+    box-shadow: 
+      0 0 12px rgba(0, 243, 255, 0.25),
+      inset 0 0 8px rgba(0, 195, 255, 0.15);
+    transform: translateY(-4px);
+  }
+  
+  .neon-btn {
+    background: linear-gradient(90deg, #003d66, #0066cc);
+    color: #e0f7ff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .neon-btn:hover {
+    background: linear-gradient(90deg, #004d80, #0077e6);
+    box-shadow: 0 0 12px rgba(0, 195, 255, 0.4);
+    transform: translateY(-2px);
+  }
+  
+  .neon-glow {
+    box-shadow: 0 0 6px rgba(0, 195, 255, 0.3),
+                inset 0 0 3px rgba(0, 243, 255, 0.2);
+  }
+  
+  .neon-glow:focus {
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.5),
+                inset 0 0 5px rgba(0, 195, 255, 0.4);
+    border-color: #00f3ff;
+    outline: none;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    margin-bottom: 0.8rem;
+  }
+  
+  h1 {
+    font-size: 1.7rem;
+    color: var(--neon-primary);
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+    padding-bottom: 0.4rem;
+    position: relative;
+  }
+  
+  h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 35px;
+    height: 2px;
+    background: var(--neon-primary);
+    border-radius: 2px;
+  }
+  
+  h3 {
+    font-size: 1.1rem;
+  }
+  
+  p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+  
+  /* STRUCTURE DE LA PAGE */
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  
+  /* HEADER STYLES */
+  .ai-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+  
+  .ai-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  
+  .ai-rating .stars {
+    color: #ffcc00;
+    font-size: 0.9rem;
+  }
+  
+  .specialty-badge {
+    background: rgba(0, 150, 255, 0.15);
+    color: var(--neon-secondary);
+    padding: 0.25rem 0.7rem;
+    border-radius: 16px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: inline-block;
+  }
+  
+  .favorite-btn {
+    background: none;
+    border: none;
+    color: #cbd5e0;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .favorite-btn:hover, .favorite-btn.active {
+    color: #ffcc00;
+    transform: scale(1.1);
+  }
+  
+  /* LISTES */
+  .strengths-list, .use-cases-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .strengths-list li, .use-cases-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.85rem;
+  }
+  
+  .strengths-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--neon-primary);
+    font-weight: bold;
+  }
+  
+  .use-cases-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--neon-secondary);
+    font-size: 1.2rem;
+  }
+  
+  /* LIEN DU SITE WEB */
+  .ai-website {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 0.8rem 0;
+  }
+  
+  .website-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.8rem;
+    background: rgba(0, 80, 120, 0.2);
+    border-radius: 8px;
+    color: var(--text-light);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    width: fit-content;
+  }
+  
+  .website-link:hover {
+    background: rgba(0, 120, 180, 0.3);
+    transform: translateX(5px);
+  }
+  
+  .website-link i {
+    color: var(--neon-secondary);
+  }
+  
+  .website-url {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    word-break: break-all;
+  }
+  
+  /* SECTION COMMENTAIRES */
+  .add-comment textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 195, 255, 0.3);
+    background: rgba(10, 15, 30, 0.6);
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    min-height: 100px;
+    resize: vertical;
+    font-size: 0.85rem;
+  }
+  
+  .rating-input {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .rating-input .stars {
+    cursor: pointer;
+    color: #cbd5e0;
+    font-size: 1.2rem;
+  }
+  
+  .rating-input .stars i:hover,
+  .rating-input .stars i.active {
+    color: #ffcc00;
+  }
+  
+  .login-prompt {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .login-prompt a {
+    color: var(--neon-primary);
+    text-decoration: none;
+  }
+  
+  .login-prompt a:hover {
+    text-decoration: underline;
+  }
+  
+  .comments-list {
+    margin-top: 1.5rem;
+  }
+  /* Ajoutez ceci dans la section <style> */
+  .comment-item {
+    background: rgba(20, 30, 50, 0.4);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 3px solid var(--neon-primary);
+  }
+
+  .comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .comment-header .stars {
+    color: #ffcc00;
+    font-size: 0.9rem;
+  }
+
+  .comment-date {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .comment-content {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  /* RESPONSIVE */
+  @media (min-width: 768px) {
+    .card-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    h1 {
+      font-size: 1.9rem;
+    }
+    
+    h2 {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .section {
+      gap: 1.5rem;
+    }
+    
+    .card-grid {
+      gap: 1.5rem;
+    }
+  }
+</style>

@@ -1,0 +1,96 @@
+<%- include('../partials/header', { title: 'Mes favoris' }) %>
+<%- include('../partials/hamburgerMenu') %>
+
+<main class="page-container">
+  <section class="section">
+    <div class="card neon-border">
+      <h1 class="neon-text">Mes IA favorites</h1>
+      
+      <% if (favorites.length > 0) { %>
+        <div class="card-grid">
+          <% favorites.forEach(favorite => { %>
+            <div class="card favorite-card neon-border">
+              <div class="favorite-header">
+                <h3><%= favorite.AI.name %></h3>
+                <span class="specialty-badge"><%= favorite.AI.specialty %></span>
+              </div>
+              <p><%= favorite.AI.description.substring(0, 100) %>...</p>
+              <div class="actions">
+                <a href="/ai/<%= favorite.AI.id %>" class="btn neon-btn">Voir détails</a>
+                <button class="btn neon-btn remove-favorite" data-ai-id="<%= favorite.AI.id %>">
+                  <i class="fas fa-trash"></i> Supprimer
+                </button>
+              </div>
+            </div>
+          <% }); %>
+        </div>
+      <% } else { %>
+        <div class="empty-state">
+          <i class="far fa-star fa-3x neon-text"></i>
+          <h3>Aucun favori pour le moment</h3>
+          <p>Commencez à explorer les IA et ajoutez vos préférées ici</p>
+          <a href="/ai" class="btn neon-btn">Explorer les IA</a>
+        </div>
+      <% } %>
+    </div>
+  </section>
+</main>
+
+<%- include('../partials/footer') %>
+
+<style>
+  .favorite-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .favorite-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+  
+  .specialty-badge {
+    background: rgba(0, 150, 255, 0.15);
+    color: var(--neon-secondary);
+    padding: 0.25rem 0.7rem;
+    border-radius: 16px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: 1rem;
+    gap: 0.8rem;
+  }
+  
+  .actions .btn {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .empty-state {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .empty-state i {
+    margin-bottom: 1rem;
+    display: block;
+  }
+  
+  .empty-state h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .empty-state p {
+    margin-bottom: 1.5rem;
+    color: var(--text-muted);
+  }
+</style>

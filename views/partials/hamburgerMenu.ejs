@@ -1,0 +1,156 @@
+<div class="mobile-menu">
+  <div class="menu-overlay"></div>
+  
+  <div class="menu-content">
+    <button class="close-btn">&times;</button>
+    
+    <ul>
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/ai">Catalogue IA</a></li>
+      <li><a href="/prompts">Générateur de prompts</a></li>
+      <li><a href="/tips">Astuces & Conseils</a></li>
+      <% if (user) { %>
+        <li><a href="/user/dashboard">Mon compte</a></li>
+        <li><a href="/user/favorites">Mes favoris</a></li>
+        <li><a href="/auth/logout">Déconnexion</a></li>
+      <% } else { %>
+        <li><a href="/auth/login">Connexion</a></li>
+        <li><a href="/auth/register">Inscription</a></li>
+      <% } %>
+      <% if (user && user.isAdmin) { %>
+        <li><a href="/admin/dashboard">Admin</a></li>
+      <% } %>
+    </ul>
+  </div>
+</div>
+
+<style>
+  /* STYLE MENU MOBILE UNIQUEMENT */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: none;
+  }
+  
+  .mobile-menu.active {
+    display: block;
+  }
+  
+  .menu-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+  }
+  
+  .menu-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 85%;
+    max-width: 300px;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.98);
+    padding: 2rem 1.5rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    border-radius: 12px 0 0 12px;
+  }
+  
+  .mobile-menu.active .menu-content {
+    transform: translateX(0);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    color: #f1f5f9;
+    font-size: 1.8rem;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  .close-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .menu-content ul {
+    list-style: none;
+    margin-top: 2rem;
+  }
+  
+  .menu-content li {
+    margin-bottom: 1rem;
+  }
+  
+  .menu-content a {
+    color: #f1f5f9;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: block;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-content a:hover {
+    color: #06b6d4;
+    background: rgba(6, 182, 212, 0.1);
+  }
+</style>
+
+<script>
+  // Gestion du menu mobile
+  document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerBtn = document.querySelector('.hamburger-btn');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const closeBtn = document.querySelector('.close-btn');
+    
+    if (hamburgerBtn) {
+      hamburgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    }
+    
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    }
+    
+    // Fermer en cliquant sur le fond
+    const overlay = document.querySelector('.menu-overlay');
+    if (overlay) {
+      overlay.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    }
+    
+    // Fermer en cliquant sur un lien
+    const menuLinks = document.querySelectorAll('.menu-content a');
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    });
+  });
+</script>

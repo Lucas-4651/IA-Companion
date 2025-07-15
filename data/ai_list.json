@@ -1,0 +1,434 @@
+[
+  {
+    "name": "ChatGPT",
+    "description": "Modèle de langage avancé (GPT-4 Turbo) développé par OpenAI pour des interactions conversationnelles complexes, la génération de texte contextuel et la compréhension sémantique approfondie.",
+    "specialty": "Traitement du Langage Naturel (NLP), Génération de contenu créatif, Résolution de problèmes complexes",
+    "strengths": "Compréhension contextuelle multi-tours, Multilingue (100+ langues), Génération de code dans 30+ langages, Personnalisation via GPTs",
+    "useCases": "Service client automatisé, Rédaction technique/créative, Tutoriels interactifs, Analyse de données textuelles, Recherche documentaire",
+    "website": "https://chat.openai.com",
+    "isFeatured": true
+  },
+  {
+    "name": "DeepSeek",
+    "description": "Modèle open-source haute performance spécialisé dans la génération de code et l'assistance technique, avec une transparence algorithmique et une optimisation pour les développeurs.",
+    "specialty": "Génération de code (Python/JS/C++), Debugging intelligent, Documentation technique automatisée",
+    "strengths": "Support communautaire actif, Précision algorithmique, Faible latence, Intégration CI/CD",
+    "useCases": "Développement logiciel assisté, Traduction technique, Recherche en informatique, Optimisation de code legacy",
+    "website": "https://www.deepseek.com",
+    "isFeatured": false
+  },
+  {
+    "name": "Gemini",
+    "description": "IA multimodale nouvelle génération de Google DeepMind intégrant texte, image et son, optimisée pour l'écosystème Google Workspace et la recherche avancée.",
+    "specialty": "Analyse multimodale (texte-image-vidéo), Extraction de connaissances, Synthèse cross-canal",
+    "strengths": "Accès temps réel au web, Conformité RGPD, Intégration Gmail/Docs/Sheets, Chiffrement de bout en bout",
+    "useCases": "Analyse de documents structurés, Création de contenu cross-media, Business Intelligence, Veille stratégique automatisée",
+    "website": "https://gemini.google.com",
+    "isFeatured": true
+  },
+  {
+    "name": "GitHub Copilot",
+    "description": "Assistant de programmation pair basé sur OpenAI, fournissant des suggestions contextuelles en temps réel directement dans l'environnement de développement (IDE).",
+    "specialty": "Complétion de code intelligent, Refactoring automatisé, Génération de tests unitaires",
+    "strengths": "Support 15+ langages, Apprentissage des patterns projet, Intégration VS Code/JetBrains, Optimisation pour DevOps",
+    "useCases": "Développement web full-stack, Scripting infrastructure, Documentation technique, Migration de codebase",
+    "website": "https://github.com/features/copilot",
+    "isFeatured": true
+  },
+  {
+    "name": "Claude",
+    "description": "Modèle conversationnel sécurisé par Anthropic avec architecture Constitutional AI, conçu pour l'éthique et la précision dans les applications sensibles.",
+    "specialty": "Sécurité des données, Raisonnement déductif, Analyse juridique/compliance",
+    "strengths": "Gestion de contextes longs (200K tokens), Filtrage de contenu, API enterprise-grade, Audit trail",
+    "useCases": "Support réglementaire, Analyse contractuelle, Recherche médicale, Gestion de connaissances internes",
+    "website": "https://www.anthropic.com/claude",
+    "isFeatured": false
+  },
+  {
+    "name": "Bing Chat",
+    "description": "Assistant conversationnel de Microsoft intégré au moteur de recherche Bing, combinant génération textuelle et accès à l'actualité en temps réel.",
+    "specialty": "Recherche web dynamique, Veille compétitive, Analyse d'actualités",
+    "strengths": "Sources vérifiées, Génération d'images via DALL·E, Export PDF/Word, Historique conversationnel cloud",
+    "useCases": "Veille sectorielle, Résumés d'actualités, Enquêtes préliminaires, Synthèses concurrentielles",
+    "website": "https://www.bing.com/chat",
+    "isFeatured": false
+  },
+  {
+    "name": "Perplexity",
+    "description": "Moteur de réponse basé sur l'IA avec citation systématique des sources, optimisé pour la recherche académique et technique.",
+    "specialty": "Vérification factuelle, Recherche documentaire, Agrégation de sources multiples",
+    "strengths": "Base de données académique (Crossref, PubMed), Mode focus sans distraction, Alertes personnalisées",
+    "useCases": "Révision littéraire, Validation scientifique, Enquêtes journalistiques, Analyse comparative de sources",
+    "website": "https://www.perplexity.ai",
+    "isFeatured": false
+  },
+  {
+    "name": "Jasper",
+    "description": "Plateforme spécialisée dans la création de contenu marketing généré par IA avec optimisation pour le storytelling de marque.",
+    "specialty": "Content marketing, Stratégie de marque, Copywriting persuasif",
+    "strengths": "Charte éditoriale personnalisable, Analyse de tonalité, Intégration CMS (WordPress/HubSpot), SEO intégré",
+    "useCases": "Campagnes publicitaires cross-canal, Articles de blog optimisés, Scripts vidéo marketing, Newsletters segmentées",
+    "website": "https://www.jasper.ai",
+    "isFeatured": false
+  },
+  {
+    "name": "Copy.ai",
+    "description": "Outil de génération de contenu publicitaire piloté par IA pour campagnes performantes et créatives.",
+    "specialty": "Publicité digitale, Accroches percutantes, A/B testing automatisé",
+    "strengths": "Bibliothèque de templates, Analyse de performance prédictive, Intégration Google Ads/Meta Ads",
+    "useCases": "Génération de slogans, Descriptions produits e-commerce, Campagnes social media, Landing pages convertissantes",
+    "website": "https://www.copy.ai",
+    "isFeatured": false
+  },
+  {
+    "name": "Writesonic",
+    "description": "Solution IA pour la création de contenu optimisé SEO et l'automatisation des workflows éditoriaux.",
+    "specialty": "SEO technique, Génération de contenu long-form, Audit de positionnement",
+    "strengths": "Optimisation mots-clés LSI, Intégration Google Search Console, Analyse de concurrence sémantique",
+    "useCases": "Articles de fond SEO, Fiches produits optimisées, Stratégie de contenu, Migration SEO",
+    "website": "https://writesonic.com",
+    "isFeatured": false
+  },
+  {
+    "name": "Rytr",
+    "description": "Assistant d'écriture IA léger pour la production rapide de contenu e-commerce et éditorial.",
+    "specialty": "Contenu e-commerce, Product description, Micro-copy",
+    "strengths": "Interface minimaliste, +30 templates sectoriels, Export direct vers Shopify/WooCommerce",
+    "useCases": "Fiches produits marketplace, Catégories e-commerce, Posts réseaux sociaux, Descriptions d'applications",
+    "website": "https://rytr.me",
+    "isFeatured": false
+  },
+  {
+    "name": "Peppertype.ai",
+    "description": "Plateforme collaborative de création de contenu marketing pour équipes avec gestion de workflow.",
+    "specialty": "Marketing d'équipe, Workflows collaboratifs, Uniformisation de marque",
+    "strengths": "Espace de travail partagé, Calendrier éditorial, Approbations en cascade, Analyse d'engagement",
+    "useCases": "Création de campagnes team-based, Social media planning, Contenu omnicanal, Briefs créatifs automatisés",
+    "website": "https://www.peppertype.ai",
+    "isFeatured": false
+  },
+  {
+    "name": "LongShot",
+    "description": "Générateur IA de contenu long-form avec fact-checking intégré et optimisation sémantique.",
+    "specialty": "Contenu expert vérifié, Structuration thématique, SEO approfondi",
+    "strengths": "Base de données factuelles, Cartographie sémantique, Génération de schémas explicatifs",
+    "useCases": "Livres blancs, Études de cas, Guides sectoriels, Documentation technique",
+    "website": "https://longshot.ai",
+    "isFeatured": false
+  },
+  {
+    "name": "Anyword",
+    "description": "IA prédictive spécialisée dans la génération de copywriting publicitaire basé sur l'analyse de performance.",
+    "specialty": "Copywriting data-driven, Scoring de performance, Personnalisation d'audience",
+    "strengths": "Modèles prédictifs, Intégration analytics, Segmentation avancée",
+    "useCases": "Campagnes programmatiques, Ads personnalisés, Email marketing segmenté, Pages de vente adaptatives",
+    "website": "https://anyword.com",
+    "isFeatured": false
+  },
+  {
+    "name": "TextCortex",
+    "description": "Suite d'outils de réécriture et de reformulation intelligente pour améliorer clarté et impact des textes.",
+    "specialty": "Paraphrase intelligente, Amélioration stylistique, Adaptation de tonalité",
+    "strengths": "Mode académique/commercial/créatif, Extension Chrome, Intégration Office 365/Google Workspace",
+    "useCases": "Reformulation de documents, Correction stylistique, Adaptation multilingue, Synthèse de rapports",
+    "website": "https://textcortex.com",
+    "isFeatured": false
+  },
+  {
+    "name": "ShortlyAI",
+    "description": "Générateur narratif IA pour structures complexes et storytelling immersif.",
+    "specialty": "Architecture narrative, Développement scénaristique, Création d'univers cohérents",
+    "strengths": "Générateur de personnages, Cartographie d'intrigues, Assistance à la continuité",
+    "useCases": "Écriture romanesque, Scénarios cinéma/série, Jeux narratifs, Brand storytelling",
+    "website": "https://shortlyai.com",
+    "isFeatured": false
+  },
+  {
+    "name": "AI21 Studio",
+    "description": "Plateforme de développement pour modèles de langage personnalisés avec contrôle granulaire des paramètres de sortie.",
+    "specialty": "Fine-tuning LLM, Contrôle stylistique, Déploiement d'applications NLP",
+    "strengths": "Modèles spécialisés (Jurassic), Configuration de température/top-p, Dashboard analytique",
+    "useCases": "Chatbots spécialisés, Analyse de sentiment sectoriel, Génération de contenu contrôlé, Classification avancée",
+    "website": "https://studio.ai21.com",
+    "isFeatured": false
+  },
+  {
+    "name": "Cohere",
+    "description": "API d'embedding sémantique et classification contextuelle pour applications NLP d'entreprise.",
+    "specialty": "Embeddings vectoriels, Classification contextuelle, Recherche sémantique",
+    "strengths": "Précision RAG (Retrieval-Augmented), Support multilingue, Inférence optimisée GPU",
+    "useCases": "Recherche sémantique, Modération de contenu, Analyse de feedback clients, Knowledge base dynamique",
+    "website": "https://cohere.ai",
+    "isFeatured": false
+  },
+  {
+    "name": "Mistral",
+    "description": "Modèles LLM open-source optimisés pour l'efficacité opérationnelle et le déploiement léger.",
+    "specialty": "LLM pour edge computing, Optimisation ressource, Intégration embarquée",
+    "strengths": "Faible empreinte mémoire, Inférence rapide, Modèles quantifiés",
+    "useCases": "Chatbots on-device, Applications IoT, Solutions locales, Prototypage économique",
+    "website": "https://mistral.ai",
+    "isFeatured": false
+  },
+  {
+    "name": "Falcon",
+    "description": "LLM open-source haute performance développé par le Technology Innovation Institute.",
+    "specialty": "Benchmarks LLM, Entraînement distribué, Recherche en IA fondamentale",
+    "strengths": "Top LMSys Leaderboard, Architecture efficiente, Support multi-GPU",
+    "useCases": "Recherche académique, Expérimentation LLM, Pré-entraînement personnalisé, Chatbots open-source",
+    "website": "https://falcon.ai",
+    "isFeatured": false
+  },
+  {
+    "name": "LLaMA",
+    "description": "Famille de modèles langagiers open-source par Meta AI pour la recherche et l'expérimentation.",
+    "specialty": "Recherche LLM, Expérimentation académique, Fine-tuning accessible",
+    "strengths": "Variantes 7B à 70B paramètres, Licence recherche, Compatibilité Hugging Face",
+    "useCases": "Recherche universitaire, Prototypage économique, Éducation en IA, Customisation locale",
+    "website": "https://ai.meta.com/llama",
+    "isFeatured": false
+  },
+  {
+    "name": "PaLM",
+    "description": "Architecture LLM scalable de Google optimisée pour le raisonnement complexe et les tâches multilingues.",
+    "specialty": "Raisonnement chaîné, Génération multilingue, Tâches complexes multi-étapes",
+    "strengths": "Capacités mathématiques, Traduction contextuelle, API Google Cloud Vertex AI",
+    "useCases": "Systèmes tutoriels intelligents, Traduction spécialisée, Analyse financière, Recherche interdisciplinaire",
+    "website": "https://developers.google.com/palm",
+    "isFeatured": false
+  },
+  {
+    "name": "Claude 3 Opus",
+    "description": "Version premium du modèle Claude par Anthropic avec capacités de raisonnement avancé pour tâches complexes.",
+    "specialty": "Raisonnement déductif, Traitement de documents complexes, Analyse stratégique",
+    "strengths": "Capacités multimodales, Traitement de PDF/PPTX, Vision intégrée, Précision dans les tâches complexes",
+    "useCases": "Analyse financière, Recherche scientifique approfondie, Études de marché complexes, Synthèse de rapports techniques",
+    "website": "https://www.anthropic.com/claude",
+    "isFeatured": false
+  },
+  {
+    "name": "Amazon Bedrock",
+    "description": "Service managé AWS pour déployer des modèles fondationnels (Anthropic, Stability AI, etc.) avec gouvernance cloud.",
+    "specialty": "Orchestration de modèles fondationnels, Sécurité cloud, MLOps enterprise",
+    "strengths": "Console unifiée, Chiffrement AWS KMS, Scaling automatique, Audit complet",
+    "useCases": "Architectures multi-LLM, Applications IA sécurisées, Prototypage industriel, Solutions conformes HIPAA/SOC2",
+    "website": "https://aws.amazon.com/bedrock",
+    "isFeatured": false
+  },
+  {
+    "name": "IBM Watson Assistant",
+    "description": "Plateforme conversationnelle d'entreprise avec intégration profonde aux systèmes legacy et gestion de parcours utilisateur.",
+    "specialty": "Solutions d'entreprise, Intégration mainframe, Orchestration de workflows",
+    "strengths": "Connecteurs SAP/Oracle, Analyse conversationnelle avancée, Module de fallback humain",
+    "useCases": "Centres de contact automatisés, Support technique hiérarchisé, Onboarding client, FAQ dynamique",
+    "website": "https://www.ibm.com/cloud/watson-assistant",
+    "isFeatured": false
+  },
+  {
+    "name": "Rasa",
+    "description": "Framework open-source pour développer des assistants conversationnels avec contrôle total sur le NLU et la logique métier.",
+    "specialty": "Customisation NLU, Développement conversationnel, Intégration backend",
+    "strengths": "Open-source (Apache 2.0), SDK Python, Connecteurs personnalisables, Tests automatisés",
+    "useCases": "Assistants métier sur mesure, Chatbots spécialisés, Automatisation de processus, Solutions on-premise",
+    "website": "https://rasa.com",
+    "isFeatured": false
+  },
+  {
+    "name": "Botpress",
+    "description": "Plateforme open-source de développement de chatbots avec interface visuelle et gestion de flux conversationnels.",
+    "specialty": "Chatbots visuels, Automatisation de dialogues, Déploiement multicanal",
+    "strengths": "Studio drag-and-drop, Module NLP intégré, Analytics temps réel, Connecteurs WhatsApp/Teams/Slack",
+    "useCases": "Support multicanal, Qualification de leads, Sondages automatisés, Assistants RH",
+    "website": "https://botpress.com",
+    "isFeatured": false
+  },
+  {
+    "name": "H2O.ai",
+    "description": "Plateforme open-source d'AutoML pour la création automatisée de modèles prédictifs avec interprétabilité.",
+    "specialty": "Machine Learning automatisé, Feature engineering, Interprétabilité des modèles",
+    "strengths": "Driverless AI, Visualisation SHAP/LIME, Support GPU, Déploiement one-click",
+    "useCases": "Prédiction de churn, Scoring crédit, Maintenance prédictive, Prévision de ventes",
+    "website": "https://www.h2o.ai",
+    "isFeatured": false
+  },
+  {
+    "name": "Hugging Face Inference",
+    "description": "API unifiée pour déployer des milliers de modèles NLP/vision open-source avec infrastructure managée.",
+    "specialty": "Inférence de modèles transformers, Déploiement serverless, Benchmarks intégrés",
+    "strengths": "Catalogue 200k+ modèles, Endpoints scalables, Optimisation ONNX/TensorRT, Monitoring intégré",
+    "useCases": "Prototypage rapide, Comparaison de modèles, Applications NLP à la demande, Solutions serverless",
+    "website": "https://huggingface.co/inference-api",
+    "isFeatured": false
+  },
+  {
+    "name": "OpenAI DALL-E",
+    "description": "Système de génération d'images photoréalistes et artistiques à partir de descriptions textuelles avancées.",
+    "specialty": "Synthèse d'images créatives, Génération de variations, Édition inpainting/outpainting",
+    "strengths": "Rendu 1024px, Styles multiples (photographique/illustration), Cohérence sémantique, API robuste",
+    "useCases": "Conception graphique, Storyboards, Publicité visuelle, Prototypage design",
+    "website": "https://labs.openai.com",
+    "isFeatured": true
+  },
+  {
+    "name": "Midjourney",
+    "description": "Générateur d'images artistiques via Discord avec optimisation esthétique pour l'art numérique et le concept design.",
+    "specialty": "Art génératif, Styles artistiques, Design conceptuel",
+    "strengths": "Communauté créative, Paramètres stylistiques avancés (--v6), Upscaling natif",
+    "useCases": "Illustrations de livres, Moodboards, Design de personnages, Environnements immersifs",
+    "website": "https://midjourney.com",
+    "isFeatured": false
+  },
+  {
+    "name": "Stable Diffusion",
+    "description": "Modèle open-source de génération d'images haute résolution avec contrôle granulaire via prompts avancés.",
+    "specialty": "Génération locale, Customisation via LoRA, Contrôle par depth/pose",
+    "strengths": "Extensions Auto1111, Training personnalisé, Intégration Blender/Photoshop",
+    "useCases": "Création d'assets jeux vidéo, Publicité programmatique, Art génératif, Prototypage industriel",
+    "website": "https://stability.ai",
+    "isFeatured": false
+  },
+  {
+    "name": "Runway ML",
+    "description": "Suite créative pour production vidéo IA avec outils professionnels de montage et effets visuels génératifs.",
+    "specialty": "Vidéo générative, Effets visuels AI, Post-production",
+    "strengths": "Green screen AI, Motion tracking, Génération à partir de texte/image, Collaboration temps réel",
+    "useCases": "Court-métrages, Publicités dynamiques, Design motion, Contenu social animé",
+    "website": "https://runwayml.com",
+    "isFeatured": false
+  },
+  {
+    "name": "Lumen5",
+    "description": "Plateforme de création vidéo automatisée transformant articles ou scripts en contenus vidéo optimisés.",
+    "specialty": "Vidéo marketing, Automatisation de production, Social media video",
+    "strengths": "Banque de médias intégrée, Synchronisation audio-auto, Templates sectoriels, Export HD",
+    "useCases": "Vidéos explicatives, Résumés d'articles, Contenu LinkedIn/TikTok, Présentations animées",
+    "website": "https://lumen5.com",
+    "isFeatured": false
+  },
+  {
+    "name": "Synthesia",
+    "description": "Solution de création de vidéos avec présentateurs IA personnalisables et voix synthétiques naturelles.",
+    "specialty": "Vidéos avec avatars, Localisation multilingue, Présentations automatisées",
+    "strengths": "120+ avatars réalistes, 65+ langues, Studio en ligne, Intégration API",
+    "useCases": "Formations d'entreprise, Tutoriels produits, Messages CEO virtuels, Onboarding multilingue",
+    "website": "https://www.synthesia.io",
+    "isFeatured": false
+  },
+  {
+    "name": "Descript",
+    "description": "Suite audio/vidéo tout-en-un avec transcription, montage basé texte et synthèse vocale avancée.",
+    "specialty": "Podcasting, Post-production, Voice cloning éthique",
+    "strengths": "Éditeur multitrack, Correction vocale, Overdub (voix personnelle), Collaboration cloud",
+    "useCases": "Production podcast, Doublage vidéo, Transcription synchronisée, Création de voiceovers",
+    "website": "https://www.descript.com",
+    "isFeatured": false
+  },
+  {
+    "name": "Murf.ai",
+    "description": "Studio de voix off IA avec bibliothèque de voix naturelles et contrôle prosodique avancé.",
+    "specialty": "Synthèse vocale, Narration professionnelle, Voice branding",
+    "strengths": "120+ voix 20 langues, Éditeur d'intonation, Synchronisation vidéo, API développeurs",
+    "useCases": "Audiobooks, Tutoriels e-learning, Publicités audio, Voiceovers corporate",
+    "website": "https://murf.ai",
+    "isFeatured": false
+  },
+  {
+    "name": "ElevenLabs",
+    "description": "Technologie de pointe en synthèse vocale et clonage de voix avec contrôle émotionnel granulaire.",
+    "specialty": "Voice cloning haute fidélité, Expressivité vocale, Solutions studio",
+    "strengths": "Clonage voix en 1 minute, Modulation émotionnelle, Modèle multilingual, SDK Python",
+    "useCases": "Doublage de films, Jeux vidéo, Podcasts personnalisés, Solutions d'accessibilité",
+    "website": "https://elevenlabs.io",
+    "isFeatured": false
+  },
+  {
+    "name": "Pictory",
+    "description": "Outil de transformation automatique de contenus textuels en vidéos sociales avec sous-titres dynamiques.",
+    "specialty": "Repurposing de contenu, Vidéos courtes, Automatisation sociale",
+    "strengths": "Extraction de highlights, Bibliothèque B-roll, Voix off intégrée, Export pour réseaux sociaux",
+    "useCases": "Recyclage de blogs, Teasers vidéo, Newsletters visuelles, Résumés événementiels",
+    "website": "https://pictory.ai",
+    "isFeatured": false
+  },
+  {
+    "name": "Quickchat AI",
+    "description": "Plateforme de chatbots multilingues pour automatisation du service client avec personnalisation avancée.",
+    "specialty": "Service client automatisé, Qualification multicanal, Personnalisation conversationnelle",
+    "strengths": "16 langues natives, Connecteurs Zendesk/Salesforce, Scénarios conditionnels, Analyse de satisfaction",
+    "useCases": "Support 24/7, Pré-qualification de leads, FAQ dynamique, Rappels automatisés",
+    "website": "https://quickchat.ai",
+    "isFeatured": false
+  },
+  {
+    "name": "Replika",
+    "description": "Compagnon conversationnel émotionnel avec apprentissage adaptatif pour le bien-être psychologique.",
+    "specialty": "Companion AI, Écoute active, Coaching émotionnel",
+    "strengths": "Mémoire conversationnelle, Journal d'humeur, Modules thérapeutiques, Personnalité évolutive",
+    "useCases": "Soutien émotionnel, Développement personnel, Pratique linguistique, Lutte contre l'isolement",
+    "website": "https://replika.ai",
+    "isFeatured": false
+  },
+  {
+    "name": "Woebot",
+    "description": "Assistant thérapeutique fondé sur les principes TCC (Thérapie Cognitivo-Comportementale) validé cliniquement.",
+    "specialty": "Santé mentale numérique, Interventions TCC, Suivi d'humeur",
+    "strengths": "Protocoles certifiés, Journal émotionnel, Alertes crise, Conformité HIPAA",
+    "useCases": "Gestion du stress, Réduction de l'anxiété, Amélioration du sommeil, Support dépressif léger",
+    "website": "https://woebot.io",
+    "isFeatured": false
+  },
+  {
+    "name": "ChatSonic",
+    "description": "Alternative à ChatGPT avec accès web temps réel, génération d'images et capacités vocales intégrées.",
+    "specialty": "Recherche actualisée, Multimodalité, Création rapide",
+    "strengths": "Intégration Google Search, Génération d'images, Mode vocal, Extension Chrome",
+    "useCases": "Veille concurrentielle, Création de contenu multimédia, Brainstorming visuel, Présentations rapides",
+    "website": "https://writesonic.com/chatsonic",
+    "isFeatured": false
+  },
+  {
+    "name": "Scite.ai",
+    "description": "Assistant de recherche scientifique avec analyse des citations et vérification de la fiabilité des sources.",
+    "specialty": "Métrique de citations, Analyse de controverses, Vérification de sources",
+    "strengths": "Base de données de 1B+ citations, Rapports de fiabilité, Alertes de rétractation, Visualisations de réseaux",
+    "useCases": "Revue par les pairs, Détection de biais, Évaluation d'impact, Cartographie de controverses scientifiques",
+    "website": "https://scite.ai",
+    "isFeatured": false
+  },
+  {
+    "name": "Elicit",
+    "description": "Robot de recherche académique automatisant la synthèse littéraire et l'extraction de données structurées.",
+    "specialty": "Revue systématique, Extraction de données, Cartographie de connaissances",
+    "strengths": "Analyse de 180M+ articles, Tableaux de synthèse, Détection de gaps, Export Zotero/RIS",
+    "useCases": "Méta-analyses, Études bibliométriques, Synthèses pour thèses, Veille scientifique automatisée",
+    "website": "https://elicit.org",
+    "isFeatured": false
+  },
+  {
+    "name": "Consensus",
+    "description": "Moteur de réponses basé sur des preuves scientifiques et l'analyse de consensus dans la littérature.",
+    "specialty": "Preuves scientifiques, Analyse de consensus, Recherche factuelle",
+    "strengths": "Sources peer-reviewed, Scores de confiance, Résumés vulgarisés, Filtres méthodologiques",
+    "useCases": "Prise de décision médicale, Recherche basée sur preuves, Vérification de faits, Enseignement supérieur",
+    "website": "https://consensus.app",
+    "isFeatured": false
+  },
+  {
+    "name": "Kuki AI",
+    "description": "Chatbot conversationnel divertissant avec personnalité adaptative et capacités de jeu interactif.",
+    "specialty": "Divertissement interactif, Jeux conversationnels, RP social",
+    "strengths": "Mémoire contextuelle, Humour adaptatif, Compétences ludiques (trivia/énigmes), Profil évolutif",
+    "useCases": "Compagnon virtuel, Jeux textuels, Apprentissage ludique, Expériences RP",
+    "website": "https://www.kuki.ai",
+    "isFeatured": false
+  },
+  {
+    "name": "Tidio AI",
+    "description": "Solution complète de live-chat et chatbots pour e-commerce avec automation des parcours clients.",
+    "specialty": "Conversions e-commerce, Abandon de panier, Service client unifié",
+    "strengths": "Triggers comportementaux, Intégration Shopify/WooCommerce, Scoring de leads, Rapports ROI",
+    "useCases": "Récupération panier abandonné, Recommandations produits, Support pré-vente, Feedback post-achat",
+    "website": "https://www.tidio.com",
+    "isFeatured": false
+  }
+]

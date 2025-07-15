@@ -1,0 +1,89 @@
+<%- include('partials/header', { 
+  title: 'Gestion des Catégories',
+  currentPage: 'categories'
+}) %>
+
+<div class="admin-main">
+  <div class="d-flex justify-content-between mb-4">
+    <h1>Gestion des Catégories de Prompts</h1>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addCategoryModal">
+      <i class="fas fa-plus"></i> Ajouter une catégorie
+    </button>
+  </div>
+
+  <div class="admin-card">
+    <div class="admin-card-header">
+      Liste des catégories (Total: <%= categories.length %>)
+    </div>
+    <div class="admin-card-body">
+      <div class="row">
+        <% categories.forEach(category => { %>
+          <div class="col-md-3 mb-3">
+            <div class="category-card">
+              <div class="category-name"><%= category %></div>
+              <div class="category-actions">
+                <button class="btn btn-sm btn-danger delete-category" data-category="<%= category %>">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        <% }); %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal pour ajouter une catégorie -->
+<div class="modal fade" id="addCategoryModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Ajouter une nouvelle catégorie</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form id="addCategoryForm">
+          <div class="mb-3">
+            <label class="form-label">Nom de la catégorie</label>
+            <input type="text" class="form-control" name="category" required>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+        <button type="submit" class="btn btn-primary" form="addCategoryForm">Ajouter</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Gestion de l'ajout de catégorie
+  document.getElementById('addCategoryForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const category = formData.get('category');
+    
+    try {
+      const response = await fetch('/admin/categories/add', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ category })
+      });
+      
+      if (response.ok) {
+        location.reload();
+      } else {
+        alert('Erreur lors de l\'ajout de la catégorie');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('Erreur serveur');
+    }
+  });
+</script>
+
+<%- include('partials/footer') %>

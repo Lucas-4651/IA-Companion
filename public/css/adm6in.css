@@ -1,0 +1,110 @@
+.admin-container {
+  padding: 1.5rem 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  padding: 1.2rem;
+}
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.2rem;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.stat-content h2 {
+  font-size: 1.7rem;
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+.stat-content p {
+  color: var(--gray);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.recent-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.8rem;
+}
+
+@media (max-width: 900px) {
+  .recent-section {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  font-size: 0.9rem;
+}
+
+th, td {
+  padding: 0.85rem;
+  text-align: left;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+th {
+  background-color: var(--light);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.btn-sm {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.85rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-sm:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-sm.danger {
+  background-color: var(--danger);
+  padding: 0.4rem 0.8rem;
+}
+
+.btn-sm.danger:hover {
+  background-color: #ef4444;
+}
