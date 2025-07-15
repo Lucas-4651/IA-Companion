@@ -5,14 +5,16 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const sequelize = require('./config/database');
 const path = require('path');
 
+
+
+const app = express();
+const port = process.env.PORT || 3000;
+
 const isProduction = process.env.NODE_ENV === 'production';
 
 if (isProduction) {
   app.set('trust proxy', 1); 
 }
-
-const app = express();
-const port = process.env.PORT || 3000;
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));
