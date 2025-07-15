@@ -5,6 +5,12 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const sequelize = require('./config/database');
 const path = require('path');
 
+const isProduction = process.env.NODE_ENV === 'production';
+
+if (isProduction) {
+  app.set('trust proxy', 1); 
+}
+
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -21,7 +27,7 @@ app.use(session({
   store: new SequelizeStore({ db: sequelize }),
   resave: false,
   saveUninitialized: false,
-  cookie: { secure: false, maxAge: 24 * 60 * 60 * 1000 }
+  cookie: { secure: true, maxAge: 24 * 60 * 60 * 1000 }
 }));
 
 // Pass user data to all views
