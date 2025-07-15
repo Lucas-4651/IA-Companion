@@ -21,7 +21,7 @@ app.use(session({
   store: new SequelizeStore({ db: sequelize }),
   resave: false,
   saveUninitialized: false,
-  cookie: { secure: true, maxAge: 24 * 60 * 60 * 1000 }
+  cookie: { secure: false, maxAge: 24 * 60 * 60 * 1000 }
 }));
 
 // Pass user data to all views
