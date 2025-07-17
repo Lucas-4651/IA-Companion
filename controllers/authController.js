@@ -78,6 +78,7 @@ exports.adminLoginForm = (req, res) => {
 
 exports.adminLogin = async (req, res) => {
   const { email, password } = req.body;
+  console.log('Login form:', req.body); // 🔍 Ajoute ceci
   
   try {
     const user = await User.findOne({ where: { email } });
@@ -85,12 +86,11 @@ exports.adminLogin = async (req, res) => {
     if (!user || !(await user.validPassword(password))) {
       return res.redirect('/auth/admin/login?error=invalid');
     }
-    
-    // Vérifier que l'utilisateur est admin
+
     if (!user.isAdmin) {
       return res.redirect('/auth/admin/login?error=notadmin');
     }
-    
+
     req.session.user = {
       id: user.id,
       username: user.username,

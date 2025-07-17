@@ -3,6 +3,9 @@ const express = require('express');
 const session = require('express-session');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const sequelize = require('./config/database');
+sequelize.authenticate()
+  .then(() => console.log('✅ Connexion PostgreSQL OK'))
+  .catch(err => console.error('❌ Connexion PostgreSQL échouée :', err));
 const path = require('path');
 
 
@@ -29,7 +32,7 @@ app.use(session({
   store: new SequelizeStore({ db: sequelize }),
   resave: false,
   saveUninitialized: false,
-  cookie: { secure: true, maxAge: 24 * 60 * 60 * 1000 }
+  cookie: { secure:false, maxAge: 24 * 60 * 60 * 1000 }
 }));
 
 // Pass user data to all views
@@ -40,6 +43,8 @@ app.use((req, res, next) => {
 });
 
 // Routes
+app.use('/api/prompt-favorites', require('./routes/promptFavorite'));
+
 app.use('/', require('./routes/index'));
 app.use('/auth', require('./routes/authRoutes'));
 app.use('/user', require('./routes/userRoutes'));
@@ -71,6 +76,8 @@ sequelize.sync({ force: false }).then(async () => {
   } catch (error) {
     console.error('Error creating admin:', error);
   }
+
+console.log('OPENROUTER_KEY chargée :', process.env.OPENROUTER_KEY ? 'OK' : 'MANQUANTE');
 
   app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);

@@ -1,414 +1,280 @@
-<%- include('../partials/header', { title: 'Générateur de prompts' }) %>
+<%- include('../partials/header', { title: 'Prompt Pro-Max' }) %>
 <%- include('../partials/hamburgerMenu') %>
 
 <main class="page-container">
-  <section class="section">
-    <div class="card neon-border">
-      <h1 class="neon-text">Générateur de prompts IA</h1>
-      
-      <div class="prompt-generator">
-        <form id="prompt-form" class="card neon-border">
-          <div class="form-group">
-            <label for="category" class="neon-text">Sélectionnez une catégorie</label>
-            <select id="category" required class="form-input neon-glow">
-              <option value="">Toutes les catégories</option>
-              <% categories.forEach(category => { %>
-                <option value="<%= category %>"><%= category %></option>
-              <% }); %>
-            </select>
-          </div>
-          
-          <button type="submit" class="btn neon-btn">✨ Afficher les prompts</button>
-        </form>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Générateur de Prompts <span class="badge">KIMI K2</span></h1>
+    <p>Remplis → Génère → Copie. Fini.</p>
 
-        <div class="result card neon-border" id="prompt-result">
-          <h3>Prompts de la catégorie : <span id="selected-category">Toutes</span></h3>
-          <div class="card-grid" id="prompts-container">
-            <!-- Les prompts seront affichés ici -->
-          </div>
+    <!-- TOGGLE CYBER & GLASS -->
+    <div class="toggles">
+      <button id="themeToggle"  title="Thème clair / sombre">🌙</button>
+      <button id="cyberToggle"  title="Mode néon">⚡</button>
+      <button id="glassToggle"  title="Effet glass on / off">🪟</button>
+    </div>
+
+    <!-- MODE D'EMPLOI -->
+    <details class="howto">
+      <summary><i class="fas fa-question-circle"></i> Mode d'emploi rapide</summary>
+      <ol>
+        <li>Remplis les champs requis</li>
+        <li>Choisis ton ton et format</li>
+        <li><kbd>Ctrl</kbd>+<kbd>Enter</kbd> ou clique sur "Générer"</li>
+      </ol>
+    </details>
+  </section>
+
+  <!-- FORMULAIRE -->
+  <section class="glass card" id="builder">
+    <form id="promptForm">
+      <div class="input-group">
+        <label for="role">Rôle</label>
+        <input id="role" name="role" type="text" placeholder="Expert SEO junior spécialisé santé" required>
+      </div>
+
+      <div class="input-group">
+        <label for="task">Tâche</label>
+        <textarea id="task" name="task" rows="3" placeholder="Résumer ce texte en 3 bullets" required></textarea>
+      </div>
+
+      <div class="row">
+        <div class="input-group">
+          <label for="tone">Ton</label>
+          <select id="tone" name="tone" required>
+            <option value="" disabled selected>Choisir</option>
+            <% ['professionnel','amical','humoristique','académique','divertissant','corporate','consultant','pitch-deck','storytelling','poétique','cinématographique','stand-up','code-doc','debug','hackerman','grand-frère','coach','best-friend','speedrun','npc-tutorial'].forEach(t => { %>
+              <option value="<%= t %>"><%= t %></option>
+            <% }) %>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="format">Format</label>
+          <select id="format" name="format" required>
+            <option value="" disabled selected>Choisir</option>
+            <% ['markdown','bullet points','thread Twitter','pdf','script vidéo','email','landing page','tweet unique','carrousel LinkedIn','post Instagram','post Facebook','post LinkedIn','article blog','newsletter','documentation','README','slide pitch','script TikTok','script Reels','script YouTube Shorts','script Short-Form'].forEach(f => { %>
+              <option value="<%= f %>"><%= f %></option>
+            <% }) %>
+          </select>
         </div>
       </div>
-    </div>
 
-    <!-- 🔥 Section des prompts populaires -->
-    <div class="card neon-border">
-      <h2 class="neon-text">Prompts populaires</h2>
-      <div class="card-grid">
-        <% popularPrompts.forEach(prompt => { %>
-          <div class="card prompt-card neon-border">
-            <h3><%= prompt.title %></h3>
-            <p class="meta">
-              <span class="category"><%= prompt.category %></span> • 
-              <span class="difficulty"><%= prompt.difficulty %></span>
-            </p>
-            <div class="prompt-content">
-              <p><%= prompt.content %></p>
-            </div>
-            <div class="prompt-footer">
-              <span class="usage">Utilisé <%= prompt.usageCount %> fois</span>
-              <button class="btn neon-btn copy-prompt" data-prompt="<%= prompt.content %>">
-                <i class="fas fa-copy"></i> Copier
-              </button>
-            </div>
-          </div>
-        <% }); %>
+      <div class="input-group">
+        <label for="constraints">Contraintes / mots-clés</label>
+        <input id="constraints" name="constraints" type="text" placeholder="800 mots, inclure 'insuline'">
       </div>
+
+      <div class="actions">
+        <button type="button" class="btn primary" id="generateBtn">Générer</button>
+        <button type="button" class="btn secondary" id="perfectBtn">Perfectionner</button>
+        <button type="button" class="btn ghost" id="randomBtn">Inspire-moi</button>
+      </div>
+    </form>
+
+    <!-- BARRE DE PROGRÈS -->
+    <div class="progress-bar hidden" id="progressBar">
+      <div id="progressFill"></div>
     </div>
   </section>
+
+  <!-- RÉSULTAT -->
+  <section id="result" class="glass card hidden">
+    <h2>Prompt final</h2>
+    <pre id="final-prompt"></pre>
+    <div class="result-actions">
+      <button class="btn ghost copy-btn"><i class="fas fa-copy"></i> Copier</button>
+      <button class="btn ghost" id="favBtn"><i class="fas fa-heart"></i> Favori</button>
+      <a class="btn ghost" id="tweetBtn" target="_blank"><i class="fab fa-twitter"></i> Tweeter</a>
+      <button class="btn ghost" id="downloadBtn"><i class="fas fa-download"></i> PDF</button>
+    </div>
+  </section>
+
+  <!-- PRÉVISUALISATION LIVE -->
+  <section class="glass card hidden" id="previewBox">
+    <h3>Aperçu en temps réel</h3>
+    <pre id="livePreview"></pre>
+  </section>
+
+  <!-- HISTORIQUE + RECHERCHE -->
+  <details class="glass card" id="history">
+    <summary>Historique <small id="stats"></small></summary>
+    <input type="search" id="searchHistory" placeholder="Chercher…" class="input-group">
+    <div id="history-cards"></div>
+  </details>
+
+  <!-- FAVORIS -->
+  <details class="glass card" id="favorites">
+    <summary>Favoris</summary>
+    <div id="fav-cards"></div>
+  </details>
 </main>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // ⚙️ Copie du prompt
-    document.body.addEventListener('click', function(e) {
-      if (e.target.closest('.copy-prompt')) {
-        const button = e.target.closest('.copy-prompt');
-        const prompt = button.dataset.prompt;
-        
-        navigator.clipboard.writeText(prompt)
-          .then(() => {
-            const icon = button.querySelector('i');
-            icon.className = 'fas fa-check';
-            button.innerHTML = '<i class="fas fa-check"></i> Copié!';
-            
-            setTimeout(() => {
-              button.innerHTML = '<i class="fas fa-copy"></i> Copier';
-            }, 2000);
-          })
-          .catch(err => {
-            console.error('Erreur de copie :', err);
-          });
-      }
-    });
-    
-    // Gestion du formulaire
-    const promptForm = document.getElementById('prompt-form');
-    const promptsContainer = document.getElementById('prompts-container');
-    const selectedCategory = document.getElementById('selected-category');
-    
-    // Charger les prompts au démarrage
-    loadPrompts('');
-    
-    promptForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const category = document.getElementById('category').value;
-      loadPrompts(category);
-    });
-    
-    function loadPrompts(category) {
-      // Mettre à jour le titre
-      selectedCategory.textContent = category || 'Toutes';
-      
-      // Filtrer les prompts populaires par catégorie
-      const filteredPrompts = category 
-        ? popularPrompts.filter(p => p.category === category)
-        : popularPrompts;
-      
-      // Afficher les prompts
-      promptsContainer.innerHTML = '';
-      
-      if (filteredPrompts.length === 0) {
-        promptsContainer.innerHTML = `
-          <div class="no-results">
-            <p>Aucun prompt trouvé pour cette catégorie</p>
-          </div>
-        `;
-        return;
-      }
-      
-      filteredPrompts.forEach(prompt => {
-        const promptCard = document.createElement('div');
-        promptCard.className = 'card prompt-card neon-border';
-        promptCard.innerHTML = `
-          <h3>${prompt.title}</h3>
-          <p class="meta">
-            <span class="category">${prompt.category}</span> • 
-            <span class="difficulty">${prompt.difficulty}</span>
-          </p>
-          <div class="prompt-content">
-            <p>${prompt.content}</p>
-          </div>
-          <div class="prompt-footer">
-            <span class="usage">Utilisé ${prompt.usageCount} fois</span>
-            <button class="btn neon-btn copy-prompt" data-prompt="${prompt.content}">
-              <i class="fas fa-copy"></i> Copier
-            </button>
-          </div>
-        `;
-        promptsContainer.appendChild(promptCard);
-      });
-    }
-    
-    // Animation d'apparition progressive
-    const cards = document.querySelectorAll('.card');
-    cards.forEach((card, i) => {
-      card.style.opacity = 0;
-      card.style.transform = 'translateY(20px)';
-      setTimeout(() => {
-        card.style.transition = `opacity 0.4s ${i*0.1}s, transform 0.4s ${i*0.1}s`;
-        card.style.opacity = 1;
-        card.style.transform = 'translateY(0)';
-      }, 100);
-    });
-  });
-  
-  // Variable globale pour stocker les prompts populaires
-  const popularPrompts = [
-    <% popularPrompts.forEach(prompt => { %>
-      {
-        title: `<%= prompt.title %>`,
-        category: `<%= prompt.category %>`,
-        difficulty: `<%= prompt.difficulty %>`,
-        content: `<%= prompt.content %>`,
-        usageCount: <%= prompt.usageCount %>
-      },
-    <% }); %>
-  ];
-</script>
+<!-- CONFETTI -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
 <style>
-  /* VARIABLES ET BASE */
-  :root {
-    --neon-primary: #00f3ff;
-    --neon-secondary: #00ccff;
-    --bg-dark: #0a0a1a;
-    --bg-darker: #0f172a;
-    --text-light: #e0e0ff;
-    --text-muted: #a0b3c0;
-    --card-bg: rgba(15, 23, 42, 0.8);
-  }
-  
-  body {
-    background: linear-gradient(135deg, var(--bg-dark), var(--bg-darker));
-    color: var(--text-light);
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    line-height: 1.5;
-  }
-  
-  .page-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
-  }
-  
-  .card {
-    background: var(--card-bg);
-    border: 1px solid rgba(0, 243, 255, 0.2);
-    border-radius: 10px;
-    padding: 1.2rem;
-    backdrop-filter: blur(6px);
-    transition: all 0.3s ease;
-  }
-  
-  .neon-border {
-    box-shadow: 
-      0 0 8px rgba(0, 243, 255, 0.15), 
-      inset 0 0 6px rgba(0, 195, 255, 0.1);
-  }
-  
-  .neon-border:hover {
-    box-shadow: 
-      0 0 12px rgba(0, 243, 255, 0.25),
-      inset 0 0 8px rgba(0, 195, 255, 0.15);
-    transform: translateY(-4px);
-  }
-  
-  .neon-text {
-    color: #e0f7ff;
-    text-shadow: 0 0 5px rgba(0, 195, 255, 0.5);
-  }
-  
-  .neon-btn {
-    background: linear-gradient(90deg, #003d66, #0066cc);
-    color: #e0f7ff;
-    border: none;
-    padding: 0.7rem 1.4rem;
-    border-radius: 8px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-shadow: 0 0 3px rgba(0, 195, 255, 0.7);
-    display: inline-block;
-    margin-top: 1rem;
-  }
-  
-  .neon-btn:hover {
-    background: linear-gradient(90deg, #004d80, #0077e6);
-    box-shadow: 0 0 12px rgba(0, 195, 255, 0.4);
-    transform: translateY(-2px);
-  }
-  
-  .neon-glow {
-    box-shadow: 0 0 6px rgba(0, 195, 255, 0.3),
-                inset 0 0 3px rgba(0, 243, 255, 0.2);
-  }
-  
-  .neon-glow:focus {
-    box-shadow: 0 0 10px rgba(0, 243, 255, 0.5),
-                inset 0 0 5px rgba(0, 195, 255, 0.4);
-    border-color: #00f3ff;
-    outline: none;
-  }
-  
-  h1, h2, h3 {
-    font-weight: 600;
-    letter-spacing: -0.015em;
-    margin-bottom: 1rem;
-  }
-  
-  h1 {
-    font-size: 1.8rem;
-  }
-  
-  h2 {
-    font-size: 1.4rem;
-    padding-bottom: 0.4rem;
-    position: relative;
-  }
-  
-  h2::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 40px;
-    height: 2px;
-    background: var(--neon-primary);
-    border-radius: 2px;
-  }
-  
-  h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.8rem;
-  }
-  
-  p {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    line-height: 1.6;
-  }
-  
-  /* STRUCTURE DE LA PAGE */
-  .section {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  
-  .card-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-    margin-top: 1rem;
-  }
-  
-  /* FORMULAIRES */
-  .prompt-generator {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  
-  .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-  
-  label {
-    font-size: 0.95rem;
-    font-weight: 500;
-  }
-  
-  .form-input {
-    width: 100%;
-    padding: 0.8rem;
-    border-radius: 8px;
-    border: 1px solid rgba(0, 195, 255, 0.3);
-    background: rgba(10, 15, 30, 0.6);
-    color: var(--text-light);
-    font-size: 0.9rem;
-  }
-  
-  .result {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  /* CARDS DE PROMPTS */
-  .prompt-card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    transition: all 0.3s ease;
-  }
-  
-  .prompt-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 100, 255, 0.2);
-  }
-  
-  .meta {
-    font-size: 0.85rem;
-    color: var(--neon-secondary);
-    margin-bottom: 0.8rem;
-    display: flex;
-    gap: 0.5rem;
-  }
-  
-  .category {
-    font-weight: 500;
-  }
-  
-  .difficulty {
-    font-style: italic;
-  }
-  
-  .prompt-content p {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    margin-bottom: 1.2rem;
-  }
-  
-  .prompt-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: auto;
-    padding-top: 0.8rem;
-    border-top: 1px solid rgba(0, 195, 255, 0.1);
-  }
-  
-  .usage {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-  }
-  
-  .no-results {
-    text-align: center;
-    padding: 2rem;
-    color: var(--text-muted);
-    font-size: 0.95rem;
-  }
-  
-  /* RESPONSIVE */
-  @media (min-width: 768px) {
-    .card-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    
-    #prompts-container .card-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    #prompts-container .card-grid,
-    .popular-prompts .card-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
+:root {
+  --bg: #0f172a;
+  --glass: rgba(255,255,255,.06);
+  --glass-hover: rgba(255,255,255,.1);
+  --accent: #06b6d4;
+  --text: #f8fafc;
+  --text-soft: #a0b3c0;
+  --radius: 12px;
+  --neon-cyan: #0ff;
+  --neon-pink: #f0f;
+}
+* { box-sizing: border-box; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; background:var(--bg); color:var(--text); line-height:1.5; transition:.3s; }
+.page-container { max-width:700px; margin:2rem auto; padding:0 1rem; }
+.hero { text-align:center; margin-bottom:2rem; }
+.toggles { margin:.5rem 0; }
+.toggles button { background:transparent; border:1px solid var(--accent); color:var(--accent); margin:0 .25rem; padding:.25rem .5rem; border-radius:var(--radius); cursor:pointer; transition:.3s; }
+.toggles button:hover { transform:scale(1.1); }
+.cyber {
+  --accent:var(--neon-cyan);
+  --bg:#000;
+  text-shadow:0 0 6px var(--neon-cyan), 0 0 12px var(--neon-pink);
+}
+.no-glass .glass { backdrop-filter:none; }
+.progress-bar { height:4px; background:var(--text-soft); border-radius:var(--radius); overflow:hidden; margin-top:1rem; }
+#progressFill { height:100%; background:var(--accent); width:0%; transition:width .3s; }
+.result-actions { display:flex; flex-wrap:wrap; gap:.5rem; margin-top:.5rem; }
+.hist-card, .fav-card { display:flex; justify-content:space-between; padding:.5rem; background:var(--glass); border-radius:var(--radius); margin-bottom:.25rem; }
+kbd { background:var(--glass); padding:.2em .4em; border-radius:3px; font-size:.85em; }
+.glass { background:var(--glass); border:1px solid rgba(255,255,255,.08); border-radius:var(--radius); padding:1.5rem; margin-bottom:1.5rem; backdrop-filter:blur(12px); transition:.3s; }
+.input-group label { color:var(--accent); font-size:.875rem; font-weight:600; }
+.input-group input,.input-group textarea,.input-group select { width:100%; padding:.75rem; border:1px solid rgba(255,255,255,.1); border-radius:var(--radius); background:rgba(255,255,255,.05); color:var(--text); font-size:1rem; }
+.row { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+@media(max-width:480px){ .row{grid-template-columns:1fr} }
+.actions { display:flex; gap:1rem; margin-top:1.5rem; flex-wrap:wrap; }
+.btn { flex:1 1 120px; padding:.75rem; border:none; border-radius:var(--radius); font-weight:700; cursor:pointer; transition:.3s; }
+.btn:hover:not(:disabled){ transform:translateY(-2px) scale(1.02); box-shadow:0 0 12px var(--accent); }
+.btn:disabled{ opacity:.5; cursor:not-allowed; }
+.primary { background:var(--accent); color:#000; }
+.secondary, .ghost { background:transparent; color:var(--accent); border:1px solid var(--accent); }
+.hidden { display:none; }
+pre { background:var(--glass); padding:1rem; border-radius:var(--radius); white-space:pre-wrap; font-size:.875rem; }
+.toast { position:fixed; top:1rem; right:1rem; background:var(--accent); color:#000; padding:.5rem .75rem; border-radius:var(--radius); font-size:.875rem; z-index:999; transform:translateX(110%); transition:transform .25s; }
+.toast.show { transform:translateX(0); }
 </style>
 
+<script>
+/* ---------- UTILS ---------- */
+function toast(msg){
+  const d=document.createElement('div'); d.className='toast'; d.textContent='✅ '+msg;
+  document.body.appendChild(d); requestAnimationFrame(()=>d.classList.add('show'));
+  setTimeout(()=>{d.classList.remove('show'); setTimeout(()=>d.remove(),250)},2000);
+}
+function save(key,data){ localStorage.setItem(key,JSON.stringify(data)); }
+function load(key){ return JSON.parse(localStorage.getItem(key)||'[]'); }
+
+/* ---------- THEME / GLASS / CYBER ---------- */
+const themeBtn=document.getElementById('themeToggle');
+const cyberBtn=document.getElementById('cyberToggle');
+const glassBtn=document.getElementById('glassToggle');
+themeBtn.onclick=()=>{ document.body.classList.toggle('light'); };
+cyberBtn.onclick=()=>{ document.body.classList.toggle('cyber'); };
+glassBtn.onclick=()=>{ document.body.classList.toggle('no-glass'); };
+
+/* ---------- BUILD PROMPT + LIVE PREVIEW ---------- */
+function buildPrompt(){
+  const data=new FormData(document.getElementById('promptForm'));
+  return Array.from(data.entries()).filter(([,v])=>v.trim())
+             .map(([k,v])=>`${k.charAt(0).toUpperCase()+k.slice(1)} : ${v}`).join('\n');
+}
+['role','task','tone','format','constraints'].forEach(id=>{
+  document.getElementById(id).addEventListener('input',()=>{
+    document.getElementById('livePreview').textContent=buildPrompt();
+    document.getElementById('previewBox').classList.remove('hidden');
+  });
+});
+
+/* ---------- RANDOM TEMPLATE ---------- */
+const templates={
+  'seo-blog':{role:'Rédacteur SEO senior',task:'Article de 800 mots optimisé Google',tone:'professionnel',format:'article blog'},
+  'tiktok':{role:'Créateur de contenu',task:'Script accrocheur TikTok',tone:'divertissant',format:'script TikTok'},
+  'code-doc':{role:'Dev senior',task:'Documenter une fonction',tone:'code-doc',format:'README'}
+};
+document.getElementById('randomBtn').onclick=()=>{
+  const keys=Object.keys(templates);
+  const t=templates[keys[Math.floor(Math.random()*keys.length)]];
+  Object.entries(t).forEach(([k,v])=>document.getElementById(k).value=v);
+  document.getElementById('livePreview').textContent=buildPrompt();
+};
+
+/* ---------- COPIE / FAVORIS / DOWNLOAD ---------- */
+document.addEventListener('click',e=>{
+  if(e.target.closest('.copy-btn')){
+    const txt=document.getElementById('final-prompt').textContent;
+    navigator.clipboard.writeText(txt).then(()=>{toast('Copié !'); confetti();});
+  }
+  if(e.target.closest('#favBtn')){
+    const favs=load('favs'); favs.push(document.getElementById('final-prompt').textContent);
+    save('favs',favs); toast('Ajouté aux favoris');
+  }
+  if(e.target.closest('#downloadBtn')){
+    const {jsPDF}=window; const doc=new jsPDF(); doc.text(document.getElementById('final-prompt').textContent,10,10);
+    doc.save('prompt.pdf');
+  }
+});
+
+/* ---------- HISTORIQUE + STATS ---------- */
+function renderHistory(filter=''){
+  const hist=load('history').filter(p=>p.toLowerCase().includes(filter));
+  const container=document.getElementById('history-cards');
+  container.innerHTML=hist.map(p=>`
+    <div class="hist-card">
+      <p>${p.slice(0,100)}...</p>
+      <button class="btn ghost copy-btn" data-text="${p}"><i class="fas fa-copy"></i></button>
+    </div>`).join('');
+  document.getElementById('stats').textContent=`– ${hist.length} prompts`;
+}
+document.getElementById('searchHistory').addEventListener('input',e=>renderHistory(e.target.value));
+function saveHistory(text){
+  const hist=[text,...load('history')].slice(0,50); save('history',hist); renderHistory();
+}
+renderHistory();
+
+/* ---------- API ---------- */
+async function sendToMini(prompt){
+  const btn=document.getElementById('generateBtn');
+  const bar=document.getElementById('progressBar');
+  const fill=document.getElementById('progressFill');
+  btn.disabled=true; btn.textContent='...';
+  bar.classList.remove('hidden');
+  let w=0; const int=setInterval(()=>{w+=5;fill.style.width=Math.min(w,90)+'%';},100);
+
+  try{
+    const res=await fetch('/prompts/mini',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        messages:[
+          {role:'system',content:'Tu es un prompt-engineur expert. Retourne UNIQUEMENT le prompt final.'},
+          {role:'user',content:prompt}
+        ]
+      })
+    });
+    const data=await res.json();
+    const output=data.choices?.[0]?.message?.content||'Erreur';
+    document.getElementById('final-prompt').textContent=output;
+    document.getElementById('result').classList.remove('hidden');
+    saveHistory(output);
+  }finally{
+    clearInterval(int); fill.style.width='100%';
+    setTimeout(()=>{bar.classList.add('hidden');fill.style.width='0';},300);
+    btn.disabled=false; btn.textContent='Générer';
+  }
+}
+document.getElementById('generateBtn').addEventListener('click',()=>sendToMini(buildPrompt()));
+document.getElementById('perfectBtn').addEventListener('click',()=>sendToMini(buildPrompt()+'\nPerfectionne encore.'));
+
+/* ---------- TWEET INTENT ---------- */
+document.getElementById('tweetBtn').href='https://twitter.com/intent/tweet?text='+encodeURIComponent('Mon prompt généré via IA-Companion → https://ia-companion.onrender.com');
+</script>
+
+<!-- jsPDF for download -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <%- include('../partials/footer') %>
