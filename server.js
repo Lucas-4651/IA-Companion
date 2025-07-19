@@ -1,4 +1,6 @@
 require('dotenv').config();
+const PORT = process.env.PORT || 3000;
+
 const express = require('express');
 const session = require('express-session');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -8,10 +10,16 @@ sequelize.authenticate()
   .catch(err => console.error('❌ Connexion PostgreSQL échouée :', err));
 const path = require('path');
 
-
-
 const app = express();
 const port = process.env.PORT || 3000;
+
+const http = require('http').createServer(app);
+const io   = require('socket.io')(http);
+io.on('connection', socket => {
+  socket.on('chat msg', data => io.emit('chat msg', data));
+});
+
+
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -79,9 +87,8 @@ sequelize.sync({ force: false }).then(async () => {
 
 console.log('OPENROUTER_KEY chargée :', process.env.OPENROUTER_KEY ? 'OK' : 'MANQUANTE');
 
-  app.listen(port, () => {
-    console.log(`Server running on http://localhost:${port}`);
-  });
+  http.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+
 }).catch(err => {
   console.error('Database sync error:', err);
 });

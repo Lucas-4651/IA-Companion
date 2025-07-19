@@ -5,12 +5,14 @@
   <section class="section">
     <div class="card neon-border">
       <h1 class="animate-fade-in">Catalogue des IA</h1>
-      
+
+      <div class="search-stats" id="search-stats"></div>
+
       <div class="search-section animate-fade-in">
         <input type="text" id="search-input" placeholder="Rechercher une IA..." class="form-input neon-glow">
         <button id="search-btn" class="btn neon-btn">🔍</button>
       </div>
-      
+
       <div class="filters animate-fade-in">
         <select id="specialty-filter" class="form-input neon-glow">
           <option value="">Toutes les spécialités</option>
@@ -18,32 +20,75 @@
             <option value="<%= specialty %>"><%= specialty %></option>
           <% }) %>
         </select>
+
+        <select id="sort-filter" class="form-input neon-glow">
+          <option value="name-asc">Nom A-Z</option>
+          <option value="name-desc">Nom Z-A</option>
+          <option value="newest">Plus récent</option>
+          <option value="popular">Populaire</option>
+        </select>
+
+        <div class="toggle-group">
+          <label class="toggle-switch">
+            <input type="checkbox" id="favorites-only">
+            <span class="slider"></span>
+            <span class="label">Favoris uniquement</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="view-controls">
+        <button class="view-btn active" data-view="grid" aria-label="Vue grille">⊞</button>
+        <button class="view-btn" data-view="list" aria-label="Vue liste">☰</button>
       </div>
     </div>
-    
+
     <div class="card neon-border">
       <h2 class="neon-text">IA Disponibles</h2>
+
       <div class="card-grid" id="ai-container">
-        <% ais.forEach(ai => { %>
-          <div class="card ai-card" data-name="<%= ai.name.toLowerCase() %>" data-specialty="<%= ai.specialty %>">
+        <% ais.forEach((ai, index) => { %>
+          <div
+            class="card ai-card"
+            data-name="<%= ai.name.toLowerCase() %>"
+            data-specialty="<%= ai.specialty %>"
+            data-date="<%= ai.createdAt %>"
+            data-popularity="<%= ai.popularity || 0 %>"
+            role="article"
+            aria-label="<%= ai.name %> - Spécialité <%= ai.specialty %>"
+            tabindex="0"
+            style="transition-delay: <%= index * 50 %>ms"
+          >
             <div class="ai-header">
               <h3><%= ai.name %></h3>
               <span class="specialty-badge"><%= ai.specialty %></span>
             </div>
+
             <p><%= ai.description.length > 90 ? ai.description.substring(0, 90) + '...' : ai.description %></p>
-            
+
             <div class="ai-footer">
               <a href="/ai/<%= ai.id %>" class="btn neon-btn">Détails</a>
               <% if (user) { %>
-                <button class="favorite-btn" data-ai-id="<%= ai.id %>">
-                  <i class="far fa-star"></i>
+                <button
+                  class="favorite-btn"
+                  data-ai-id="<%= ai.id %>"
+                  aria-label="Ajouter <%= ai.name %> aux favoris"
+                  aria-pressed="false"
+                >
+                  <i class="far fa-star" aria-hidden="true"></i>
                 </button>
               <% } %>
+            </div>
+
+            <!-- Prévisualisation au survol -->
+            <div class="ai-preview" aria-hidden="true">
+              <strong><%= ai.name %></strong>
+              <p><%= ai.description %></p>
             </div>
           </div>
         <% }) %>
       </div>
-      
+
       <div id="no-results" class="no-results-message" style="display: none;">
         <p>Aucune IA trouvée</p>
       </div>
@@ -54,236 +99,506 @@
 <%- include('../partials/footer') %>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const searchInput = document.getElementById('search-input');
-    const searchBtn = document.getElementById('search-btn');
-    const specialtyFilter = document.getElementById('specialty-filter');
-    const aiCards = document.querySelectorAll('.ai-card');
-    const noResultsMessage = document.getElementById('no-results');
+document.addEventListener('DOMContentLoaded', function () {
+  const searchInput = document.getElementById('search-input');
+  const searchBtn = document.getElementById('search-btn');
+  const specialtyFilter = document.getElementById('specialty-filter');
+  const sortFilter = document.getElementById('sort-filter');
+  const favoritesOnlyToggle = document.getElementById('favorites-only');
+  const viewBtns = document.querySelectorAll('.view-btn');
+  const aiContainer = document.getElementById('ai-container');
+  const aiCards = document.querySelectorAll('.ai-card');
+  const noResultsMessage = document.getElementById('no-results');
+  const searchStats = document.getElementById('search-stats');
 
-    // Fonction de recherche optimisée
-    function filterAIs() {
-      const searchTerm = searchInput.value.toLowerCase().trim();
-      const specialtyValue = specialtyFilter.value;
-      let visibleCount = 0;
-      const startTime = performance.now();
+  /* ---------- Outils ---------- */
+  function levenshteinDistance(a, b) {
+    if (a.length === 0) return b.length;
+    if (b.length === 0) return a.length;
 
-      aiCards.forEach(card => {
-        const aiName = card.getAttribute('data-name');
-        const aiSpecialty = card.getAttribute('data-specialty');
-        
-        const matchesSearch = searchTerm === '' || aiName.includes(searchTerm);
-        const matchesSpecialty = specialtyValue === '' || aiSpecialty === specialtyValue;
-        
-        if (matchesSearch && matchesSpecialty) {
-          card.style.display = 'flex';
-          visibleCount++;
-        } else {
-          card.style.display = 'none';
-        }
-      });
+    const matrix = Array.from({ length: b.length + 1 }, () =>
+      Array(a.length + 1).fill(null)
+    );
 
-      // Afficher le message si aucun résultat
-      noResultsMessage.style.display = visibleCount ? 'none' : 'block';
-      
-      // Log de performance
-      const duration = performance.now() - startTime;
-      console.log(`Filtrage effectué en ${duration.toFixed(2)}ms - ${visibleCount} résultats`);
+    for (let i = 0; i <= a.length; i++) matrix[0][i] = i;
+    for (let j = 0; j <= b.length; j++) matrix[j][0] = j;
+
+    for (let j = 1; j <= b.length; j++) {
+      for (let i = 1; i <= a.length; i++) {
+        const indicator = a[i - 1] === b[j - 1] ? 0 : 1;
+        matrix[j][i] = Math.min(
+          matrix[j][i - 1] + 1,
+          matrix[j - 1][i] + 1,
+          matrix[j - 1][i - 1] + indicator
+        );
+      }
     }
+    return matrix[b.length][a.length];
+  }
 
-    // Événements avec debounce pour fluidité
-    let searchTimeout;
-    searchInput.addEventListener('input', () => {
-      clearTimeout(searchTimeout);
-      searchTimeout = setTimeout(filterAIs, 200);
+  /* ---------- Filtres & Tri ---------- */
+  function filterAIs() {
+    const searchTerm = searchInput.value.toLowerCase().trim();
+    const specialtyValue = specialtyFilter.value;
+    const sortValue = sortFilter.value;
+    const favoritesOnly = favoritesOnlyToggle.checked;
+
+    let visibleCards = [];
+
+    aiCards.forEach((card) => {
+      const aiName = card.dataset.name;
+      const aiSpecialty = card.dataset.specialty;
+      const aiDesc = card.querySelector('p').textContent.toLowerCase();
+      const searchWords = searchTerm.split(/\s+/);
+
+      const matchesSearch = searchWords.every(
+        (word) =>
+          aiName.includes(word) ||
+          aiDesc.includes(word) ||
+          levenshteinDistance(aiName, word) <= 2
+      );
+      const matchesSpecialty = specialtyValue === '' || aiSpecialty === specialtyValue;
+      const matchesFavorite = !favoritesOnly || card.classList.contains('is-favorite');
+
+      if (matchesSearch && matchesSpecialty && matchesFavorite) {
+        card.style.display = 'flex';
+        visibleCards.push(card);
+      } else {
+        card.style.display = 'none';
+      }
     });
-    
-    searchBtn.addEventListener('click', filterAIs);
-    specialtyFilter.addEventListener('change', filterAIs);
-    
-    // Animation initiale progressive
-    const cards = document.querySelectorAll('.ai-card');
-    cards.forEach((card, i) => {
-      card.style.opacity = 0;
-      card.style.transform = 'translateY(20px)';
-      setTimeout(() => {
-        card.style.transition = `opacity 0.3s ${i*0.05}s, transform 0.3s ${i*0.05}s`;
-        card.style.opacity = 1;
-        card.style.transform = 'translateY(0)';
-      }, 100);
+
+    /* Tri */
+    visibleCards.sort((a, b) => {
+      switch (sortValue) {
+        case 'name-asc':
+          return a.dataset.name.localeCompare(b.dataset.name);
+        case 'name-desc':
+          return b.dataset.name.localeCompare(a.dataset.name);
+        case 'newest':
+          return new Date(b.dataset.date) - new Date(a.dataset.date);
+        case 'popular':
+          return parseInt(b.dataset.popularity) - parseInt(a.dataset.popularity);
+        default:
+          return 0;
+      }
     });
+
+    /* Ré-affichage dans l’ordre trié */
+    visibleCards.forEach((card) => aiContainer.appendChild(card));
+
+    /* Mise à jour stats */
+    const count = visibleCards.length;
+    searchStats.textContent = `${count} IA${count > 1 ? 's' : ''} trouvée${count > 1 ? 's' : ''}`;
+    noResultsMessage.style.display = count ? 'none' : 'block';
+  }
+
+  /* ---------- Evénements avec debounce ---------- */
+  let searchTimeout;
+  searchInput.addEventListener('input', () => {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(filterAIs, 200);
   });
+  searchBtn.addEventListener('click', filterAIs);
+  specialtyFilter.addEventListener('change', filterAIs);
+  sortFilter.addEventListener('change', filterAIs);
+  favoritesOnlyToggle.addEventListener('change', filterAIs);
+
+  /* ---------- Toggle Vue Grille / Liste ---------- */
+  viewBtns.forEach((btn) =>
+    btn.addEventListener('click', (e) => {
+      viewBtns.forEach((b) => b.classList.remove('active'));
+      e.target.classList.add('active');
+      aiContainer.className =
+        e.target.dataset.view === 'list' ? 'card-list' : 'card-grid';
+    })
+  );
+
+  /* ---------- Gestion des favoris ---------- */
+  document.addEventListener('click', (e) => {
+    if (e.target.closest('.favorite-btn')) {
+      const btn = e.target.closest('.favorite-btn');
+      const card = btn.closest('.ai-card');
+      const isFavorite = btn.getAttribute('aria-pressed') === 'true';
+
+      btn.setAttribute('aria-pressed', !isFavorite);
+      card.classList.toggle('is-favorite', !isFavorite);
+      btn.querySelector('i').className = isFavorite ? 'far fa-star' : 'fas fa-star';
+
+      /* Persist (ex : localStorage) */
+      const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+      const id = btn.dataset.aiId;
+      if (!isFavorite) {
+        favorites.push(id);
+      } else {
+        const idx = favorites.indexOf(id);
+        if (idx > -1) favorites.splice(idx, 1);
+      }
+      localStorage.setItem('favorites', JSON.stringify(favorites));
+    }
+  });
+
+  /* Restauration des favoris */
+  const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+  favorites.forEach((id) => {
+    const btn = document.querySelector(`.favorite-btn[data-ai-id="${id}"]`);
+    if (btn) {
+      btn.setAttribute('aria-pressed', 'true');
+      btn.closest('.ai-card').classList.add('is-favorite');
+      btn.querySelector('i').className = 'fas fa-star';
+    }
+  });
+
+  /* ---------- Animation d’entrée ---------- */
+  aiCards.forEach((card, i) => {
+    card.style.opacity = 0;
+    card.style.transform = 'translateY(20px)';
+    setTimeout(() => {
+      card.style.transition = `opacity 0.4s ease, transform 0.4s ease`;
+      card.style.opacity = 1;
+      card.style.transform = 'translateY(0)';
+    }, 100 + i * 50);
+  });
+});
 </script>
 
 <style>
-  /* STYLE OPTIMISÉ - PERFORMANCE ET COMPACITÉ */
-  :root {
-    --neon-primary: #00f3ff;
-    --neon-secondary: #00ccff;
-    --bg-dark: #0a0a1a;
-    --bg-darker: #0f172a;
-    --text-light: #e0e0ff;
-    --text-muted: #a0b3c0;
+/* ===== AJOUTER TOUT EN HAUT de <style> ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* ===== Variables ===== */
+:root {
+  --neon-primary: #00f3ff;
+  --neon-secondary: #00ccff;
+  --bg-dark: #0a0a1a;
+  --bg-darker: #0f172a;
+  --text-light: #e0e0ff;
+  --text-muted: #a0b3c0;
+}
+
+/* ===== Reset & base ===== */
+body {
+  background: linear-gradient(135deg, var(--bg-dark), var(--bg-darker));
+  color: var(--text-light);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* ===== REMPLACER la règle .page-container ===== */
+.page-container {
+  max-width: 100vw;           /* pas 1200px fixe sur mobile */
+  margin: 0 auto;
+  padding: 0.5rem;            /* réduit sur petits écrans */
+  overflow-x: hidden;         /* coupe les débords */
+}
+
+/* ===== Cartes ===== */
+.card {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(0, 243, 255, 0.2);
+  border-radius: 10px;
+  padding: 1.2rem;
+  backdrop-filter: blur(6px);
+  margin-bottom: 1.2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.neon-border {
+  box-shadow: 0 0 8px rgba(0, 243, 255, 0.15), inset 0 0 6px rgba(0, 195, 255, 0.1);
+}
+.neon-border:hover {
+  box-shadow: 0 0 12px rgba(0, 243, 255, 0.25), inset 0 0 8px rgba(0, 195, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.8rem;
+}
+h1 {
+  font-size: 1.7rem;
+}
+h2 {
+  font-size: 1.3rem;
+  padding-bottom: 0.4rem;
+}
+h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* ===== Recherche & filtres ===== */
+.search-section {
+  display: flex;
+  gap: 0.8rem;
+  margin: 1rem 0;
+}
+.form-input {
+  flex: 1;
+  padding: 0.65rem;
+  font-size: 0.85rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 243, 255, 0.3);
+  border-radius: 6px;
+  color: var(--text-light);
+  transition: box-shadow 0.2s;
+}
+.form-input:focus {
+  outline: none;
+  box-shadow: 0 0 6px var(--neon-primary);
+}
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+/* ===== Toggle switch ===== */
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.toggle-switch input {
+  display: none;
+}
+.slider {
+  width: 40px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  position: relative;
+  transition: 0.3s;
+}
+.slider::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background: var(--neon-primary);
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: 0.3s;
+}
+.toggle-switch input:checked + .slider {
+  background: rgba(0, 243, 255, 0.3);
+}
+.toggle-switch input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+/* ===== Boutons de vue ===== */
+.view-controls {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.view-btn {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 243, 255, 0.4);
+  color: var(--neon-primary);
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.view-btn.active {
+  background: rgba(0, 243, 255, 0.2);
+}
+
+/* ===== Grille / Liste ===== */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.card-list .ai-card {
+  flex-direction: row;
+  align-items: center;
+}
+.card-list .ai-header {
+  flex: 1;
+}
+.card-list .ai-footer {
+  margin-left: auto;
+}
+
+/* ===== Carte IA ===== */
+.ai-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+  border: 1px solid rgba(0, 195, 255, 0.15);
+  border-radius: 8px;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+.ai-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 100, 255, 0.15);
+}
+.ai-header {
+  margin-bottom: 0.6rem;
+}
+.specialty-badge {
+  background: rgba(0, 150, 255, 0.15);
+  color: var(--neon-secondary);
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  position: relative;
+  overflow: hidden;
+}
+.specialty-badge::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transform: rotate(45deg);
+  animation: shine 2s infinite;
+}
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) rotate(45deg);
   }
-  
-  body {
-    background: linear-gradient(135deg, var(--bg-dark), var(--bg-darker));
-    color: var(--text-light);
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    line-height: 1.5;
-    overflow-x: hidden;
+  100% {
+    transform: translateX(100%) rotate(45deg);
   }
-  
-  .page-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
+}
+.ai-footer {
+  margin-top: auto;
+  padding-top: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.neon-btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  background: linear-gradient(90deg, #003d66, #0066cc);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.neon-btn:hover {
+  box-shadow: 0 0 8px var(--neon-primary);
+}
+.favorite-btn {
+  background: none;
+  border: none;
+  color: var(--neon-primary);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.favorite-btn:hover {
+  transform: scale(1.2);
+}
+.ai-preview {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  right: 0;
+  background: rgba(0, 10, 20, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 1rem;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+.ai-card:hover .ai-preview {
+  top: 0;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Messages ===== */
+.no-results-message,
+.search-stats {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* ===== Animations ===== */
+.search-highlight {
+  animation: highlight 1s;
+}
+@keyframes highlight {
+  0% {
+    box-shadow: 0 0 0 rgba(0, 243, 255, 0);
   }
-  
-  .card {
-    background: rgba(15, 23, 42, 0.8);
-    border: 1px solid rgba(0, 243, 255, 0.2);
-    border-radius: 10px;
-    padding: 1.2rem;
-    backdrop-filter: blur(6px);
-    margin-bottom: 1.2rem;
-    transition: 
-      transform 0.3s ease,
-      box-shadow 0.3s ease;
+  50% {
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.5);
   }
-  
-  .neon-border {
-    box-shadow: 
-      0 0 8px rgba(0, 243, 255, 0.15), 
-      inset 0 0 6px rgba(0, 195, 255, 0.1);
+  100% {
+    box-shadow: 0 0 0 rgba(0, 243, 255, 0);
   }
-  
-  .neon-border:hover {
-    box-shadow: 
-      0 0 12px rgba(0, 243, 255, 0.25),
-      inset 0 0 8px rgba(0, 195, 255, 0.15);
-    transform: translateY(-4px);
-  }
-  
-  h1, h2, h3 {
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    margin-bottom: 0.8rem;
-  }
-  
-  h1 {
-    font-size: 1.7rem;
-  }
-  
-  h2 {
-    font-size: 1.3rem;
-    padding-bottom: 0.4rem;
-  }
-  
-  h2::after {
-    width: 35px;
-    height: 2px;
-    background: var(--neon-primary);
-  }
-  
-  h3 {
-    font-size: 1.05rem;
-    margin-bottom: 0.4rem;
-  }
-  
-  p {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    margin-bottom: 1rem;
-    line-height: 1.5;
-  }
-  
-  .search-section {
-    display: flex;
-    gap: 0.8rem;
-    margin: 1rem 0;
-  }
-  
-  .form-input {
-    flex: 1;
-    padding: 0.65rem;
-    font-size: 0.85rem;
-  }
-  
-  .specialty-badge {
-    background: rgba(0, 150, 255, 0.15);
-    color: var(--neon-secondary);
-    padding: 0.2rem 0.6rem;
-    font-size: 0.7rem;
-  }
-  
+}
+
+/* ===== Responsive ===== */
+/* ===== AJOUTER ces media-queries ===== */
+@media (max-width: 480px) {
+  .card,
   .ai-card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding: 1rem;
-    border: 1px solid rgba(0, 195, 255, 0.15);
-    transition: all 0.25s ease;
-    opacity: 0; /* Initial state for animation */
+    padding: 0.75rem;         /* moins de padding sur mobile */
+    margin-left: 0;
+    margin-right: 0;
   }
-  
-  .ai-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 100, 255, 0.15);
-  }
-  
-  .ai-header {
-    margin-bottom: 0.6rem;
-  }
-  
-  .ai-footer {
-    margin-top: auto;
-    padding-top: 0.8rem;
-  }
-  
-  .neon-btn {
-    padding: 0.5rem 1rem;
-    font-size: 0.85rem;
-    background: linear-gradient(90deg, #003d66, #0066cc);
-  }
-  
-  .favorite-btn {
-    font-size: 1rem;
-  }
-  
-  .no-results-message {
-    padding: 1rem;
-    font-size: 0.9rem;
-  }
-  
+}
+
+@media (min-width: 768px) {
   .card-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  /* Responsive */
-  @media (min-width: 768px) {
-    .card-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    
-    h1 {
-      font-size: 1.8rem;
-    }
+}
+@media (min-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
-  
-  @media (min-width: 1024px) {
-    .card-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-    
-    .card {
-      padding: 1rem;
-    }
-    
-    .ai-card {
-      padding: 0.9rem;
-    }
+}
+@media (hover: none) {
+  .ai-card:active {
+    transform: scale(0.98);
   }
+}
 </style>
+
+
+
+
+
+

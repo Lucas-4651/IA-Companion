@@ -9,6 +9,7 @@
     "sync": "node scripts/sync.js"
   },
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "bcryptjs": "^3.0.2",
     "connect-session-sequelize": "^7.1.5",
     "dotenv": "^16.6.1",
@@ -18,7 +19,9 @@
     "multer": "^2.0.1",
     "node-fetch": "^3.3.2",
     "pg": "^8.16.3",
-    "sequelize": "^6.28.0"
+    "sequelize": "^6.28.0",
+    "socket.io": "^4.8.1",
+    "web-push": "^3.6.7"
   },
   "devDependencies": {
     "nodemon": "^2.0.20",

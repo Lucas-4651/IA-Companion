@@ -1,77 +1,60 @@
+// controllers/commentController.js
 const { Comment, Rating, User } = require('../models');
 
-exports.addComment = async (req, res) => {
+exports.addCommentWithRating = async (req, res) => {
   try {
-    const { aiId, content } = req.body;
+    const { aiId, content, rating } = req.body;
     const userId = req.session.user.id;
-    
-    const comment = await Comment.create({ 
-      content, 
-      userId, 
-      aiId 
+
+    if (!content || !rating || rating < 1 || rating > 5) {
+      return res.status(400).json({ error: 'Champs invalides' });
+    }
+
+    // 1) Crée le commentaire
+    const comment = await Comment.create({ content, userId, aiId });
+
+    // 2) Crée ou met à jour la note
+    const [ratingObj, created] = await Rating.findOrCreate({
+      where: { userId, aiId },
+      defaults: { value: rating }
     });
-    
-    // Populate user data for response
+    if (!created) {
+      ratingObj.value = rating;
+      await ratingObj.save();
+    }
+
+    // 3) Recalcule la moyenne
+    const allRatings = await Rating.findAll({ where: { aiId } });
+    const averageRating = allRatings.reduce((a, r) => a + r.value, 0) / allRatings.length;
+
+    // 4) Renvoie le commentaire enrichi
     const commentWithUser = await Comment.findByPk(comment.id, {
-      include: [{
-        model: User,
-        attributes: ['id', 'username']
-      }]
+      include: [{ model: User, attributes: ['id', 'username'] }]
     });
-    
-    res.status(201).json(commentWithUser);
-  } catch (error) {
-    console.error(error);
+
+    res.status(201).json({
+      comment: commentWithUser,
+      averageRating: parseFloat(averageRating.toFixed(1)),
+      ratingsCount: allRatings.length
+    });
+  } catch (err) {
+    console.error(err);
     res.status(500).json({ error: 'Erreur serveur' });
   }
 };
 
-exports.addRating = async (req, res) => {
-  try {
-    const { aiId, value } = req.body;
-    const userId = req.session.user.id;
-    
-    const [rating, created] = await Rating.findOrCreate({
-      where: { userId, aiId },
-      defaults: { value }
-    });
-    
-    if (!created) {
-      rating.value = value;
-      await rating.save();
-    }
-    
-    // Calculate new average rating
-    const ratings = await Rating.findAll({ where: { aiId } });
-    const averageRating = ratings.reduce((acc, curr) => acc + curr.value, 0) / ratings.length;
-    
-    res.json({ 
-      rating, 
-      averageRating: averageRating.toFixed(1),
-      ratingsCount: ratings.length
-    });
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: 'Erreur serveur' });
-  }
-};
-// Ajouter cette méthode
+// --- le reste inchangé ---
 exports.getCommentsForAI = async (req, res) => {
   try {
     const { aiId } = req.params;
-    
     const comments = await Comment.findAll({
       where: { aiId },
-      include: [{
-        model: User,
-        attributes: ['id', 'username']
-      }],
+      include: [{ model: User, attributes: ['id', 'username'] }],
       order: [['createdAt', 'DESC']]
     });
-    
     res.json(comments);
-  } catch (error) {
-    console.error(error);
+  } catch (err) {
+    console.error(err);
     res.status(500).json({ error: 'Erreur serveur' });
   }
 };

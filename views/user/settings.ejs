@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paramètres – <%= user.username %></title>
+  <style>
+    :root {
+      --bg: #0f172a; --accent: #0ea5e9; --text: #e2e8f0;
+    }
+    body {
+      margin: 0; height: 100vh; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(circle at 50% 50%, var(--accent), var(--bg));
+      color: var(--text); font-family: Inter, sans-serif;
+    }
+    .card {
+      background: rgba(30, 41, 59, 0.8); border: 1px solid var(--accent);
+      border-radius: 16px; padding: 3rem 4rem; text-align: center;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.3); backdrop-filter: blur(6px);
+    }
+    .emoji {
+      font-size: 3rem; margin-bottom: 1rem; animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+    .btn {
+      display: inline-block; margin-top: 1.5rem; padding: .75rem 2rem;
+      background: linear-gradient(90deg, #004d80, #0077e6);
+      color: #fff; border: none; border-radius: 8px; text-decoration: none;
+      transition: .3s;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 0 12px var(--accent); }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="emoji">🚧</div>
+    <h2>Disponible bientôt !</h2>
+    <p>Nos équipes préparent une mise à jour ultra-cool.</p>
+    <a href="/" class="btn">Retour à l’accueil</a>
+  </div>
+</body>
+</html>
